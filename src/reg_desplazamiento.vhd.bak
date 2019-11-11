@@ -54,13 +54,12 @@ begin
 			end generate t1_10;
 			
 			t11 : if (i=d_int'length-1) generate
-					bitxul : registro port map (	carry => d_int(i-1),
+				bitx : registro port map (	carry => d_int(i-1),
 												load => load,
 												clk => clk,
 												reset_d => reset_d,
 												dout => d_int(i),
-												din => d_in(i) 
-												);
+												din => d_in(i) );
 			end generate t11;
 		end generate t;
 		
