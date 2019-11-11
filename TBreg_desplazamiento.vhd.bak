@@ -1,11 +1,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-
-use ieee.numeric_std.all;
-use ieee.std_logic_arith.all;
-use ieee.std_logic_unsigned.all;
-
 entity TBreg_desplazamiento is
 end TBreg_desplazamiento;
 
@@ -19,8 +14,6 @@ architecture bh of TBreg_desplazamiento is
 	signal tbs_in: std_logic;
 	signal tbserial_out: std_logic;
 	signal tbones: std_logic;
-	
-	signal cont: std_logic_vector(7 downto 0):= "00000000";
 	
 	component reg_desplazamiento
 		port(
@@ -53,23 +46,17 @@ begin
 	
 	data_in: process
 		begin	
-			-- trama: start dato paridad_par stop (11bits) 
---			tbd_in <= "10101010111";
-			tbd_in(10) <= '0';
-			tbd_in(9 downto 2) <= cont;
-			tbd_in(1) <= cont(0) xor cont(1) xor cont(2) xor cont(3) xor cont(4) xor cont(5) xor cont(6) xor cont(7);    
-			tbd_in(0) <= '1';
-			--	tbd_in <= cont;
+			tbd_in <= "10101001010";-- trama: start dato paridad_par stop (11bits) 
 			wait for 500 us;
-			cont <= cont+1;
-
+			tbd_in <= "10101000110";
+			wait for 500 us;
 	end process data_in;
 	
 	ser_in: process 
 		begin 
-			tbs_in <= '1';
+			tbs_in <= '0';
 			wait for 500 us;
-			tbs_in <= '1';
+			tbs_in <= '0';
 			wait for 500 us;
 	end process ser_in;
 	
