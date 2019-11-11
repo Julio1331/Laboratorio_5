@@ -1,0 +1,147 @@
+# do reg_desplazamiento_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying /home/julio/intelFPGA_lite/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/laboratorio_5/src/registro.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:10:00 on Nov 11,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/laboratorio_5/src/registro.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity registro
+# -- Compiling architecture bh of registro
+# End time: 16:10:00 on Nov 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/laboratorio_5/src/reg_desplazamiento.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:10:00 on Nov 11,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/laboratorio_5/src/reg_desplazamiento.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity reg_desplazamiento
+# -- Compiling architecture func of reg_desplazamiento
+# End time: 16:10:00 on Nov 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/laboratorio_5/reg_desplazamiento/../../../../Escritorio/FPGA_Proyectos/laboratorio_5/test_bench/TBreg_desplazamiento.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:10:00 on Nov 11,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/laboratorio_5/reg_desplazamiento/../../../../Escritorio/FPGA_Proyectos/laboratorio_5/test_bench/TBreg_desplazamiento.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity TBreg_desplazamiento
+# -- Compiling architecture bh of TBreg_desplazamiento
+# End time: 16:10:00 on Nov 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  TBreg_desplazamiento
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" TBreg_desplazamiento 
+# Start time: 16:10:00 on Nov 11,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tbreg_desplazamiento(bh)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.reg_desplazamiento(func)
+# Loading work.registro(bh)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# 
+# stdin: <EOF>
+do reg_desplazamiento_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/laboratorio_5/src/registro.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:12:31 on Nov 11,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/laboratorio_5/src/registro.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity registro
+# -- Compiling architecture bh of registro
+# End time: 16:12:31 on Nov 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/laboratorio_5/src/reg_desplazamiento.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:12:31 on Nov 11,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/laboratorio_5/src/reg_desplazamiento.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity reg_desplazamiento
+# -- Compiling architecture func of reg_desplazamiento
+# End time: 16:12:32 on Nov 11,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/laboratorio_5/reg_desplazamiento/../../../../Escritorio/FPGA_Proyectos/laboratorio_5/test_bench/TBreg_desplazamiento.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:12:32 on Nov 11,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/laboratorio_5/reg_desplazamiento/../../../../Escritorio/FPGA_Proyectos/laboratorio_5/test_bench/TBreg_desplazamiento.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity TBreg_desplazamiento
+# -- Compiling architecture bh of TBreg_desplazamiento
+# End time: 16:12:32 on Nov 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  TBreg_desplazamiento
+# End time: 16:12:32 on Nov 11,2019, Elapsed time: 0:02:32
+# Errors: 0, Warnings: 0
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" TBreg_desplazamiento 
+# Start time: 16:12:32 on Nov 11,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tbreg_desplazamiento(bh)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.reg_desplazamiento(func)
+# Loading work.registro(bh)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# End time: 16:21:07 on Nov 11,2019, Elapsed time: 0:08:35
+# Errors: 0, Warnings: 0

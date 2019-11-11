@@ -1,0 +1,33 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "reset_d_out",
+					"strict" : false
+				},
+				{
+					"name" : "load",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset_d",
+					"strict" : false
+				},
+				{
+					"name" : "EOT",
+					"strict" : false
+				},
+				{
+					"name" : "send",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

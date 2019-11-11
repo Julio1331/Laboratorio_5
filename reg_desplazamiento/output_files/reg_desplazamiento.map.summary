@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Nov 11 15:07:53 2019
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Revision Name : reg_desplazamiento
+Top-level Entity Name : reg_desplazamiento
+Family : Cyclone IV E
+Total logic elements : 15
+    Total combinational functions : 15
+    Dedicated logic registers : 11
+Total registers : 11
+Total pins : 17
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

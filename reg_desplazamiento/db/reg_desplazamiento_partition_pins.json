@@ -1,0 +1,77 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "serial_out",
+					"strict" : false
+				},
+				{
+					"name" : "ones",
+					"strict" : false
+				},
+				{
+					"name" : "d_in[10]",
+					"strict" : false
+				},
+				{
+					"name" : "load",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset_d",
+					"strict" : false
+				},
+				{
+					"name" : "d_in[9]",
+					"strict" : false
+				},
+				{
+					"name" : "d_in[8]",
+					"strict" : false
+				},
+				{
+					"name" : "d_in[7]",
+					"strict" : false
+				},
+				{
+					"name" : "d_in[6]",
+					"strict" : false
+				},
+				{
+					"name" : "d_in[5]",
+					"strict" : false
+				},
+				{
+					"name" : "d_in[4]",
+					"strict" : false
+				},
+				{
+					"name" : "d_in[3]",
+					"strict" : false
+				},
+				{
+					"name" : "d_in[2]",
+					"strict" : false
+				},
+				{
+					"name" : "d_in[1]",
+					"strict" : false
+				},
+				{
+					"name" : "d_in[0]",
+					"strict" : false
+				},
+				{
+					"name" : "s_in",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

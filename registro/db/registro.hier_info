@@ -1,0 +1,9 @@
+|registro
+load => dout.OUTPUTSELECT
+carry => dout.DATAA
+din => dout.DATAB
+clk => dout~reg0.CLK
+reset_d => dout~reg0.PRESET
+dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

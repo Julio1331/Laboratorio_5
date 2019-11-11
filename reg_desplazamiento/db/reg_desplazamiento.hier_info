@@ -1,0 +1,149 @@
+|reg_desplazamiento
+d_in[0] => registro:t:0:t0:bitx0.din
+d_in[1] => registro:t:1:t1_10:bitx.din
+d_in[2] => registro:t:2:t1_10:bitx.din
+d_in[3] => registro:t:3:t1_10:bitx.din
+d_in[4] => registro:t:4:t1_10:bitx.din
+d_in[5] => registro:t:5:t1_10:bitx.din
+d_in[6] => registro:t:6:t1_10:bitx.din
+d_in[7] => registro:t:7:t1_10:bitx.din
+d_in[8] => registro:t:8:t1_10:bitx.din
+d_in[9] => registro:t:9:t1_10:bitx.din
+d_in[10] => registro:t:10:t11:bitxul.din
+clk => registro:t:10:t11:bitxul.clk
+clk => registro:t:9:t1_10:bitx.clk
+clk => registro:t:8:t1_10:bitx.clk
+clk => registro:t:7:t1_10:bitx.clk
+clk => registro:t:6:t1_10:bitx.clk
+clk => registro:t:5:t1_10:bitx.clk
+clk => registro:t:4:t1_10:bitx.clk
+clk => registro:t:3:t1_10:bitx.clk
+clk => registro:t:2:t1_10:bitx.clk
+clk => registro:t:1:t1_10:bitx.clk
+clk => registro:t:0:t0:bitx0.clk
+load => registro:t:10:t11:bitxul.load
+load => registro:t:9:t1_10:bitx.load
+load => registro:t:8:t1_10:bitx.load
+load => registro:t:7:t1_10:bitx.load
+load => registro:t:6:t1_10:bitx.load
+load => registro:t:5:t1_10:bitx.load
+load => registro:t:4:t1_10:bitx.load
+load => registro:t:3:t1_10:bitx.load
+load => registro:t:2:t1_10:bitx.load
+load => registro:t:1:t1_10:bitx.load
+load => registro:t:0:t0:bitx0.load
+reset_d => registro:t:10:t11:bitxul.reset_d
+reset_d => registro:t:9:t1_10:bitx.reset_d
+reset_d => registro:t:8:t1_10:bitx.reset_d
+reset_d => registro:t:7:t1_10:bitx.reset_d
+reset_d => registro:t:6:t1_10:bitx.reset_d
+reset_d => registro:t:5:t1_10:bitx.reset_d
+reset_d => registro:t:4:t1_10:bitx.reset_d
+reset_d => registro:t:3:t1_10:bitx.reset_d
+reset_d => registro:t:2:t1_10:bitx.reset_d
+reset_d => registro:t:1:t1_10:bitx.reset_d
+reset_d => registro:t:0:t0:bitx0.reset_d
+s_in => registro:t:0:t0:bitx0.carry
+serial_out <= registro:t:10:t11:bitxul.dout
+ones <= ones.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|reg_desplazamiento|registro:\t:10:t11:bitxul
+load => dout.OUTPUTSELECT
+carry => dout.DATAA
+din => dout.DATAB
+clk => dout~reg0.CLK
+reset_d => dout~reg0.PRESET
+dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|reg_desplazamiento|registro:\t:9:t1_10:bitx
+load => dout.OUTPUTSELECT
+carry => dout.DATAA
+din => dout.DATAB
+clk => dout~reg0.CLK
+reset_d => dout~reg0.PRESET
+dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|reg_desplazamiento|registro:\t:8:t1_10:bitx
+load => dout.OUTPUTSELECT
+carry => dout.DATAA
+din => dout.DATAB
+clk => dout~reg0.CLK
+reset_d => dout~reg0.PRESET
+dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|reg_desplazamiento|registro:\t:7:t1_10:bitx
+load => dout.OUTPUTSELECT
+carry => dout.DATAA
+din => dout.DATAB
+clk => dout~reg0.CLK
+reset_d => dout~reg0.PRESET
+dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|reg_desplazamiento|registro:\t:6:t1_10:bitx
+load => dout.OUTPUTSELECT
+carry => dout.DATAA
+din => dout.DATAB
+clk => dout~reg0.CLK
+reset_d => dout~reg0.PRESET
+dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|reg_desplazamiento|registro:\t:5:t1_10:bitx
+load => dout.OUTPUTSELECT
+carry => dout.DATAA
+din => dout.DATAB
+clk => dout~reg0.CLK
+reset_d => dout~reg0.PRESET
+dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|reg_desplazamiento|registro:\t:4:t1_10:bitx
+load => dout.OUTPUTSELECT
+carry => dout.DATAA
+din => dout.DATAB
+clk => dout~reg0.CLK
+reset_d => dout~reg0.PRESET
+dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|reg_desplazamiento|registro:\t:3:t1_10:bitx
+load => dout.OUTPUTSELECT
+carry => dout.DATAA
+din => dout.DATAB
+clk => dout~reg0.CLK
+reset_d => dout~reg0.PRESET
+dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|reg_desplazamiento|registro:\t:2:t1_10:bitx
+load => dout.OUTPUTSELECT
+carry => dout.DATAA
+din => dout.DATAB
+clk => dout~reg0.CLK
+reset_d => dout~reg0.PRESET
+dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|reg_desplazamiento|registro:\t:1:t1_10:bitx
+load => dout.OUTPUTSELECT
+carry => dout.DATAA
+din => dout.DATAB
+clk => dout~reg0.CLK
+reset_d => dout~reg0.PRESET
+dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|reg_desplazamiento|registro:\t:0:t0:bitx0
+load => dout.OUTPUTSELECT
+carry => dout.DATAA
+din => dout.DATAB
+clk => dout~reg0.CLK
+reset_d => dout~reg0.PRESET
+dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
