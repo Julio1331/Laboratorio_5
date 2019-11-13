@@ -1,5 +1,5 @@
 Analysis & Synthesis report for reg_desplazamiento
-Mon Nov 11 15:07:53 2019
+Wed Nov 13 16:26:44 2019
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -44,7 +44,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Nov 11 15:07:53 2019       ;
+; Analysis & Synthesis Status        ; Successful - Wed Nov 13 16:26:44 2019       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; reg_desplazamiento                          ;
 ; Top-level Entity Name              ; reg_desplazamiento                          ;
@@ -168,8 +168,8 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                   ; Library ;
 +----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------+---------+
-; ../src/registro.vhd              ; yes             ; User VHDL File  ; /home/julio/Escritorio/FPGA_Proyectos/laboratorio_5/src/registro.vhd           ;         ;
-; ../src/reg_desplazamiento.vhd    ; yes             ; User VHDL File  ; /home/julio/Escritorio/FPGA_Proyectos/laboratorio_5/src/reg_desplazamiento.vhd ;         ;
+; ../src/registro.vhd              ; yes             ; User VHDL File  ; /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/registro.vhd           ;         ;
+; ../src/reg_desplazamiento.vhd    ; yes             ; User VHDL File  ; /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/reg_desplazamiento.vhd ;         ;
 +----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------+---------+
 
 
@@ -295,7 +295,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -305,22 +305,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Mon Nov 11 15:07:25 2019
+    Info: Processing started: Wed Nov 13 16:26:29 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off reg_desplazamiento -c reg_desplazamiento
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file /home/julio/Escritorio/FPGA_Proyectos/laboratorio_5/src/registro.vhd
-    Info (12022): Found design unit 1: registro-bh File: /home/julio/Escritorio/FPGA_Proyectos/laboratorio_5/src/registro.vhd Line: 18
-    Info (12023): Found entity 1: registro File: /home/julio/Escritorio/FPGA_Proyectos/laboratorio_5/src/registro.vhd Line: 7
-Info (12021): Found 2 design units, including 1 entities, in source file /home/julio/Escritorio/FPGA_Proyectos/laboratorio_5/src/reg_desplazamiento.vhd
-    Info (12022): Found design unit 1: reg_desplazamiento-func File: /home/julio/Escritorio/FPGA_Proyectos/laboratorio_5/src/reg_desplazamiento.vhd Line: 21
-    Info (12023): Found entity 1: reg_desplazamiento File: /home/julio/Escritorio/FPGA_Proyectos/laboratorio_5/src/reg_desplazamiento.vhd Line: 7
-Info (12021): Found 2 design units, including 1 entities, in source file /home/julio/Escritorio/FPGA_Proyectos/laboratorio_5/test_bench/TBreg_desplazamiento.vhd
-    Info (12022): Found design unit 1: TBreg_desplazamiento-bh File: /home/julio/Escritorio/FPGA_Proyectos/laboratorio_5/test_bench/TBreg_desplazamiento.vhd Line: 7
-    Info (12023): Found entity 1: TBreg_desplazamiento File: /home/julio/Escritorio/FPGA_Proyectos/laboratorio_5/test_bench/TBreg_desplazamiento.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/registro.vhd
+    Info (12022): Found design unit 1: registro-bh File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/registro.vhd Line: 18
+    Info (12023): Found entity 1: registro File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/registro.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/reg_desplazamiento.vhd
+    Info (12022): Found design unit 1: reg_desplazamiento-func File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/reg_desplazamiento.vhd Line: 21
+    Info (12023): Found entity 1: reg_desplazamiento File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/reg_desplazamiento.vhd Line: 7
+Warning (12019): Can't analyze file -- file ../../laboratorio_5/test_bench/TBreg_desplazamiento.vhd is missing
 Info (12127): Elaborating entity "reg_desplazamiento" for the top level hierarchy
-Info (12128): Elaborating entity "registro" for hierarchy "registro:\t:10:t11:bitxul" File: /home/julio/Escritorio/FPGA_Proyectos/laboratorio_5/src/reg_desplazamiento.vhd Line: 57
-Info (13000): Registers with preset signals will power-up high File: /home/julio/Escritorio/FPGA_Proyectos/laboratorio_5/src/registro.vhd Line: 14
+Info (12128): Elaborating entity "registro" for hierarchy "registro:\t:10:t11:bitxul" File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/reg_desplazamiento.vhd Line: 57
+Info (13000): Registers with preset signals will power-up high File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/registro.vhd Line: 14
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -329,10 +327,10 @@ Info (21057): Implemented 32 device resources after synthesis - the final resour
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 2 output pins
     Info (21061): Implemented 15 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 970 megabytes
-    Info: Processing ended: Mon Nov 11 15:07:53 2019
-    Info: Elapsed time: 00:00:28
-    Info: Total CPU time (on all processors): 00:00:42
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 971 megabytes
+    Info: Processing ended: Wed Nov 13 16:26:44 2019
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:30
 
 

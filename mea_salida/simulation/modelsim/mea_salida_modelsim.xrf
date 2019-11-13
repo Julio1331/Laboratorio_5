@@ -1,11 +1,11 @@
 vendor_name = ModelSim
-source_file = 1, /home/julio/Escritorio/FPGA Proyectos/laboratorio_5/src/mea_salida.vhd
-source_file = 1, ../src/TBmea_salida.vhd
+source_file = 1, /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/test_bench/TBmea_salida.vhd
+source_file = 1, /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_salida.vhd
 source_file = 1, /home/julio/intelFPGA_lite/18.0/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, /home/julio/intelFPGA_lite/18.0/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, /home/julio/intelFPGA_lite/18.0/quartus/libraries/vhdl/ieee/timing_b.vhd
 source_file = 1, /home/julio/intelFPGA_lite/18.0/quartus/libraries/vhdl/ieee/timing_p.vhd
-source_file = 1, /home/julio/Escritorio/FPGA Proyectos/laboratorio_5/mea_salida/db/mea_salida.cbx.xml
+source_file = 1, /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/mea_salida/db/mea_salida.cbx.xml
 design_name = hard_block
 design_name = mea_salida
 instance = comp, \reset_d_out~output\, reset_d_out~output, mea_salida, 1

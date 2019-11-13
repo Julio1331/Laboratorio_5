@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition"
 
--- DATE "11/11/2019 15:08:09"
+-- DATE "11/13/2019 16:27:15"
 
 -- 
 -- Device: Altera EP4CE6E22C6 Package TQFP144
@@ -83,8 +83,8 @@ ENTITY 	reg_desplazamiento IS
 	load : IN std_logic;
 	reset_d : IN std_logic;
 	s_in : IN std_logic;
-	serial_out : OUT std_logic;
-	ones : OUT std_logic
+	serial_out : BUFFER std_logic;
+	ones : BUFFER std_logic
 	);
 END reg_desplazamiento;
 

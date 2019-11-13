@@ -21,7 +21,7 @@ begin
 	process (clk, load, reset_d)
 		begin
 		if (reset_d='0') then
-			dout <='1';
+			dout <='1';--1
 		else
 			if(rising_edge(clk))then
 				if(load = '1') then

@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition"
 
--- DATE "11/10/2019 18:02:58"
+-- DATE "11/13/2019 16:44:00"
 
 -- 
 -- Device: Altera EP4CE6E22C6 Package TQFP144
@@ -81,8 +81,8 @@ ENTITY 	mea_salida IS
 	send : IN std_logic;
 	EOT : IN std_logic;
 	reset_d : IN std_logic;
-	reset_d_out : BUFFER std_logic;
-	load : BUFFER std_logic;
+	reset_d_out : OUT std_logic;
+	load : OUT std_logic;
 	clk : IN std_logic
 	);
 END mea_salida;

@@ -7,8 +7,8 @@ use ieee.numeric_std.all;
 
 entity mea_salida is
 	port(
-			send : in std_logic;
-			EOT : in std_logic;
+			send : in std_logic;-- señal de comienzo de transmision 
+			EOT : in std_logic; 
 			reset_d : in std_logic;
 			reset_d_out : out std_logic;
 			load : out std_logic;	
@@ -34,12 +34,13 @@ begin
 				end if;
 			end if;
 		end process actual;
-		
+
 		proximo : process(st, send, EOT)
 		begin
 			case st is
 				when ILDE =>
-					if (send = '1') then
+					if( rising_edge(send)) then
+					--if (send = '1') then
 						px_st <= LD;
 					else
 						px_st <= ILDE;
@@ -61,12 +62,18 @@ begin
 				if(reset_d = '0')then
 					reset_d_out <= '0';
 				else
+					reset_d_out <= '1';
 					if (rising_edge(clk)) then
 						case st is
-							when ILDE => reset_d_out <= '0'; load <= '0';
-							when LD=> reset_d_out <= '1'; load <='1';
-							when SND => reset_d_out <= '1'; load <= '0';
-							when others => reset_d_out <= '0'; load <= '0';
+							when ILDE => load <= '0';
+							when LD=> load <='1';
+							when SND => load <= '0';
+							when others => load <= '0';
+							
+--							when ILDE => reset_d_out <= '0'; load <= '0';
+--							when LD=> reset_d_out <= '1'; load <='1';
+--							when SND => reset_d_out <= '1'; load <= '0';
+--							when others => reset_d_out <= '0'; load <= '0';
 						end case;
 					end if;
 				end if;

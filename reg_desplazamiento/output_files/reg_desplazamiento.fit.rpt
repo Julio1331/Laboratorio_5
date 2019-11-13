@@ -1,5 +1,5 @@
 Fitter report for reg_desplazamiento
-Mon Nov 11 15:08:01 2019
+Wed Nov 13 16:26:53 2019
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -65,7 +65,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Mon Nov 11 15:08:01 2019       ;
+; Fitter Status                      ; Successful - Wed Nov 13 16:26:53 2019       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; reg_desplazamiento                          ;
 ; Top-level Entity Name              ; reg_desplazamiento                          ;
@@ -154,7 +154,7 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.4%      ;
+;     Processor 2            ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -196,7 +196,7 @@ refer to the applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in /home/julio/Escritorio/FPGA_Proyectos/laboratorio_5/reg_desplazamiento/output_files/reg_desplazamiento.pin.
+The pin-out file can be found in /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/reg_desplazamiento/output_files/reg_desplazamiento.pin.
 
 
 +--------------------------------------------------------------------+
@@ -966,9 +966,9 @@ Info (332144): No user constrained base clocks found in the design
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
-Info (176353): Automatically promoted node clk~input (placed in PIN 23 (CLK1, DIFFCLK_0n)) File: /home/julio/Escritorio/FPGA_Proyectos/laboratorio_5/src/reg_desplazamiento.vhd Line: 11
+Info (176353): Automatically promoted node clk~input (placed in PIN 23 (CLK1, DIFFCLK_0n)) File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/reg_desplazamiento.vhd Line: 11
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G2
-Info (176353): Automatically promoted node reset_d~input (placed in PIN 24 (CLK2, DIFFCLK_1p)) File: /home/julio/Escritorio/FPGA_Proyectos/laboratorio_5/src/reg_desplazamiento.vhd Line: 13
+Info (176353): Automatically promoted node reset_d~input (placed in PIN 24 (CLK2, DIFFCLK_1p)) File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/reg_desplazamiento.vhd Line: 13
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G4
 Info (176233): Starting register packing
 Info (176235): Finished register packing
@@ -1000,23 +1000,23 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.16 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.04 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
-Info (144001): Generated suppressed messages file /home/julio/Escritorio/FPGA_Proyectos/laboratorio_5/reg_desplazamiento/output_files/reg_desplazamiento.fit.smsg
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
+Info (144001): Generated suppressed messages file /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/reg_desplazamiento/output_files/reg_desplazamiento.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 1244 megabytes
-    Info: Processing ended: Mon Nov 11 15:08:01 2019
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:07
+    Info: Processing ended: Wed Nov 13 16:26:53 2019
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:06
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in /home/julio/Escritorio/FPGA_Proyectos/laboratorio_5/reg_desplazamiento/output_files/reg_desplazamiento.fit.smsg.
+The suppressed messages can be found in /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/reg_desplazamiento/output_files/reg_desplazamiento.fit.smsg.
 
 

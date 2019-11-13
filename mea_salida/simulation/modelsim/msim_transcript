@@ -9,10 +9,10 @@
 # Copying /home/julio/intelFPGA_lite/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/laboratorio_5/src/mea_salida.vhd}
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_salida.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:53:33 on Nov 11,2019
-# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/laboratorio_5/src/mea_salida.vhd 
+# Start time: 15:36:08 on Nov 12,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_salida.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -21,24 +21,24 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity mea_salida
 # -- Compiling architecture mea of mea_salida
-# End time: 14:53:33 on Nov 11,2019, Elapsed time: 0:00:00
+# End time: 15:36:08 on Nov 12,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/laboratorio_5/mea_salida/../test_bench/TBmea_salida.vhd}
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/mea_salida/../test_bench/TBmea_salida.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:53:33 on Nov 11,2019
-# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/laboratorio_5/mea_salida/../test_bench/TBmea_salida.vhd 
+# Start time: 15:36:08 on Nov 12,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/mea_salida/../test_bench/TBmea_salida.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity TBmea_salida
 # -- Compiling architecture bh of TBmea_salida
-# End time: 14:53:33 on Nov 11,2019, Elapsed time: 0:00:00
+# End time: 15:36:08 on Nov 12,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  TBmea_salida
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" TBmea_salida 
-# Start time: 14:53:33 on Nov 11,2019
+# Start time: 15:36:08 on Nov 12,2019
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -56,5 +56,5 @@
 # run -all
 # 
 # stdin: <EOF>
-# End time: 14:54:01 on Nov 11,2019, Elapsed time: 0:00:28
+# End time: 15:39:24 on Nov 12,2019, Elapsed time: 0:03:16
 # Errors: 0, Warnings: 0

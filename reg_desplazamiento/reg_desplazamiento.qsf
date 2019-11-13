@@ -46,9 +46,6 @@ set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name VHDL_FILE ../../../../Escritorio/FPGA_Proyectos/laboratorio_5/src/registro.vhd
-set_global_assignment -name VHDL_FILE ../src/reg_desplazamiento.vhd
-set_global_assignment -name VHDL_FILE ../../../../Escritorio/FPGA_Proyectos/laboratorio_5/test_bench/TBreg_desplazamiento.vhd
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
 set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR simulation/modelsim -section_id eda_simulation
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
@@ -58,5 +55,8 @@ set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH TBreg_desplazam
 set_global_assignment -name EDA_TEST_BENCH_NAME TBreg_desplazamiento -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME dut -section_id TBreg_desplazamiento
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME TBreg_desplazamiento -section_id TBreg_desplazamiento
-set_global_assignment -name EDA_TEST_BENCH_FILE ../../../../Escritorio/FPGA_Proyectos/laboratorio_5/test_bench/TBreg_desplazamiento.vhd -section_id TBreg_desplazamiento
+set_global_assignment -name EDA_TEST_BENCH_FILE ../TBreg_desplazamiento.vhd -section_id TBreg_desplazamiento
+set_global_assignment -name VHDL_FILE ../src/registro.vhd
+set_global_assignment -name VHDL_FILE ../src/reg_desplazamiento.vhd
+set_global_assignment -name VHDL_FILE ../../../../Escritorio/FPGA_Proyectos/laboratorio_5/test_bench/TBreg_desplazamiento.vhd
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

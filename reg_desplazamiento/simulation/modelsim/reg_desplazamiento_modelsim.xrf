@@ -1,12 +1,12 @@
 vendor_name = ModelSim
-source_file = 1, /home/julio/Escritorio/FPGA_Proyectos/laboratorio_5/src/registro.vhd
-source_file = 1, /home/julio/Escritorio/FPGA_Proyectos/laboratorio_5/src/reg_desplazamiento.vhd
-source_file = 1, /home/julio/Escritorio/FPGA_Proyectos/laboratorio_5/test_bench/TBreg_desplazamiento.vhd
+source_file = 1, /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/registro.vhd
+source_file = 1, /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/reg_desplazamiento.vhd
+source_file = 1, ../../laboratorio_5/test_bench/TBreg_desplazamiento.vhd
 source_file = 1, /home/julio/intelFPGA_lite/18.0/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, /home/julio/intelFPGA_lite/18.0/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, /home/julio/intelFPGA_lite/18.0/quartus/libraries/vhdl/ieee/timing_b.vhd
 source_file = 1, /home/julio/intelFPGA_lite/18.0/quartus/libraries/vhdl/ieee/timing_p.vhd
-source_file = 1, /home/julio/Escritorio/FPGA_Proyectos/laboratorio_5/reg_desplazamiento/db/reg_desplazamiento.cbx.xml
+source_file = 1, /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/reg_desplazamiento/db/reg_desplazamiento.cbx.xml
 design_name = hard_block
 design_name = reg_desplazamiento
 instance = comp, \serial_out~output\, serial_out~output, reg_desplazamiento, 1

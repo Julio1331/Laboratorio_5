@@ -44,8 +44,8 @@ reset_d => registro:t:2:t1_10:bitx.reset_d
 reset_d => registro:t:1:t1_10:bitx.reset_d
 reset_d => registro:t:0:t0:bitx0.reset_d
 s_in => registro:t:0:t0:bitx0.carry
-serial_out <= registro:t:10:t11:bitxul.dout
-ones <= ones.DB_MAX_OUTPUT_PORT_TYPE
+serial_out << registro:t:10:t11:bitxul.dout
+ones << ones.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |reg_desplazamiento|registro:\t:10:t11:bitxul
