@@ -1,0 +1,6 @@
+
+State Machine - |mef_registro|mea_salida:d2|st
+Name st.SND st.LD st.ILDE 
+st.ILDE 0 0 0 
+st.LD 0 1 1 
+st.SND 1 0 1 
