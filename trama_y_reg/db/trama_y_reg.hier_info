@@ -1,0 +1,229 @@
+|trama_y_reg
+send => mef_registro:d2.snd
+rst => mef_registro:d2.reset
+datos[0] => data_11:d1.datos_in[0]
+datos[1] => data_11:d1.datos_in[1]
+datos[2] => data_11:d1.datos_in[2]
+datos[3] => data_11:d1.datos_in[3]
+datos[4] => data_11:d1.datos_in[4]
+datos[5] => data_11:d1.datos_in[5]
+datos[6] => data_11:d1.datos_in[6]
+datos[7] => data_11:d1.datos_in[7]
+sal_serie << mef_registro:d2.serial_out
+clk => mef_registro:d2.clk
+
+
+|trama_y_reg|data_11:d1
+datos_in[0] => paridad.IN0
+datos_in[0] => datos_out[2].DATAIN
+datos_in[1] => paridad.IN1
+datos_in[1] => datos_out[3].DATAIN
+datos_in[2] => paridad.IN1
+datos_in[2] => datos_out[4].DATAIN
+datos_in[3] => paridad.IN1
+datos_in[3] => datos_out[5].DATAIN
+datos_in[4] => paridad.IN1
+datos_in[4] => datos_out[6].DATAIN
+datos_in[5] => paridad.IN1
+datos_in[5] => datos_out[7].DATAIN
+datos_in[6] => paridad.IN1
+datos_in[6] => datos_out[8].DATAIN
+datos_in[7] => paridad.IN1
+datos_in[7] => datos_out[9].DATAIN
+datos_out[0] <= <VCC>
+datos_out[1] <= paridad.DB_MAX_OUTPUT_PORT_TYPE
+datos_out[2] <= datos_in[0].DB_MAX_OUTPUT_PORT_TYPE
+datos_out[3] <= datos_in[1].DB_MAX_OUTPUT_PORT_TYPE
+datos_out[4] <= datos_in[2].DB_MAX_OUTPUT_PORT_TYPE
+datos_out[5] <= datos_in[3].DB_MAX_OUTPUT_PORT_TYPE
+datos_out[6] <= datos_in[4].DB_MAX_OUTPUT_PORT_TYPE
+datos_out[7] <= datos_in[5].DB_MAX_OUTPUT_PORT_TYPE
+datos_out[8] <= datos_in[6].DB_MAX_OUTPUT_PORT_TYPE
+datos_out[9] <= datos_in[7].DB_MAX_OUTPUT_PORT_TYPE
+datos_out[10] <= <GND>
+serial_out <= <VCC>
+
+
+|trama_y_reg|mef_registro:d2
+snd => mea_salida:d2.send
+reset => mea_salida:d2.reset_d
+clk => reg_desplazamiento:d1.clk
+clk => mea_salida:d2.clk
+data_in[0] => reg_desplazamiento:d1.d_in[0]
+data_in[1] => reg_desplazamiento:d1.d_in[1]
+data_in[2] => reg_desplazamiento:d1.d_in[2]
+data_in[3] => reg_desplazamiento:d1.d_in[3]
+data_in[4] => reg_desplazamiento:d1.d_in[4]
+data_in[5] => reg_desplazamiento:d1.d_in[5]
+data_in[6] => reg_desplazamiento:d1.d_in[6]
+data_in[7] => reg_desplazamiento:d1.d_in[7]
+data_in[8] => reg_desplazamiento:d1.d_in[8]
+data_in[9] => reg_desplazamiento:d1.d_in[9]
+data_in[10] => reg_desplazamiento:d1.d_in[10]
+serial_in => reg_desplazamiento:d1.s_in
+serial_out <= reg_desplazamiento:d1.serial_out
+
+
+|trama_y_reg|mef_registro:d2|reg_desplazamiento:d1
+d_in[0] => registro:t:0:t0:bitx0.din
+d_in[1] => registro:t:1:t1_10:bitx.din
+d_in[2] => registro:t:2:t1_10:bitx.din
+d_in[3] => registro:t:3:t1_10:bitx.din
+d_in[4] => registro:t:4:t1_10:bitx.din
+d_in[5] => registro:t:5:t1_10:bitx.din
+d_in[6] => registro:t:6:t1_10:bitx.din
+d_in[7] => registro:t:7:t1_10:bitx.din
+d_in[8] => registro:t:8:t1_10:bitx.din
+d_in[9] => registro:t:9:t1_10:bitx.din
+d_in[10] => registro:t:10:t11:bitxul.din
+clk => registro:t:10:t11:bitxul.clk
+clk => registro:t:9:t1_10:bitx.clk
+clk => registro:t:8:t1_10:bitx.clk
+clk => registro:t:7:t1_10:bitx.clk
+clk => registro:t:6:t1_10:bitx.clk
+clk => registro:t:5:t1_10:bitx.clk
+clk => registro:t:4:t1_10:bitx.clk
+clk => registro:t:3:t1_10:bitx.clk
+clk => registro:t:2:t1_10:bitx.clk
+clk => registro:t:1:t1_10:bitx.clk
+clk => registro:t:0:t0:bitx0.clk
+load => registro:t:10:t11:bitxul.load
+load => registro:t:9:t1_10:bitx.load
+load => registro:t:8:t1_10:bitx.load
+load => registro:t:7:t1_10:bitx.load
+load => registro:t:6:t1_10:bitx.load
+load => registro:t:5:t1_10:bitx.load
+load => registro:t:4:t1_10:bitx.load
+load => registro:t:3:t1_10:bitx.load
+load => registro:t:2:t1_10:bitx.load
+load => registro:t:1:t1_10:bitx.load
+load => registro:t:0:t0:bitx0.load
+reset_d => registro:t:10:t11:bitxul.reset_d
+reset_d => registro:t:9:t1_10:bitx.reset_d
+reset_d => registro:t:8:t1_10:bitx.reset_d
+reset_d => registro:t:7:t1_10:bitx.reset_d
+reset_d => registro:t:6:t1_10:bitx.reset_d
+reset_d => registro:t:5:t1_10:bitx.reset_d
+reset_d => registro:t:4:t1_10:bitx.reset_d
+reset_d => registro:t:3:t1_10:bitx.reset_d
+reset_d => registro:t:2:t1_10:bitx.reset_d
+reset_d => registro:t:1:t1_10:bitx.reset_d
+reset_d => registro:t:0:t0:bitx0.reset_d
+s_in => registro:t:0:t0:bitx0.carry
+serial_out <= registro:t:10:t11:bitxul.dout
+ones <= ones.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|trama_y_reg|mef_registro:d2|reg_desplazamiento:d1|registro:\t:10:t11:bitxul
+load => dout.OUTPUTSELECT
+carry => dout.DATAA
+din => dout.DATAB
+clk => dout~reg0.CLK
+reset_d => dout~reg0.PRESET
+dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|trama_y_reg|mef_registro:d2|reg_desplazamiento:d1|registro:\t:9:t1_10:bitx
+load => dout.OUTPUTSELECT
+carry => dout.DATAA
+din => dout.DATAB
+clk => dout~reg0.CLK
+reset_d => dout~reg0.PRESET
+dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|trama_y_reg|mef_registro:d2|reg_desplazamiento:d1|registro:\t:8:t1_10:bitx
+load => dout.OUTPUTSELECT
+carry => dout.DATAA
+din => dout.DATAB
+clk => dout~reg0.CLK
+reset_d => dout~reg0.PRESET
+dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|trama_y_reg|mef_registro:d2|reg_desplazamiento:d1|registro:\t:7:t1_10:bitx
+load => dout.OUTPUTSELECT
+carry => dout.DATAA
+din => dout.DATAB
+clk => dout~reg0.CLK
+reset_d => dout~reg0.PRESET
+dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|trama_y_reg|mef_registro:d2|reg_desplazamiento:d1|registro:\t:6:t1_10:bitx
+load => dout.OUTPUTSELECT
+carry => dout.DATAA
+din => dout.DATAB
+clk => dout~reg0.CLK
+reset_d => dout~reg0.PRESET
+dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|trama_y_reg|mef_registro:d2|reg_desplazamiento:d1|registro:\t:5:t1_10:bitx
+load => dout.OUTPUTSELECT
+carry => dout.DATAA
+din => dout.DATAB
+clk => dout~reg0.CLK
+reset_d => dout~reg0.PRESET
+dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|trama_y_reg|mef_registro:d2|reg_desplazamiento:d1|registro:\t:4:t1_10:bitx
+load => dout.OUTPUTSELECT
+carry => dout.DATAA
+din => dout.DATAB
+clk => dout~reg0.CLK
+reset_d => dout~reg0.PRESET
+dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|trama_y_reg|mef_registro:d2|reg_desplazamiento:d1|registro:\t:3:t1_10:bitx
+load => dout.OUTPUTSELECT
+carry => dout.DATAA
+din => dout.DATAB
+clk => dout~reg0.CLK
+reset_d => dout~reg0.PRESET
+dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|trama_y_reg|mef_registro:d2|reg_desplazamiento:d1|registro:\t:2:t1_10:bitx
+load => dout.OUTPUTSELECT
+carry => dout.DATAA
+din => dout.DATAB
+clk => dout~reg0.CLK
+reset_d => dout~reg0.PRESET
+dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|trama_y_reg|mef_registro:d2|reg_desplazamiento:d1|registro:\t:1:t1_10:bitx
+load => dout.OUTPUTSELECT
+carry => dout.DATAA
+din => dout.DATAB
+clk => dout~reg0.CLK
+reset_d => dout~reg0.PRESET
+dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|trama_y_reg|mef_registro:d2|reg_desplazamiento:d1|registro:\t:0:t0:bitx0
+load => dout.OUTPUTSELECT
+carry => dout.DATAA
+din => dout.DATAB
+clk => dout~reg0.CLK
+reset_d => dout~reg0.PRESET
+dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|trama_y_reg|mef_registro:d2|mea_salida:d2
+send => px_st.LD.IN0
+send => Selector2.IN0
+EOT => Selector1.IN1
+EOT => Selector0.IN2
+reset_d => reset_d_out.DATAIN
+reset_d => st~3.DATAIN
+reset_d => load~reg0.ENA
+reset_d_out <= reset_d.DB_MAX_OUTPUT_PORT_TYPE
+load <= load~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => load~reg0.CLK
+clk => st~1.DATAIN
+
+

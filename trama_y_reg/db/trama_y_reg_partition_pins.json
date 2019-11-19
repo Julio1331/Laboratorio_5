@@ -1,0 +1,57 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "sal_serie",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "datos[7]",
+					"strict" : false
+				},
+				{
+					"name" : "datos[6]",
+					"strict" : false
+				},
+				{
+					"name" : "datos[5]",
+					"strict" : false
+				},
+				{
+					"name" : "send",
+					"strict" : false
+				},
+				{
+					"name" : "datos[4]",
+					"strict" : false
+				},
+				{
+					"name" : "datos[3]",
+					"strict" : false
+				},
+				{
+					"name" : "datos[2]",
+					"strict" : false
+				},
+				{
+					"name" : "datos[1]",
+					"strict" : false
+				},
+				{
+					"name" : "datos[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
