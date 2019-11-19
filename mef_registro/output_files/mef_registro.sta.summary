@@ -2,64 +2,76 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
+Type  : Slow 1200mV 85C Model Setup 'snd'
+Slack : -2.546
+TNS   : -4.280
+
 Type  : Slow 1200mV 85C Model Setup 'clk'
-Slack : -0.898
-TNS   : -7.046
+Slack : -1.535
+TNS   : -5.608
 
 Type  : Slow 1200mV 85C Model Hold 'clk'
-Slack : 0.385
+Slack : 0.404
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Recovery 'clk'
-Slack : -0.690
-TNS   : -7.167
-
-Type  : Slow 1200mV 85C Model Removal 'clk'
-Slack : 0.781
+Type  : Slow 1200mV 85C Model Hold 'snd'
+Slack : 1.004
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -23.560
+TNS   : -22.275
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'snd'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Setup 'snd'
+Slack : -2.383
+TNS   : -4.006
 
 Type  : Slow 1200mV 0C Model Setup 'clk'
-Slack : -0.719
-TNS   : -5.007
+Slack : -1.271
+TNS   : -3.809
 
 Type  : Slow 1200mV 0C Model Hold 'clk'
-Slack : 0.338
+Slack : 0.356
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Recovery 'clk'
-Slack : -0.533
-TNS   : -5.475
-
-Type  : Slow 1200mV 0C Model Removal 'clk'
-Slack : 0.706
+Type  : Slow 1200mV 0C Model Hold 'snd'
+Slack : 0.976
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -23.560
+TNS   : -22.275
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'snd'
+Slack : -3.000
+TNS   : -3.000
 
 Type  : Fast 1200mV 0C Model Setup 'clk'
-Slack : 0.100
-TNS   : 0.000
+Slack : -0.862
+TNS   : -1.571
+
+Type  : Fast 1200mV 0C Model Setup 'snd'
+Slack : -0.713
+TNS   : -0.946
 
 Type  : Fast 1200mV 0C Model Hold 'clk'
-Slack : 0.173
+Slack : 0.184
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Recovery 'clk'
-Slack : 0.146
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Removal 'clk'
-Slack : 0.360
+Type  : Fast 1200mV 0C Model Hold 'snd'
+Slack : 0.352
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -20.073
+TNS   : -18.854
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'snd'
+Slack : -3.000
+TNS   : -3.000
 
 ------------------------------------------------------------

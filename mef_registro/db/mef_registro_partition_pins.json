@@ -24,11 +24,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "snd",
+					"name" : "data_in[8]",
 					"strict" : false
 				},
 				{
-					"name" : "data_in[8]",
+					"name" : "snd",
 					"strict" : false
 				},
 				{

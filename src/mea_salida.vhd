@@ -39,11 +39,11 @@ begin
 		begin
 			case st is
 				when ILDE =>
-					if( rising_edge(send)) then
-					--if (send = '1') then
+					--if( rising_edge(send)) then
+					if (send = '1') then
 						px_st <= LD;
 					else
-						px_st <= ILDE;
+						--px_st <= ILDE;
 					end if;
 				when LD =>
 					px_st <= SND;

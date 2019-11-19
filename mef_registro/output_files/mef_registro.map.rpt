@@ -1,5 +1,5 @@
 Analysis & Synthesis report for mef_registro
-Thu Nov 14 20:28:55 2019
+Sat Nov 16 10:13:07 2019
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -10,7 +10,18 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |mef_registro|mea_salida:d2|st
+  9. User-Specified and Inferred Latches
+ 10. General Register Statistics
+ 11. Inverted Register Statistics
+ 12. Parameter Settings for User Entity Instance: Top-level Entity: |mef_registro
+ 13. Parameter Settings for User Entity Instance: reg_desplazamiento:d1
+ 14. Post-Synthesis Netlist Statistics for Top Partition
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
 
 
 
@@ -36,20 +47,20 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Thu Nov 14 20:28:55 2019           ;
+; Analysis & Synthesis Status        ; Successful - Sat Nov 16 10:13:07 2019       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; mef_registro                                ;
 ; Top-level Entity Name              ; mef_registro                                ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 23                                          ;
+;     Total combinational functions  ; 23                                          ;
+;     Dedicated logic registers      ; 15                                          ;
+; Total registers                    ; 15                                          ;
+; Total pins                         ; 16                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -148,11 +159,189 @@ refer to the applicable agreement for further details.
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                          ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                   ; Library ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------+---------+
+; ../src/registro.vhd              ; yes             ; User VHDL File  ; /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/registro.vhd           ;         ;
+; ../src/reg_desplazamiento.vhd    ; yes             ; User VHDL File  ; /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/reg_desplazamiento.vhd ;         ;
+; ../src/mef_registro.vhd          ; yes             ; User VHDL File  ; /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mef_registro.vhd       ;         ;
+; ../src/mea_salida.vhd            ; yes             ; User VHDL File  ; /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_salida.vhd         ;         ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 23        ;
+;                                             ;           ;
+; Total combinational functions               ; 23        ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 5         ;
+;     -- 3 input functions                    ; 16        ;
+;     -- <=2 input functions                  ; 2         ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 23        ;
+;     -- arithmetic mode                      ; 0         ;
+;                                             ;           ;
+; Total registers                             ; 15        ;
+;     -- Dedicated logic registers            ; 15        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 16        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 15        ;
+; Total fan-out                               ; 132       ;
+; Average fan-out                             ; 1.89      ;
++---------------------------------------------+-----------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                              ;
++-----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------+--------------------+--------------+
+; Compilation Hierarchy Node        ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                           ; Entity Name        ; Library Name ;
++-----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------+--------------------+--------------+
+; |mef_registro                     ; 23 (0)              ; 15 (0)                    ; 0           ; 0            ; 0       ; 0         ; 16   ; 0            ; |mef_registro                                                 ; mef_registro       ; work         ;
+;    |mea_salida:d2|                ; 10 (10)             ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mef_registro|mea_salida:d2                                   ; mea_salida         ; work         ;
+;    |reg_desplazamiento:d1|        ; 13 (2)              ; 11 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mef_registro|reg_desplazamiento:d1                           ; reg_desplazamiento ; work         ;
+;       |registro:\t:0:t0:bitx0|    ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mef_registro|reg_desplazamiento:d1|registro:\t:0:t0:bitx0    ; registro           ; work         ;
+;       |registro:\t:10:t11:bitxul| ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mef_registro|reg_desplazamiento:d1|registro:\t:10:t11:bitxul ; registro           ; work         ;
+;       |registro:\t:1:t1_10:bitx|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mef_registro|reg_desplazamiento:d1|registro:\t:1:t1_10:bitx  ; registro           ; work         ;
+;       |registro:\t:2:t1_10:bitx|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mef_registro|reg_desplazamiento:d1|registro:\t:2:t1_10:bitx  ; registro           ; work         ;
+;       |registro:\t:3:t1_10:bitx|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mef_registro|reg_desplazamiento:d1|registro:\t:3:t1_10:bitx  ; registro           ; work         ;
+;       |registro:\t:4:t1_10:bitx|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mef_registro|reg_desplazamiento:d1|registro:\t:4:t1_10:bitx  ; registro           ; work         ;
+;       |registro:\t:5:t1_10:bitx|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mef_registro|reg_desplazamiento:d1|registro:\t:5:t1_10:bitx  ; registro           ; work         ;
+;       |registro:\t:6:t1_10:bitx|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mef_registro|reg_desplazamiento:d1|registro:\t:6:t1_10:bitx  ; registro           ; work         ;
+;       |registro:\t:7:t1_10:bitx|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mef_registro|reg_desplazamiento:d1|registro:\t:7:t1_10:bitx  ; registro           ; work         ;
+;       |registro:\t:8:t1_10:bitx|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mef_registro|reg_desplazamiento:d1|registro:\t:8:t1_10:bitx  ; registro           ; work         ;
+;       |registro:\t:9:t1_10:bitx|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mef_registro|reg_desplazamiento:d1|registro:\t:9:t1_10:bitx  ; registro           ; work         ;
++-----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------+--------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++------------------------------------------------+
+; State Machine - |mef_registro|mea_salida:d2|st ;
++---------+--------+-------+---------------------+
+; Name    ; st.SND ; st.LD ; st.ILDE             ;
++---------+--------+-------+---------------------+
+; st.ILDE ; 0      ; 0     ; 0                   ;
+; st.LD   ; 0      ; 1     ; 1                   ;
+; st.SND  ; 1      ; 0     ; 1                   ;
++---------+--------+-------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                   ;
++----------------------------------------------------+-------------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal     ; Free of Timing Hazards ;
++----------------------------------------------------+-------------------------+------------------------+
+; mea_salida:d2|px_st.LD_74                          ; GND                     ; yes                    ;
+; mea_salida:d2|px_st.ILDE_83                        ; mea_salida:d2|Selector2 ; yes                    ;
+; mea_salida:d2|px_st.SND_68                         ; mea_salida:d2|Selector2 ; yes                    ;
+; Number of user-specified and inferred latches = 3  ;                         ;                        ;
++----------------------------------------------------+-------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 15    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 14    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------+
+; Inverted Register Statistics                                   ;
++------------------------------------------------------+---------+
+; Inverted Register                                    ; Fan out ;
++------------------------------------------------------+---------+
+; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; 2       ;
+; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; 2       ;
+; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; 2       ;
+; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; 2       ;
+; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; 2       ;
+; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; 2       ;
+; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; 2       ;
+; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; 2       ;
+; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; 3       ;
+; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; 3       ;
+; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout    ; 3       ;
+; Total number of inverted registers = 11              ;         ;
++------------------------------------------------------+---------+
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |mef_registro ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; buss           ; 11    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: reg_desplazamiento:d1 ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; buss           ; 11    ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 16                          ;
+; cycloneiii_ff         ; 15                          ;
+;     CLR               ; 14                          ;
+;     plain             ; 1                           ;
+; cycloneiii_lcell_comb ; 24                          ;
+;     normal            ; 24                          ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 16                          ;
+;         4 data inputs ; 5                           ;
+;                       ;                             ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 1.88                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
 
 
 +-------------------------------+
@@ -161,7 +350,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Thu Nov 14 20:28:40 2019
+    Info: Processing started: Sat Nov 16 10:12:52 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mef_registro -c mef_registro
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -171,16 +360,36 @@ Info (12021): Found 2 design units, including 1 entities, in source file /home/j
 Info (12021): Found 2 design units, including 1 entities, in source file /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/reg_desplazamiento.vhd
     Info (12022): Found design unit 1: reg_desplazamiento-func File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/reg_desplazamiento.vhd Line: 21
     Info (12023): Found entity 1: reg_desplazamiento File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/reg_desplazamiento.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mef_registro.vhd
+    Info (12022): Found design unit 1: mef_registro-bh File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mef_registro.vhd Line: 18
+    Info (12023): Found entity 1: mef_registro File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mef_registro.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_salida.vhd
     Info (12022): Found design unit 1: mea_salida-mea File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_salida.vhd Line: 19
     Info (12023): Found entity 1: mea_salida File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_salida.vhd Line: 8
-Warning (12019): Can't analyze file -- file ../../../../Desktop/FPGA_Proyectos/Laboratorio_5/src/mef_registro.vhd is missing
-Warning (12019): Can't analyze file -- file ../test_bench/TBmef_registro.vhd is missing
-Error (12007): Top-level design entity "mef_registro" is undefined
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 3 warnings
-    Error: Peak virtual memory: 955 megabytes
-    Error: Processing ended: Thu Nov 14 20:28:55 2019
-    Error: Elapsed time: 00:00:15
-    Error: Total CPU time (on all processors): 00:00:29
+Info (12021): Found 2 design units, including 1 entities, in source file /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/test_bench/TBmef_registro.vhd
+    Info (12022): Found design unit 1: TBMef_registro-bh File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/test_bench/TBmef_registro.vhd Line: 10
+    Info (12023): Found entity 1: TBmef_registro File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/test_bench/TBmef_registro.vhd Line: 7
+Info (12127): Elaborating entity "mef_registro" for the top level hierarchy
+Info (12128): Elaborating entity "reg_desplazamiento" for hierarchy "reg_desplazamiento:d1" File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mef_registro.vhd Line: 46
+Info (12128): Elaborating entity "registro" for hierarchy "reg_desplazamiento:d1|registro:\t:10:t11:bitxul" File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/reg_desplazamiento.vhd Line: 57
+Info (12128): Elaborating entity "mea_salida" for hierarchy "mea_salida:d2" File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mef_registro.vhd Line: 55
+Warning (10631): VHDL Process Statement warning at mea_salida.vhd(38): inferring latch(es) for signal or variable "px_st", which holds its previous value in one or more paths through the process File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_salida.vhd Line: 38
+Info (10041): Inferred latch for "px_st.SND" at mea_salida.vhd(38) File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_salida.vhd Line: 38
+Info (10041): Inferred latch for "px_st.LD" at mea_salida.vhd(38) File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_salida.vhd Line: 38
+Info (10041): Inferred latch for "px_st.ILDE" at mea_salida.vhd(38) File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_salida.vhd Line: 38
+Info (13000): Registers with preset signals will power-up high File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/registro.vhd Line: 14
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 41 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 15 input pins
+    Info (21059): Implemented 1 output pins
+    Info (21061): Implemented 25 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 979 megabytes
+    Info: Processing ended: Sat Nov 16 10:13:07 2019
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:30
 
 

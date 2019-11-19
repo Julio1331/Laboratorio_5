@@ -168,17 +168,16 @@ dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |mef_registro|mea_salida:d2
-send => px_st.LD.DATAB
-send => Selector0.IN1
+send => px_st.LD.IN0
+send => Selector2.IN0
+EOT => Selector1.IN1
 EOT => Selector0.IN2
-EOT => Selector1.IN2
-reset_d => reset_d_out~reg0.ACLR
+reset_d => reset_d_out.DATAIN
 reset_d => st~3.DATAIN
 reset_d => load~reg0.ENA
-reset_d_out <= reset_d_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+reset_d_out <= reset_d.DB_MAX_OUTPUT_PORT_TYPE
 load <= load~reg0.DB_MAX_OUTPUT_PORT_TYPE
 clk => load~reg0.CLK
-clk => reset_d_out~reg0.CLK
 clk => st~1.DATAIN
 
 
