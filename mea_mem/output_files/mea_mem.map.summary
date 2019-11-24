@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Nov 22 18:40:13 2019
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Revision Name : mea_mem
+Top-level Entity Name : mea_mem
+Family : Cyclone IV E
+Total logic elements : 31
+    Total combinational functions : 30
+    Dedicated logic registers : 6
+Total registers : 6
+Total pins : 22
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

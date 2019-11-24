@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Tue Nov 19 12:38:47 2019
+Analysis & Synthesis Status : Successful - Fri Nov 22 20:27:13 2019
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : trama_y_reg
 Top-level Entity Name : trama_y_reg
 Family : Cyclone IV E
-Total logic elements : 24
-    Total combinational functions : 24
+Total logic elements : 27
+    Total combinational functions : 27
     Dedicated logic registers : 14
 Total registers : 14
-Total pins : 12
+Total pins : 14
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

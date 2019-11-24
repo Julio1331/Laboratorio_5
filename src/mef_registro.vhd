@@ -3,6 +3,9 @@ use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 use ieee.numeric_std.all;
 
+--dispositivo formado por el registro de desplazamiento y la mef que controla dicho
+--registro, las entradas van conectadas al dispositivo que amrma la trama para transmitir
+
 entity mef_registro is
 	generic (buss : natural :=11);
 	port(
@@ -11,7 +14,8 @@ entity mef_registro is
 			clk : in std_logic;
 			data_in : in std_logic_vector (buss-1 downto 0);--asignada
 			serial_in : in std_logic;
-			serial_out : out std_logic
+			serial_out : out std_logic;
+			end_of_tram : out std_logic
 			);
 end mef_registro;
 
@@ -60,6 +64,7 @@ begin
 									load => sig_load,
 									clk => clk
 									);
+	end_of_tram <= ones_to_eot;
 end architecture;
 			
 			

@@ -1,0 +1,30 @@
+|mea_mem
+send_us => pxst.asign.DATAB
+send_us => Selector1.IN1
+end_transmission => pxst.DATAA
+end_transmission => pxst.DATAA
+end_trama => pxst.OUTPUTSELECT
+end_trama => pxst.OUTPUTSELECT
+end_trama => Selector2.IN2
+add_0[0] => Selector3.IN1
+add_0[1] => Selector0.IN1
+add_0[2] => Selector4.IN1
+add_0[3] => Selector5.IN1
+add_0[4] => Selector6.IN1
+add_0[5] => Selector7.IN1
+add_0[6] => Selector8.IN1
+add_0[7] => Selector9.IN1
+send_int <= send_int~reg0.DB_MAX_OUTPUT_PORT_TYPE
+add_out[0] <= add_aux[0].DB_MAX_OUTPUT_PORT_TYPE
+add_out[1] <= add_aux[1].DB_MAX_OUTPUT_PORT_TYPE
+add_out[2] <= add_aux[2].DB_MAX_OUTPUT_PORT_TYPE
+add_out[3] <= add_aux[3].DB_MAX_OUTPUT_PORT_TYPE
+add_out[4] <= add_aux[4].DB_MAX_OUTPUT_PORT_TYPE
+add_out[5] <= add_aux[5].DB_MAX_OUTPUT_PORT_TYPE
+add_out[6] <= add_aux[6].DB_MAX_OUTPUT_PORT_TYPE
+add_out[7] <= add_aux[7].DB_MAX_OUTPUT_PORT_TYPE
+clk => send_int~reg0.CLK
+clk => stac~1.DATAIN
+reset => stac~3.DATAIN
+
+

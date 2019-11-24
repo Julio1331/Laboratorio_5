@@ -8,6 +8,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "end_of_tram",
+					"strict" : false
+				},
+				{
 					"name" : "data_in[10]",
 					"strict" : false
 				},
@@ -25,10 +29,6 @@
 				},
 				{
 					"name" : "data_in[8]",
-					"strict" : false
-				},
-				{
-					"name" : "snd",
 					"strict" : false
 				},
 				{
@@ -65,6 +65,10 @@
 				},
 				{
 					"name" : "serial_in",
+					"strict" : false
+				},
+				{
+					"name" : "snd",
 					"strict" : false
 				}
 			]

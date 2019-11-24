@@ -9,27 +9,37 @@ datos[4] => data_11:d1.datos_in[4]
 datos[5] => data_11:d1.datos_in[5]
 datos[6] => data_11:d1.datos_in[6]
 datos[7] => data_11:d1.datos_in[7]
-sal_serie << mef_registro:d2.serial_out
+sal_serie <= mef_registro:d2.serial_out
+end_of_transmition <= data_11:d1.eot
+end_of_trama <= mef_registro:d2.end_of_tram
 clk => mef_registro:d2.clk
 
 
 |trama_y_reg|data_11:d1
 datos_in[0] => paridad.IN0
 datos_in[0] => datos_out[2].DATAIN
+datos_in[0] => Equal0.IN6
 datos_in[1] => paridad.IN1
 datos_in[1] => datos_out[3].DATAIN
+datos_in[1] => Equal0.IN5
 datos_in[2] => paridad.IN1
 datos_in[2] => datos_out[4].DATAIN
+datos_in[2] => Equal0.IN7
 datos_in[3] => paridad.IN1
 datos_in[3] => datos_out[5].DATAIN
+datos_in[3] => Equal0.IN4
 datos_in[4] => paridad.IN1
 datos_in[4] => datos_out[6].DATAIN
+datos_in[4] => Equal0.IN3
 datos_in[5] => paridad.IN1
 datos_in[5] => datos_out[7].DATAIN
+datos_in[5] => Equal0.IN2
 datos_in[6] => paridad.IN1
 datos_in[6] => datos_out[8].DATAIN
+datos_in[6] => Equal0.IN1
 datos_in[7] => paridad.IN1
 datos_in[7] => datos_out[9].DATAIN
+datos_in[7] => Equal0.IN0
 datos_out[0] <= <VCC>
 datos_out[1] <= paridad.DB_MAX_OUTPUT_PORT_TYPE
 datos_out[2] <= datos_in[0].DB_MAX_OUTPUT_PORT_TYPE
@@ -42,6 +52,7 @@ datos_out[8] <= datos_in[6].DB_MAX_OUTPUT_PORT_TYPE
 datos_out[9] <= datos_in[7].DB_MAX_OUTPUT_PORT_TYPE
 datos_out[10] <= <GND>
 serial_out <= <VCC>
+eot <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |trama_y_reg|mef_registro:d2
@@ -62,6 +73,7 @@ data_in[9] => reg_desplazamiento:d1.d_in[9]
 data_in[10] => reg_desplazamiento:d1.d_in[10]
 serial_in => reg_desplazamiento:d1.s_in
 serial_out <= reg_desplazamiento:d1.serial_out
+end_of_tram <= reg_desplazamiento:d1.ones
 
 
 |trama_y_reg|mef_registro:d2|reg_desplazamiento:d1

@@ -8,7 +8,7 @@ use ieee.numeric_std.all;
 entity mea_salida is
 	port(
 			send : in std_logic;-- señal de comienzo de transmision 
-			EOT : in std_logic; 
+			EOT : in std_logic; -- salida del registro "ones"
 			reset_d : in std_logic;
 			reset_d_out : out std_logic;
 			load : out std_logic;	

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for data_11
-Tue Nov 19 10:57:45 2019
+Thu Nov 21 18:25:03 2019
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -42,16 +42,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Nov 19 10:57:45 2019       ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 21 18:25:03 2019       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; data_11                                     ;
 ; Top-level Entity Name              ; data_11                                     ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 3                                           ;
-;     Total combinational functions  ; 3                                           ;
+; Total logic elements               ; 6                                           ;
+;     Total combinational functions  ; 6                                           ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 20                                          ;
+; Total pins                         ; 21                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -176,30 +176,30 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-------------------+
 ; Resource                                    ; Usage             ;
 +---------------------------------------------+-------------------+
-; Estimated Total logic elements              ; 3                 ;
+; Estimated Total logic elements              ; 6                 ;
 ;                                             ;                   ;
-; Total combinational functions               ; 3                 ;
+; Total combinational functions               ; 6                 ;
 ; Logic element usage by number of LUT inputs ;                   ;
-;     -- 4 input functions                    ; 2                 ;
+;     -- 4 input functions                    ; 4                 ;
 ;     -- 3 input functions                    ; 0                 ;
-;     -- <=2 input functions                  ; 1                 ;
+;     -- <=2 input functions                  ; 2                 ;
 ;                                             ;                   ;
 ; Logic elements by mode                      ;                   ;
-;     -- normal mode                          ; 3                 ;
+;     -- normal mode                          ; 6                 ;
 ;     -- arithmetic mode                      ; 0                 ;
 ;                                             ;                   ;
 ; Total registers                             ; 0                 ;
 ;     -- Dedicated logic registers            ; 0                 ;
 ;     -- I/O registers                        ; 0                 ;
 ;                                             ;                   ;
-; I/O pins                                    ; 20                ;
+; I/O pins                                    ; 21                ;
 ;                                             ;                   ;
 ; Embedded Multiplier 9-bit elements          ; 0                 ;
 ;                                             ;                   ;
 ; Maximum fan-out node                        ; datos_in[0]~input ;
-; Maximum fan-out                             ; 2                 ;
-; Total fan-out                               ; 39                ;
-; Average fan-out                             ; 0.91              ;
+; Maximum fan-out                             ; 3                 ;
+; Total fan-out                               ; 51                ;
+; Average fan-out                             ; 1.06              ;
 +---------------------------------------------+-------------------+
 
 
@@ -208,7 +208,7 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |data_11                   ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 20   ; 0            ; |data_11            ; data_11     ; work         ;
+; |data_11                   ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 21   ; 0            ; |data_11            ; data_11     ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -233,15 +233,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 20                          ;
-; cycloneiii_lcell_comb ; 5                           ;
-;     normal            ; 5                           ;
+; boundary_port         ; 21                          ;
+; cycloneiii_lcell_comb ; 8                           ;
+;     normal            ; 8                           ;
 ;         0 data inputs ; 2                           ;
-;         2 data inputs ; 1                           ;
-;         4 data inputs ; 2                           ;
+;         2 data inputs ; 2                           ;
+;         4 data inputs ; 4                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.69                        ;
+; Average LUT depth     ; 1.75                        ;
 +-----------------------+-----------------------------+
 
 
@@ -260,32 +260,32 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Tue Nov 19 10:57:32 2019
+    Info: Processing started: Thu Nov 21 18:24:49 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off data_11 -c data_11
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/data_11.vhd
-    Info (12022): Found design unit 1: data_11-bh File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/data_11.vhd Line: 13
-    Info (12023): Found entity 1: data_11 File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/data_11.vhd Line: 5
+    Info (12022): Found design unit 1: data_11-bh File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/data_11.vhd Line: 15
+    Info (12023): Found entity 1: data_11 File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/data_11.vhd Line: 6
 Info (12021): Found 2 design units, including 0 entities, in source file partity.vhd
     Info (12022): Found design unit 1: my_pack File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/data_11/partity.vhd Line: 5
     Info (12022): Found design unit 2: my_pack-body File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/data_11/partity.vhd Line: 9
 Info (12127): Elaborating entity "data_11" for the top level hierarchy
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "datos_out[0]" is stuck at VCC File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/data_11.vhd Line: 8
-    Warning (13410): Pin "datos_out[10]" is stuck at GND File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/data_11.vhd Line: 8
-    Warning (13410): Pin "serial_out" is stuck at VCC File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/data_11.vhd Line: 9
+    Warning (13410): Pin "datos_out[0]" is stuck at VCC File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/data_11.vhd Line: 9
+    Warning (13410): Pin "datos_out[10]" is stuck at GND File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/data_11.vhd Line: 9
+    Warning (13410): Pin "serial_out" is stuck at VCC File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/data_11.vhd Line: 10
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 23 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 27 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 8 input pins
-    Info (21059): Implemented 12 output pins
-    Info (21061): Implemented 3 logic cells
+    Info (21059): Implemented 13 output pins
+    Info (21061): Implemented 6 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 974 megabytes
-    Info: Processing ended: Tue Nov 19 10:57:45 2019
-    Info: Elapsed time: 00:00:13
+    Info: Peak virtual memory: 969 megabytes
+    Info: Processing ended: Thu Nov 21 18:25:03 2019
+    Info: Elapsed time: 00:00:14
     Info: Total CPU time (on all processors): 00:00:29
 
 

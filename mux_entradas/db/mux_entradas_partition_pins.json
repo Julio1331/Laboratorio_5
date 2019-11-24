@@ -1,0 +1,45 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "add_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "add_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "add_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "add_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "add_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "add_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "add_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "sel_msj[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sel_msj[1]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

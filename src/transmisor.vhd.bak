@@ -1,0 +1,11 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity transmisor is
+		port (
+				select_msj: in std_logic_vector (1 downto 0);
+				select_baud: in std_logic_vector(1 downto 0);
+				salida_ser: out std_logic;
+				clk: in std_logic
+				);
+end transmisor;

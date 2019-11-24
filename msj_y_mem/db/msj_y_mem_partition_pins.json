@@ -1,0 +1,69 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "msj_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "msj_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "msj_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "msj_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "msj_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "msj_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "msj_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "send_interno",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "select_msj[0]",
+					"strict" : false
+				},
+				{
+					"name" : "select_msj[1]",
+					"strict" : false
+				},
+				{
+					"name" : "reset_in",
+					"strict" : false
+				},
+				{
+					"name" : "end_transmission",
+					"strict" : false
+				},
+				{
+					"name" : "end_trama",
+					"strict" : false
+				},
+				{
+					"name" : "enviar",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,20 +1,28 @@
 |data_11
 datos_in[0] => paridad.IN0
 datos_in[0] => datos_out[2].DATAIN
+datos_in[0] => Equal0.IN6
 datos_in[1] => paridad.IN1
 datos_in[1] => datos_out[3].DATAIN
+datos_in[1] => Equal0.IN5
 datos_in[2] => paridad.IN1
 datos_in[2] => datos_out[4].DATAIN
+datos_in[2] => Equal0.IN7
 datos_in[3] => paridad.IN1
 datos_in[3] => datos_out[5].DATAIN
+datos_in[3] => Equal0.IN4
 datos_in[4] => paridad.IN1
 datos_in[4] => datos_out[6].DATAIN
+datos_in[4] => Equal0.IN3
 datos_in[5] => paridad.IN1
 datos_in[5] => datos_out[7].DATAIN
+datos_in[5] => Equal0.IN2
 datos_in[6] => paridad.IN1
 datos_in[6] => datos_out[8].DATAIN
+datos_in[6] => Equal0.IN1
 datos_in[7] => paridad.IN1
 datos_in[7] => datos_out[9].DATAIN
+datos_in[7] => Equal0.IN0
 datos_out[0] <= <VCC>
 datos_out[1] <= paridad.DB_MAX_OUTPUT_PORT_TYPE
 datos_out[2] <= datos_in[0].DB_MAX_OUTPUT_PORT_TYPE
@@ -27,5 +35,6 @@ datos_out[8] <= datos_in[6].DB_MAX_OUTPUT_PORT_TYPE
 datos_out[9] <= datos_in[7].DB_MAX_OUTPUT_PORT_TYPE
 datos_out[10] <= <GND>
 serial_out <= <VCC>
+eot <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 

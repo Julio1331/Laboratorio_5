@@ -1,0 +1,27 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity mux_entradas is
+	port(
+			sel_msj : in std_logic_vector(1 downto 0);
+			add_out : out std_logic_vector(7 downto 0)
+			);
+end mux_entradas;
+
+architecture bh of mux_entradas is
+	
+	begin
+	mux: process(sel_msj)
+		begin	
+		case sel_msj is
+			when "00" => add_out <= "00000000";
+			when "01" => add_out <= "00100111";
+			when "10" => add_out <= "00111110";
+			when "11" => add_out <= "01100101";
+			when others => add_out <= "00000000";
+		end case;
+	end process mux;
+end architecture;
+
+
+

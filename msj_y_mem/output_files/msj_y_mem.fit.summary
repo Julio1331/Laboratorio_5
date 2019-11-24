@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sun Nov 24 17:42:05 2019
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Revision Name : msj_y_mem
+Top-level Entity Name : msj_y_mem
+Family : Cyclone IV E
+Device : EP4CE6E22C6
+Timing Models : Final
+Total logic elements : 32 / 6,272 ( < 1 % )
+    Total combinational functions : 30 / 6,272 ( < 1 % )
+    Dedicated logic registers : 6 / 6,272 ( < 1 % )
+Total registers : 6
+Total pins : 16 / 92 ( 17 % )
+Total virtual pins : 0
+Total memory bits : 1,792 / 276,480 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

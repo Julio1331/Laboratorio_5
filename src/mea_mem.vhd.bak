@@ -1,0 +1,100 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
+
+
+entity mea_mem is
+	port (
+			send_us: in std_logic;--send dado por el usuario
+			end_transmission: in std_logic;
+			end_trama: in std_logic;
+			add_0: in std_logic_vector(7 downto 0);--direccion puntero de cada msj
+			send_int: out std_logic;--send interno entre las maquinas
+			add_out: out std_logic_vector(7 downto 0);--direccion de salida a la memoria
+			clk: in std_logic;
+			reset: in std_logic
+			);
+end mea_mem;
+
+architecture bh of mea_mem is
+
+	type mea is (ini, asign, send, espera, incremento);
+	signal pxst, stac: mea;
+	signal add_aux: std_logic_vector(7 downto 0);
+
+	
+begin	
+
+	actual: process(clk, reset)
+		begin
+			if (reset = '0') then
+				stac <= ini;
+			else
+				if(rising_edge(clk)) then
+					stac <= pxst;
+				end if;
+			end if;
+		end process actual;
+
+
+		proximo : process(stac, send_us, end_trama, end_transmission)
+		begin
+			case stac is
+				when ini =>
+					if (send_us ='1') then
+						pxst <= asign;
+					else 
+						pxst <= ini;
+					end if;
+				when asign =>
+					add_aux <= add_0;
+					pxst <= send;
+				when send =>
+					pxst <= espera;
+				when espera =>
+					if (end_trama = '0') then
+						pxst <= espera;
+					else
+						if end_transmission = '1' then 
+							pxst <= ini;
+						else
+							pxst <= incremento;
+						end if;
+					end if;
+				when incremento => 
+					add_aux <= add_aux + '1';
+					pxst <= send;
+				when others => pxst <= ini;
+			end case;
+		add_out <= add_aux;
+		end process proximo;
+		
+		salidas : process (clk)
+		begin
+					if (rising_edge(clk)) then
+						case stac is
+							when ini => send_int <= '0';
+							when asign => send_int <= '0';
+							when send => send_int <= '1';
+							when espera => send_int <= '0';
+							when incremento => send_int <= '0';
+							when others => send_int <= '0';
+							
+--							when ILDE => reset_d_out <= '0'; load <= '0';
+--							when LD=> reset_d_out <= '1'; load <='1';
+--							when SND => reset_d_out <= '1'; load <= '0';
+--							when others => reset_d_out <= '0'; load <= '0';
+						end case;
+					end if;
+		end process salidas;
+end architecture;
+	
+	
+	
+	
+			
+
+
+

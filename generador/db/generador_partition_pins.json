@@ -1,0 +1,29 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "salida",
+					"strict" : false
+				},
+				{
+					"name" : "clk_50Mhz",
+					"strict" : false
+				},
+				{
+					"name" : "reset_d",
+					"strict" : false
+				},
+				{
+					"name" : "async_in[1]",
+					"strict" : false
+				},
+				{
+					"name" : "async_in[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

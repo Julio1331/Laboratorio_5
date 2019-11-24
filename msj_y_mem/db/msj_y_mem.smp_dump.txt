@@ -1,0 +1,8 @@
+
+State Machine - |msj_y_mem|mea_mem:d1|stac
+Name stac.incremento stac.espera stac.send stac.asign stac.ini 
+stac.ini 0 0 0 0 0 
+stac.asign 0 0 0 1 1 
+stac.send 0 0 1 0 1 
+stac.espera 0 1 0 0 1 
+stac.incremento 1 0 0 0 1 

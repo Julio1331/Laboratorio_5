@@ -1,0 +1,97 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "send_int",
+					"strict" : false
+				},
+				{
+					"name" : "add_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "add_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "add_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "add_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "add_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "add_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "add_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "add_out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "add_0[0]",
+					"strict" : false
+				},
+				{
+					"name" : "add_0[1]",
+					"strict" : false
+				},
+				{
+					"name" : "add_0[2]",
+					"strict" : false
+				},
+				{
+					"name" : "add_0[3]",
+					"strict" : false
+				},
+				{
+					"name" : "add_0[4]",
+					"strict" : false
+				},
+				{
+					"name" : "add_0[5]",
+					"strict" : false
+				},
+				{
+					"name" : "add_0[6]",
+					"strict" : false
+				},
+				{
+					"name" : "add_0[7]",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "end_transmission",
+					"strict" : false
+				},
+				{
+					"name" : "end_trama",
+					"strict" : false
+				},
+				{
+					"name" : "send_us",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

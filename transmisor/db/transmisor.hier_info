@@ -1,0 +1,590 @@
+|transmisor
+enviar_msj => msj_y_mem:d1.enviar
+select_msj[0] => msj_y_mem:d1.select_msj[0]
+select_msj[1] => msj_y_mem:d1.select_msj[1]
+select_baud[0] => generador:d3.async_in[0]
+select_baud[1] => generador:d3.async_in[1]
+salida_serie << trama_y_reg:d2.sal_serie
+reset => msj_y_mem:d1.reset_in
+reset => trama_y_reg:d2.rst
+reset => generador:d3.reset_d
+clk => generador:d3.clk_50Mhz
+
+
+|transmisor|msj_y_mem:d1
+enviar => mea_mem:d1.send_us
+select_msj[0] => mux_entradas:d3.sel_msj[0]
+select_msj[1] => mux_entradas:d3.sel_msj[1]
+end_transmission => mea_mem:d1.end_transmission
+end_trama => mea_mem:d1.end_trama
+msj_out[0] <= ROM:d2.data_out[0]
+msj_out[1] <= ROM:d2.data_out[1]
+msj_out[2] <= ROM:d2.data_out[2]
+msj_out[3] <= ROM:d2.data_out[3]
+msj_out[4] <= ROM:d2.data_out[4]
+msj_out[5] <= ROM:d2.data_out[5]
+msj_out[6] <= ROM:d2.data_out[6]
+msj_out[7] <= ROM:d2.data_out[7]
+send_interno <= mea_mem:d1.send_int
+clk => mea_mem:d1.clk
+clk => ROM:d2.clk
+reset_in => mea_mem:d1.reset
+
+
+|transmisor|msj_y_mem:d1|mea_mem:d1
+send_us => pxst.asign.DATAB
+send_us => Selector1.IN1
+end_transmission => pxst.DATAA
+end_transmission => pxst.DATAA
+end_trama => pxst.OUTPUTSELECT
+end_trama => pxst.OUTPUTSELECT
+end_trama => Selector2.IN2
+add_0[0] => Selector3.IN1
+add_0[1] => Selector0.IN1
+add_0[2] => Selector4.IN1
+add_0[3] => Selector5.IN1
+add_0[4] => Selector6.IN1
+add_0[5] => Selector7.IN1
+add_0[6] => Selector8.IN1
+add_0[7] => Selector9.IN1
+send_int <= send_int~reg0.DB_MAX_OUTPUT_PORT_TYPE
+add_out[0] <= add_aux[0].DB_MAX_OUTPUT_PORT_TYPE
+add_out[1] <= add_aux[1].DB_MAX_OUTPUT_PORT_TYPE
+add_out[2] <= add_aux[2].DB_MAX_OUTPUT_PORT_TYPE
+add_out[3] <= add_aux[3].DB_MAX_OUTPUT_PORT_TYPE
+add_out[4] <= add_aux[4].DB_MAX_OUTPUT_PORT_TYPE
+add_out[5] <= add_aux[5].DB_MAX_OUTPUT_PORT_TYPE
+add_out[6] <= add_aux[6].DB_MAX_OUTPUT_PORT_TYPE
+add_out[7] <= add_aux[7].DB_MAX_OUTPUT_PORT_TYPE
+clk => send_int~reg0.CLK
+clk => stac~1.DATAIN
+reset => stac~3.DATAIN
+
+
+|transmisor|msj_y_mem:d1|rom:d2
+clk => data_out[0]~reg0.CLK
+clk => data_out[1]~reg0.CLK
+clk => data_out[2]~reg0.CLK
+clk => data_out[3]~reg0.CLK
+clk => data_out[4]~reg0.CLK
+clk => data_out[5]~reg0.CLK
+clk => data_out[6]~reg0.CLK
+clk => data_out[7]~reg0.CLK
+address[0] => Mux0.IN263
+address[0] => Mux1.IN263
+address[0] => Mux2.IN263
+address[0] => Mux3.IN263
+address[0] => Mux4.IN263
+address[0] => Mux5.IN263
+address[0] => Mux6.IN263
+address[1] => Mux0.IN262
+address[1] => Mux1.IN262
+address[1] => Mux2.IN262
+address[1] => Mux3.IN262
+address[1] => Mux4.IN262
+address[1] => Mux5.IN262
+address[1] => Mux6.IN262
+address[2] => Mux0.IN261
+address[2] => Mux1.IN261
+address[2] => Mux2.IN261
+address[2] => Mux3.IN261
+address[2] => Mux4.IN261
+address[2] => Mux5.IN261
+address[2] => Mux6.IN261
+address[3] => Mux0.IN260
+address[3] => Mux1.IN260
+address[3] => Mux2.IN260
+address[3] => Mux3.IN260
+address[3] => Mux4.IN260
+address[3] => Mux5.IN260
+address[3] => Mux6.IN260
+address[4] => Mux0.IN259
+address[4] => Mux1.IN259
+address[4] => Mux2.IN259
+address[4] => Mux3.IN259
+address[4] => Mux4.IN259
+address[4] => Mux5.IN259
+address[4] => Mux6.IN259
+address[5] => Mux0.IN258
+address[5] => Mux1.IN258
+address[5] => Mux2.IN258
+address[5] => Mux3.IN258
+address[5] => Mux4.IN258
+address[5] => Mux5.IN258
+address[5] => Mux6.IN258
+address[6] => Mux0.IN257
+address[6] => Mux1.IN257
+address[6] => Mux2.IN257
+address[6] => Mux3.IN257
+address[6] => Mux4.IN257
+address[6] => Mux5.IN257
+address[6] => Mux6.IN257
+address[7] => Mux0.IN256
+address[7] => Mux1.IN256
+address[7] => Mux2.IN256
+address[7] => Mux3.IN256
+address[7] => Mux4.IN256
+address[7] => Mux5.IN256
+address[7] => Mux6.IN256
+data_out[0] <= data_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[1] <= data_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= data_out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= data_out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[7] <= data_out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|transmisor|msj_y_mem:d1|mux_entradas:d3
+sel_msj[0] => Mux0.IN5
+sel_msj[0] => Mux1.IN5
+sel_msj[0] => Mux2.IN5
+sel_msj[0] => Mux3.IN5
+sel_msj[0] => Mux4.IN5
+sel_msj[0] => Mux5.IN5
+sel_msj[0] => add_out[0].DATAIN
+sel_msj[1] => Mux0.IN4
+sel_msj[1] => Mux1.IN4
+sel_msj[1] => Mux2.IN4
+sel_msj[1] => Mux3.IN4
+sel_msj[1] => Mux4.IN4
+sel_msj[1] => Mux5.IN4
+add_out[0] <= sel_msj[0].DB_MAX_OUTPUT_PORT_TYPE
+add_out[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+add_out[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+add_out[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+add_out[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+add_out[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+add_out[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+add_out[7] <= <GND>
+
+
+|transmisor|trama_y_reg:d2
+send => mef_registro:d2.snd
+rst => mef_registro:d2.reset
+datos[0] => data_11:d1.datos_in[0]
+datos[1] => data_11:d1.datos_in[1]
+datos[2] => data_11:d1.datos_in[2]
+datos[3] => data_11:d1.datos_in[3]
+datos[4] => data_11:d1.datos_in[4]
+datos[5] => data_11:d1.datos_in[5]
+datos[6] => data_11:d1.datos_in[6]
+datos[7] => data_11:d1.datos_in[7]
+sal_serie <= mef_registro:d2.serial_out
+end_of_transmition <= data_11:d1.eot
+end_of_trama <= mef_registro:d2.end_of_tram
+clk => mef_registro:d2.clk
+
+
+|transmisor|trama_y_reg:d2|data_11:d1
+datos_in[0] => paridad.IN0
+datos_in[0] => datos_out[2].DATAIN
+datos_in[0] => Equal0.IN6
+datos_in[1] => paridad.IN1
+datos_in[1] => datos_out[3].DATAIN
+datos_in[1] => Equal0.IN5
+datos_in[2] => paridad.IN1
+datos_in[2] => datos_out[4].DATAIN
+datos_in[2] => Equal0.IN7
+datos_in[3] => paridad.IN1
+datos_in[3] => datos_out[5].DATAIN
+datos_in[3] => Equal0.IN4
+datos_in[4] => paridad.IN1
+datos_in[4] => datos_out[6].DATAIN
+datos_in[4] => Equal0.IN3
+datos_in[5] => paridad.IN1
+datos_in[5] => datos_out[7].DATAIN
+datos_in[5] => Equal0.IN2
+datos_in[6] => paridad.IN1
+datos_in[6] => datos_out[8].DATAIN
+datos_in[6] => Equal0.IN1
+datos_in[7] => paridad.IN1
+datos_in[7] => datos_out[9].DATAIN
+datos_in[7] => Equal0.IN0
+datos_out[0] <= <VCC>
+datos_out[1] <= paridad.DB_MAX_OUTPUT_PORT_TYPE
+datos_out[2] <= datos_in[0].DB_MAX_OUTPUT_PORT_TYPE
+datos_out[3] <= datos_in[1].DB_MAX_OUTPUT_PORT_TYPE
+datos_out[4] <= datos_in[2].DB_MAX_OUTPUT_PORT_TYPE
+datos_out[5] <= datos_in[3].DB_MAX_OUTPUT_PORT_TYPE
+datos_out[6] <= datos_in[4].DB_MAX_OUTPUT_PORT_TYPE
+datos_out[7] <= datos_in[5].DB_MAX_OUTPUT_PORT_TYPE
+datos_out[8] <= datos_in[6].DB_MAX_OUTPUT_PORT_TYPE
+datos_out[9] <= datos_in[7].DB_MAX_OUTPUT_PORT_TYPE
+datos_out[10] <= <GND>
+serial_out <= <VCC>
+eot <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|transmisor|trama_y_reg:d2|mef_registro:d2
+snd => mea_salida:d2.send
+reset => mea_salida:d2.reset_d
+clk => reg_desplazamiento:d1.clk
+clk => mea_salida:d2.clk
+data_in[0] => reg_desplazamiento:d1.d_in[0]
+data_in[1] => reg_desplazamiento:d1.d_in[1]
+data_in[2] => reg_desplazamiento:d1.d_in[2]
+data_in[3] => reg_desplazamiento:d1.d_in[3]
+data_in[4] => reg_desplazamiento:d1.d_in[4]
+data_in[5] => reg_desplazamiento:d1.d_in[5]
+data_in[6] => reg_desplazamiento:d1.d_in[6]
+data_in[7] => reg_desplazamiento:d1.d_in[7]
+data_in[8] => reg_desplazamiento:d1.d_in[8]
+data_in[9] => reg_desplazamiento:d1.d_in[9]
+data_in[10] => reg_desplazamiento:d1.d_in[10]
+serial_in => reg_desplazamiento:d1.s_in
+serial_out <= reg_desplazamiento:d1.serial_out
+end_of_tram <= reg_desplazamiento:d1.ones
+
+
+|transmisor|trama_y_reg:d2|mef_registro:d2|reg_desplazamiento:d1
+d_in[0] => registro:t:0:t0:bitx0.din
+d_in[1] => registro:t:1:t1_10:bitx.din
+d_in[2] => registro:t:2:t1_10:bitx.din
+d_in[3] => registro:t:3:t1_10:bitx.din
+d_in[4] => registro:t:4:t1_10:bitx.din
+d_in[5] => registro:t:5:t1_10:bitx.din
+d_in[6] => registro:t:6:t1_10:bitx.din
+d_in[7] => registro:t:7:t1_10:bitx.din
+d_in[8] => registro:t:8:t1_10:bitx.din
+d_in[9] => registro:t:9:t1_10:bitx.din
+d_in[10] => registro:t:10:t11:bitxul.din
+clk => registro:t:10:t11:bitxul.clk
+clk => registro:t:9:t1_10:bitx.clk
+clk => registro:t:8:t1_10:bitx.clk
+clk => registro:t:7:t1_10:bitx.clk
+clk => registro:t:6:t1_10:bitx.clk
+clk => registro:t:5:t1_10:bitx.clk
+clk => registro:t:4:t1_10:bitx.clk
+clk => registro:t:3:t1_10:bitx.clk
+clk => registro:t:2:t1_10:bitx.clk
+clk => registro:t:1:t1_10:bitx.clk
+clk => registro:t:0:t0:bitx0.clk
+load => registro:t:10:t11:bitxul.load
+load => registro:t:9:t1_10:bitx.load
+load => registro:t:8:t1_10:bitx.load
+load => registro:t:7:t1_10:bitx.load
+load => registro:t:6:t1_10:bitx.load
+load => registro:t:5:t1_10:bitx.load
+load => registro:t:4:t1_10:bitx.load
+load => registro:t:3:t1_10:bitx.load
+load => registro:t:2:t1_10:bitx.load
+load => registro:t:1:t1_10:bitx.load
+load => registro:t:0:t0:bitx0.load
+reset_d => registro:t:10:t11:bitxul.reset_d
+reset_d => registro:t:9:t1_10:bitx.reset_d
+reset_d => registro:t:8:t1_10:bitx.reset_d
+reset_d => registro:t:7:t1_10:bitx.reset_d
+reset_d => registro:t:6:t1_10:bitx.reset_d
+reset_d => registro:t:5:t1_10:bitx.reset_d
+reset_d => registro:t:4:t1_10:bitx.reset_d
+reset_d => registro:t:3:t1_10:bitx.reset_d
+reset_d => registro:t:2:t1_10:bitx.reset_d
+reset_d => registro:t:1:t1_10:bitx.reset_d
+reset_d => registro:t:0:t0:bitx0.reset_d
+s_in => registro:t:0:t0:bitx0.carry
+serial_out <= registro:t:10:t11:bitxul.dout
+ones <= ones.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|transmisor|trama_y_reg:d2|mef_registro:d2|reg_desplazamiento:d1|registro:\t:10:t11:bitxul
+load => dout.OUTPUTSELECT
+carry => dout.DATAA
+din => dout.DATAB
+clk => dout~reg0.CLK
+reset_d => dout~reg0.PRESET
+dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|transmisor|trama_y_reg:d2|mef_registro:d2|reg_desplazamiento:d1|registro:\t:9:t1_10:bitx
+load => dout.OUTPUTSELECT
+carry => dout.DATAA
+din => dout.DATAB
+clk => dout~reg0.CLK
+reset_d => dout~reg0.PRESET
+dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|transmisor|trama_y_reg:d2|mef_registro:d2|reg_desplazamiento:d1|registro:\t:8:t1_10:bitx
+load => dout.OUTPUTSELECT
+carry => dout.DATAA
+din => dout.DATAB
+clk => dout~reg0.CLK
+reset_d => dout~reg0.PRESET
+dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|transmisor|trama_y_reg:d2|mef_registro:d2|reg_desplazamiento:d1|registro:\t:7:t1_10:bitx
+load => dout.OUTPUTSELECT
+carry => dout.DATAA
+din => dout.DATAB
+clk => dout~reg0.CLK
+reset_d => dout~reg0.PRESET
+dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|transmisor|trama_y_reg:d2|mef_registro:d2|reg_desplazamiento:d1|registro:\t:6:t1_10:bitx
+load => dout.OUTPUTSELECT
+carry => dout.DATAA
+din => dout.DATAB
+clk => dout~reg0.CLK
+reset_d => dout~reg0.PRESET
+dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|transmisor|trama_y_reg:d2|mef_registro:d2|reg_desplazamiento:d1|registro:\t:5:t1_10:bitx
+load => dout.OUTPUTSELECT
+carry => dout.DATAA
+din => dout.DATAB
+clk => dout~reg0.CLK
+reset_d => dout~reg0.PRESET
+dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|transmisor|trama_y_reg:d2|mef_registro:d2|reg_desplazamiento:d1|registro:\t:4:t1_10:bitx
+load => dout.OUTPUTSELECT
+carry => dout.DATAA
+din => dout.DATAB
+clk => dout~reg0.CLK
+reset_d => dout~reg0.PRESET
+dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|transmisor|trama_y_reg:d2|mef_registro:d2|reg_desplazamiento:d1|registro:\t:3:t1_10:bitx
+load => dout.OUTPUTSELECT
+carry => dout.DATAA
+din => dout.DATAB
+clk => dout~reg0.CLK
+reset_d => dout~reg0.PRESET
+dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|transmisor|trama_y_reg:d2|mef_registro:d2|reg_desplazamiento:d1|registro:\t:2:t1_10:bitx
+load => dout.OUTPUTSELECT
+carry => dout.DATAA
+din => dout.DATAB
+clk => dout~reg0.CLK
+reset_d => dout~reg0.PRESET
+dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|transmisor|trama_y_reg:d2|mef_registro:d2|reg_desplazamiento:d1|registro:\t:1:t1_10:bitx
+load => dout.OUTPUTSELECT
+carry => dout.DATAA
+din => dout.DATAB
+clk => dout~reg0.CLK
+reset_d => dout~reg0.PRESET
+dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|transmisor|trama_y_reg:d2|mef_registro:d2|reg_desplazamiento:d1|registro:\t:0:t0:bitx0
+load => dout.OUTPUTSELECT
+carry => dout.DATAA
+din => dout.DATAB
+clk => dout~reg0.CLK
+reset_d => dout~reg0.PRESET
+dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|transmisor|trama_y_reg:d2|mef_registro:d2|mea_salida:d2
+send => px_st.LD.IN0
+send => Selector2.IN0
+EOT => Selector1.IN1
+EOT => Selector0.IN2
+reset_d => reset_d_out.DATAIN
+reset_d => st~3.DATAIN
+reset_d => load~reg0.ENA
+reset_d_out <= reset_d.DB_MAX_OUTPUT_PORT_TYPE
+load <= load~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => load~reg0.CLK
+clk => st~1.DATAIN
+
+
+|transmisor|generador:d3
+async_in[0] => sincX3:entradas.async_in[0]
+async_in[1] => sincX3:entradas.async_in[1]
+reset_d => sincX3:entradas.reset
+salida <= selFrecuencias:seleccionador.salida
+clk_50Mhz => sincX3:entradas.clk_in
+clk_50Mhz => divfrecuencias:divisor.clk50mhz
+
+
+|transmisor|generador:d3|selfrecuencias:seleccionador
+ck1 => Mux0.IN0
+ck2 => Mux0.IN1
+ck4 => Mux0.IN2
+ck5 => Mux0.IN3
+sel_in[0] => Mux0.IN5
+sel_in[1] => Mux0.IN4
+salida <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|transmisor|generador:d3|sincX3:entradas
+clk_in => sincronizador:sinc_xx:1:buss.clk_in
+clk_in => sincronizador:sinc_xx:0:buss.clk_in
+async_in[0] => sincronizador:sinc_xx:0:buss.data_async
+async_in[1] => sincronizador:sinc_xx:1:buss.data_async
+reset => sincronizador:sinc_xx:1:buss.rst
+reset => sincronizador:sinc_xx:0:buss.rst
+sync_out[0] <= sincronizador:sinc_xx:0:buss.data_sync
+sync_out[1] <= sincronizador:sinc_xx:1:buss.data_sync
+
+
+|transmisor|generador:d3|sincX3:entradas|sincronizador:\sinc_xx:1:buss
+data_async => ffd:ffd1.d
+clk_in => divisorx2:div1.clk_in
+clk_in => ffd:ffd3.clk
+clk_in => clk_out.DATAIN
+rst => ffd:ffd1.rst
+rst => ffd:ffd2.rst
+rst => divisorx2:div1.rst
+rst => ffd:ffd3.rst
+data_sync <= ffd:ffd3.q
+clk_out <= clk_in.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|transmisor|generador:d3|sincX3:entradas|sincronizador:\sinc_xx:1:buss|ffd:ffd1
+clk => dd.CLK
+d => dd.DATAIN
+rst => dd.ACLR
+q <= dd.DB_MAX_OUTPUT_PORT_TYPE
+q_d <= dd.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|transmisor|generador:d3|sincX3:entradas|sincronizador:\sinc_xx:1:buss|ffd:ffd2
+clk => dd.CLK
+d => dd.DATAIN
+rst => dd.ACLR
+q <= dd.DB_MAX_OUTPUT_PORT_TYPE
+q_d <= dd.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|transmisor|generador:d3|sincX3:entradas|sincronizador:\sinc_xx:1:buss|divisorx2:div1
+clk_in => ffd:ffd1.clk
+rst => ffd:ffd1.rst
+o <= ffd:ffd1.q
+
+
+|transmisor|generador:d3|sincX3:entradas|sincronizador:\sinc_xx:1:buss|divisorx2:div1|ffd:ffd1
+clk => dd.CLK
+d => dd.DATAIN
+rst => dd.ACLR
+q <= dd.DB_MAX_OUTPUT_PORT_TYPE
+q_d <= dd.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|transmisor|generador:d3|sincX3:entradas|sincronizador:\sinc_xx:1:buss|ffd:ffd3
+clk => dd.CLK
+d => dd.DATAIN
+rst => dd.ACLR
+q <= dd.DB_MAX_OUTPUT_PORT_TYPE
+q_d <= dd.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|transmisor|generador:d3|sincX3:entradas|sincronizador:\sinc_xx:0:buss
+data_async => ffd:ffd1.d
+clk_in => divisorx2:div1.clk_in
+clk_in => ffd:ffd3.clk
+clk_in => clk_out.DATAIN
+rst => ffd:ffd1.rst
+rst => ffd:ffd2.rst
+rst => divisorx2:div1.rst
+rst => ffd:ffd3.rst
+data_sync <= ffd:ffd3.q
+clk_out <= clk_in.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|transmisor|generador:d3|sincX3:entradas|sincronizador:\sinc_xx:0:buss|ffd:ffd1
+clk => dd.CLK
+d => dd.DATAIN
+rst => dd.ACLR
+q <= dd.DB_MAX_OUTPUT_PORT_TYPE
+q_d <= dd.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|transmisor|generador:d3|sincX3:entradas|sincronizador:\sinc_xx:0:buss|ffd:ffd2
+clk => dd.CLK
+d => dd.DATAIN
+rst => dd.ACLR
+q <= dd.DB_MAX_OUTPUT_PORT_TYPE
+q_d <= dd.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|transmisor|generador:d3|sincX3:entradas|sincronizador:\sinc_xx:0:buss|divisorx2:div1
+clk_in => ffd:ffd1.clk
+rst => ffd:ffd1.rst
+o <= ffd:ffd1.q
+
+
+|transmisor|generador:d3|sincX3:entradas|sincronizador:\sinc_xx:0:buss|divisorx2:div1|ffd:ffd1
+clk => dd.CLK
+d => dd.DATAIN
+rst => dd.ACLR
+q <= dd.DB_MAX_OUTPUT_PORT_TYPE
+q_d <= dd.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|transmisor|generador:d3|sincX3:entradas|sincronizador:\sinc_xx:0:buss|ffd:ffd3
+clk => dd.CLK
+d => dd.DATAIN
+rst => dd.ACLR
+q <= dd.DB_MAX_OUTPUT_PORT_TYPE
+q_d <= dd.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|transmisor|generador:d3|divfrecuencias:divisor
+clk50mhz => clk_5.CLK
+clk50mhz => cont5[0].CLK
+clk50mhz => cont5[1].CLK
+clk50mhz => cont5[2].CLK
+clk50mhz => cont5[3].CLK
+clk50mhz => cont5[4].CLK
+clk50mhz => cont5[5].CLK
+clk50mhz => cont5[6].CLK
+clk50mhz => cont5[7].CLK
+clk50mhz => clk_4.CLK
+clk50mhz => cont4[0].CLK
+clk50mhz => cont4[1].CLK
+clk50mhz => cont4[2].CLK
+clk50mhz => cont4[3].CLK
+clk50mhz => cont4[4].CLK
+clk50mhz => cont4[5].CLK
+clk50mhz => cont4[6].CLK
+clk50mhz => cont4[7].CLK
+clk50mhz => cont4[8].CLK
+clk50mhz => cont4[9].CLK
+clk50mhz => cont4[10].CLK
+clk50mhz => clk_2.CLK
+clk50mhz => cont2[0].CLK
+clk50mhz => cont2[1].CLK
+clk50mhz => cont2[2].CLK
+clk50mhz => cont2[3].CLK
+clk50mhz => cont2[4].CLK
+clk50mhz => cont2[5].CLK
+clk50mhz => cont2[6].CLK
+clk50mhz => cont2[7].CLK
+clk50mhz => cont2[8].CLK
+clk50mhz => cont2[9].CLK
+clk50mhz => cont2[10].CLK
+clk50mhz => cont2[11].CLK
+clk50mhz => clk_1.CLK
+clk50mhz => cont1[0].CLK
+clk50mhz => cont1[1].CLK
+clk50mhz => cont1[2].CLK
+clk50mhz => cont1[3].CLK
+clk50mhz => cont1[4].CLK
+clk50mhz => cont1[5].CLK
+clk50mhz => cont1[6].CLK
+clk50mhz => cont1[7].CLK
+clk50mhz => cont1[8].CLK
+clk50mhz => cont1[9].CLK
+clk50mhz => cont1[10].CLK
+clk50mhz => cont1[11].CLK
+clk50mhz => cont1[12].CLK
+clk1 <= clk_1.DB_MAX_OUTPUT_PORT_TYPE
+clk2 <= clk_2.DB_MAX_OUTPUT_PORT_TYPE
+clk4 <= clk_4.DB_MAX_OUTPUT_PORT_TYPE
+clk5 <= clk_5.DB_MAX_OUTPUT_PORT_TYPE
+
+

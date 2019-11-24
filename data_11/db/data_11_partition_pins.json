@@ -40,6 +40,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "eot",
+					"strict" : false
+				},
+				{
 					"name" : "datos_in[0]",
 					"strict" : false
 				},

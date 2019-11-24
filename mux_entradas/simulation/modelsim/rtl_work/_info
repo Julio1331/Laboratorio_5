@@ -1,0 +1,88 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/mux_entradas/simulation/modelsim
+Emux_entradas
+Z1 w1574447591
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/mux_entradas/mux_entradas.vhd
+Z5 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/mux_entradas/mux_entradas.vhd
+l0
+L4
+V1NN?ngf^HRdQTn4`3Flzk1
+!s100 c6P_h]dPiaI?UL6b7_n772
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1574447786
+!i10b 1
+Z8 !s108 1574447786.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/mux_entradas/mux_entradas.vhd|
+Z10 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/mux_entradas/mux_entradas.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abh
+R2
+R3
+DEx4 work 12 mux_entradas 0 22 1NN?ngf^HRdQTn4`3Flzk1
+l13
+L11
+VY:A6Cg_]8V1Tdf5h8JG:[1
+!s100 aOlBPFGA5N95B=fEAn?X30
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Etbmux_entradas
+Z13 w1574447780
+R2
+R3
+R0
+Z14 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/mux_entradas/../../../../Escritorio/FPGA_Proyectos/Laboratorio_5/mux_entradas/sim/tbmux_entradas.vhd
+Z15 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/mux_entradas/../../../../Escritorio/FPGA_Proyectos/Laboratorio_5/mux_entradas/sim/tbmux_entradas.vhd
+l0
+L4
+VkK?L>BIQ347e6Ic?=3>7C2
+!s100 Xl?RZl`VBnnl><=_o2^6K0
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/mux_entradas/../../../../Escritorio/FPGA_Proyectos/Laboratorio_5/mux_entradas/sim/tbmux_entradas.vhd|
+Z17 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/mux_entradas/../../../../Escritorio/FPGA_Proyectos/Laboratorio_5/mux_entradas/sim/tbmux_entradas.vhd|
+!i113 1
+R11
+R12
+Abh
+R2
+R3
+DEx4 work 14 tbmux_entradas 0 22 kK?L>BIQ347e6Ic?=3>7C2
+l17
+L7
+V3c3@^80l9aT`8SVZm``0V3
+!s100 N9SGF9J1_;nF2lRH0mE@:3
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12

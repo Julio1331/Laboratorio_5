@@ -1,0 +1,77 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'mea_mem:d1|stac.asign'
+Slack : -3.017
+TNS   : -19.517
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -2.849
+TNS   : -3.845
+
+Type  : Slow 1200mV 85C Model Hold 'mea_mem:d1|stac.asign'
+Slack : 0.298
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.356
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -11.174
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'mea_mem:d1|stac.asign'
+Slack : 0.348
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'mea_mem:d1|stac.asign'
+Slack : -2.619
+TNS   : -16.666
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -2.457
+TNS   : -3.252
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.310
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'mea_mem:d1|stac.asign'
+Slack : 0.418
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -11.174
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'mea_mem:d1|stac.asign'
+Slack : 0.448
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -1.333
+TNS   : -1.791
+
+Type  : Fast 1200mV 0C Model Setup 'mea_mem:d1|stac.asign'
+Slack : -1.264
+TNS   : -7.509
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'mea_mem:d1|stac.asign'
+Slack : 0.291
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -10.453
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'mea_mem:d1|stac.asign'
+Slack : 0.329
+TNS   : 0.000
+
+------------------------------------------------------------

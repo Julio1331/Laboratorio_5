@@ -1,0 +1,24 @@
+|mux_entradas
+sel_msj[0] => Mux0.IN5
+sel_msj[0] => Mux1.IN5
+sel_msj[0] => Mux2.IN5
+sel_msj[0] => Mux3.IN5
+sel_msj[0] => Mux4.IN5
+sel_msj[0] => Mux5.IN5
+sel_msj[0] => add_out[0].DATAIN
+sel_msj[1] => Mux0.IN4
+sel_msj[1] => Mux1.IN4
+sel_msj[1] => Mux2.IN4
+sel_msj[1] => Mux3.IN4
+sel_msj[1] => Mux4.IN4
+sel_msj[1] => Mux5.IN4
+add_out[0] <= sel_msj[0].DB_MAX_OUTPUT_PORT_TYPE
+add_out[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+add_out[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+add_out[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+add_out[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+add_out[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+add_out[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+add_out[7] <= <GND>
+
+

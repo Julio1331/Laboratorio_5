@@ -8,6 +8,46 @@
 					"strict" : false
 				},
 				{
+					"name" : "end_of_transmition",
+					"strict" : false
+				},
+				{
+					"name" : "end_of_trama",
+					"strict" : false
+				},
+				{
+					"name" : "datos[2]",
+					"strict" : false
+				},
+				{
+					"name" : "datos[0]",
+					"strict" : false
+				},
+				{
+					"name" : "datos[1]",
+					"strict" : false
+				},
+				{
+					"name" : "datos[3]",
+					"strict" : false
+				},
+				{
+					"name" : "datos[4]",
+					"strict" : false
+				},
+				{
+					"name" : "datos[5]",
+					"strict" : false
+				},
+				{
+					"name" : "datos[6]",
+					"strict" : false
+				},
+				{
+					"name" : "datos[7]",
+					"strict" : false
+				},
+				{
 					"name" : "clk",
 					"strict" : false
 				},
@@ -16,39 +56,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "datos[7]",
-					"strict" : false
-				},
-				{
-					"name" : "datos[6]",
-					"strict" : false
-				},
-				{
-					"name" : "datos[5]",
-					"strict" : false
-				},
-				{
 					"name" : "send",
-					"strict" : false
-				},
-				{
-					"name" : "datos[4]",
-					"strict" : false
-				},
-				{
-					"name" : "datos[3]",
-					"strict" : false
-				},
-				{
-					"name" : "datos[2]",
-					"strict" : false
-				},
-				{
-					"name" : "datos[1]",
-					"strict" : false
-				},
-				{
-					"name" : "datos[0]",
 					"strict" : false
 				}
 			]

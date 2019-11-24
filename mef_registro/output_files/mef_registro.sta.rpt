@@ -1,5 +1,5 @@
 Timing Analyzer report for mef_registro
-Sat Nov 16 10:13:40 2019
+Thu Nov 21 18:34:33 2019
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -109,7 +109,7 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.2%      ;
+;     Processor 2            ;   0.4%      ;
 +----------------------------+-------------+
 
 
@@ -128,7 +128,7 @@ refer to the applicable agreement for further details.
 +------------+-----------------+------------+---------------------------------------------------------------+
 ; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
 +------------+-----------------+------------+---------------------------------------------------------------+
-; 759.88 MHz ; 250.0 MHz       ; clk        ; limit due to minimum period restriction (max I/O toggle rate) ;
+; 765.11 MHz ; 250.0 MHz       ; clk        ; limit due to minimum period restriction (max I/O toggle rate) ;
 +------------+-----------------+------------+---------------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -144,8 +144,8 @@ HTML report is unavailable in plain text report export.
 +-------+--------+--------------------+
 ; Clock ; Slack  ; End Point TNS      ;
 +-------+--------+--------------------+
-; snd   ; -2.546 ; -4.280             ;
-; clk   ; -1.535 ; -5.608             ;
+; snd   ; -1.744 ; -3.475             ;
+; clk   ; -1.643 ; -5.768             ;
 +-------+--------+--------------------+
 
 
@@ -154,8 +154,8 @@ HTML report is unavailable in plain text report export.
 +-------+-------+--------------------+
 ; Clock ; Slack ; End Point TNS      ;
 +-------+-------+--------------------+
-; clk   ; 0.404 ; 0.000              ;
-; snd   ; 1.004 ; 0.000              ;
+; clk   ; 0.401 ; 0.000              ;
+; snd   ; 0.985 ; 0.000              ;
 +-------+-------+--------------------+
 
 
@@ -186,31 +186,31 @@ No paths to report.
 +--------+------------------------------------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node                                            ; To Node                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+------------------------------------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
-; -2.546 ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.328      ; 3.509      ;
-; -2.542 ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.328      ; 3.505      ;
-; -2.535 ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.328      ; 3.498      ;
-; -2.506 ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.328      ; 3.469      ;
-; -2.437 ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.328      ; 3.400      ;
-; -2.434 ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.328      ; 3.397      ;
-; -2.270 ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.328      ; 3.233      ;
-; -2.256 ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.328      ; 3.219      ;
-; -2.201 ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.329      ; 3.165      ;
-; -2.197 ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout    ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.329      ; 3.161      ;
-; -2.065 ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.329      ; 3.029      ;
-; -1.734 ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.328      ; 2.660      ;
-; -1.731 ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.328      ; 2.657      ;
-; -1.730 ; mea_salida:d2|st.SND                                 ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.328      ; 2.693      ;
-; -1.632 ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.329      ; 2.559      ;
-; -1.567 ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.328      ; 2.493      ;
-; -1.553 ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.328      ; 2.479      ;
-; -1.539 ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.328      ; 2.465      ;
-; -1.535 ; mea_salida:d2|st.SND                                 ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.328      ; 2.461      ;
-; -1.535 ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.328      ; 2.461      ;
-; -1.528 ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.328      ; 2.454      ;
-; -1.499 ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.328      ; 2.425      ;
-; -1.459 ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.329      ; 2.386      ;
-; -1.430 ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout    ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.329      ; 2.357      ;
-; -1.335 ; mea_salida:d2|st.LD                                  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.328      ; 2.298      ;
+; -1.744 ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.441      ; 2.658      ;
+; -1.742 ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.441      ; 2.656      ;
+; -1.731 ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.260      ; 2.586      ;
+; -1.729 ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.442      ; 2.644      ;
+; -1.723 ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.441      ; 2.637      ;
+; -1.677 ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.259      ; 2.531      ;
+; -1.670 ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.260      ; 2.525      ;
+; -1.656 ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.259      ; 2.510      ;
+; -1.653 ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.442      ; 2.568      ;
+; -1.643 ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.440      ; 2.556      ;
+; -1.640 ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.441      ; 2.554      ;
+; -1.634 ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.259      ; 2.488      ;
+; -1.634 ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout    ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.440      ; 2.547      ;
+; -1.632 ; mea_salida:d2|st.SND                                 ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.259      ; 2.486      ;
+; -1.627 ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.441      ; 2.541      ;
+; -1.624 ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.259      ; 2.478      ;
+; -1.615 ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.258      ; 2.468      ;
+; -1.606 ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout    ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.258      ; 2.459      ;
+; -1.594 ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.441      ; 2.508      ;
+; -1.591 ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.259      ; 2.445      ;
+; -1.566 ; mea_salida:d2|st.LD                                  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.441      ; 2.480      ;
+; -1.549 ; mea_salida:d2|st.SND                                 ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.441      ; 2.463      ;
+; -1.479 ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.259      ; 2.333      ;
+; -1.465 ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.440      ; 2.378      ;
+; -1.437 ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.258      ; 2.290      ;
 +--------+------------------------------------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -219,31 +219,31 @@ No paths to report.
 +--------+-----------------------------------------------------+------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node                                           ; To Node                                              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+-----------------------------------------------------+------------------------------------------------------+--------------+-------------+--------------+------------+------------+
-; -1.535 ; mea_salida:d2|px_st.ILDE_83                         ; mea_salida:d2|st.ILDE                                ; snd          ; clk         ; 0.500        ; -1.534     ; 0.479      ;
-; -1.219 ; mea_salida:d2|px_st.SND_68                          ; mea_salida:d2|st.SND                                 ; snd          ; clk         ; 0.500        ; -1.593     ; 0.104      ;
-; -0.316 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.078     ; 1.236      ;
-; -0.315 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; clk          ; clk         ; 1.000        ; -0.078     ; 1.235      ;
-; -0.315 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.078     ; 1.235      ;
-; -0.315 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.078     ; 1.235      ;
-; -0.315 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.078     ; 1.235      ;
-; -0.313 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.078     ; 1.233      ;
-; -0.313 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.078     ; 1.233      ;
-; -0.311 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.078     ; 1.231      ;
-; -0.268 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.079     ; 1.187      ;
-; -0.237 ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.079     ; 1.156      ;
-; -0.235 ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.079     ; 1.154      ;
-; -0.234 ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.079     ; 1.153      ;
-; -0.203 ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.079     ; 1.122      ;
-; -0.082 ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.078     ; 1.002      ;
-; -0.069 ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout   ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.079     ; 0.988      ;
-; -0.039 ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.079     ; 0.958      ;
-; -0.038 ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.079     ; 0.957      ;
-; -0.023 ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.079     ; 0.942      ;
-; -0.004 ; mea_salida:d2|st.LD                                 ; mea_salida:d2|load                                   ; clk          ; clk         ; 1.000        ; -0.080     ; 0.922      ;
-; 0.071  ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout    ; clk          ; clk         ; 1.000        ; -0.079     ; 0.848      ;
-; 0.074  ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.079     ; 0.845      ;
-; 0.106  ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; clk          ; clk         ; 1.000        ; -0.079     ; 0.813      ;
-; 0.185  ; mea_salida:d2|load                                  ; mea_salida:d2|load                                   ; clk          ; clk         ; 1.000        ; -0.079     ; 0.734      ;
+; -1.643 ; mea_salida:d2|px_st.ILDE_83                         ; mea_salida:d2|st.ILDE                                ; snd          ; clk         ; 0.500        ; -1.643     ; 0.478      ;
+; -1.344 ; mea_salida:d2|px_st.SND_68                          ; mea_salida:d2|st.SND                                 ; snd          ; clk         ; 0.500        ; -1.718     ; 0.104      ;
+; -0.307 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.082     ; 1.223      ;
+; -0.306 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.082     ; 1.222      ;
+; -0.304 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.082     ; 1.220      ;
+; -0.287 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.082     ; 1.203      ;
+; -0.286 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.082     ; 1.202      ;
+; -0.265 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.083     ; 1.180      ;
+; -0.265 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; clk          ; clk         ; 1.000        ; -0.083     ; 1.180      ;
+; -0.233 ; mea_salida:d2|st.LD                                 ; mea_salida:d2|load                                   ; clk          ; clk         ; 1.000        ; -0.082     ; 1.149      ;
+; -0.217 ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.082     ; 1.133      ;
+; -0.204 ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.083     ; 1.119      ;
+; -0.192 ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.082     ; 1.108      ;
+; -0.113 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout    ; clk          ; clk         ; 1.000        ; -0.081     ; 1.030      ;
+; -0.112 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.081     ; 1.029      ;
+; -0.111 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.081     ; 1.028      ;
+; -0.058 ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; clk          ; clk         ; 1.000        ; -0.082     ; 0.974      ;
+; -0.049 ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.082     ; 0.965      ;
+; -0.049 ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout   ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.082     ; 0.965      ;
+; -0.033 ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.083     ; 0.948      ;
+; -0.032 ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.082     ; 0.948      ;
+; 0.032  ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.082     ; 0.884      ;
+; 0.115  ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.082     ; 0.801      ;
+; 0.117  ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.082     ; 0.799      ;
+; 0.182  ; mea_salida:d2|load                                  ; mea_salida:d2|load                                   ; clk          ; clk         ; 1.000        ; -0.082     ; 0.734      ;
 +--------+-----------------------------------------------------+------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -252,31 +252,31 @@ No paths to report.
 +-------+-----------------------------------------------------+------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                                           ; To Node                                              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+-----------------------------------------------------+------------------------------------------------------+--------------+-------------+--------------+------------+------------+
-; 0.404 ; mea_salida:d2|load                                  ; mea_salida:d2|load                                   ; clk          ; clk         ; 0.000        ; 0.079      ; 0.669      ;
-; 0.453 ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; clk          ; clk         ; 0.000        ; 0.079      ; 0.718      ;
-; 0.458 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.079      ; 0.723      ;
-; 0.461 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout    ; clk          ; clk         ; 0.000        ; 0.079      ; 0.726      ;
-; 0.586 ; mea_salida:d2|st.LD                                 ; mea_salida:d2|load                                   ; clk          ; clk         ; 0.000        ; 0.078      ; 0.850      ;
-; 0.587 ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout   ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.079      ; 0.852      ;
-; 0.597 ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.079      ; 0.862      ;
-; 0.614 ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.079      ; 0.879      ;
-; 0.615 ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.079      ; 0.880      ;
-; 0.646 ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.079      ; 0.911      ;
-; 0.646 ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.079      ; 0.911      ;
-; 0.651 ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.080      ; 0.917      ;
-; 0.662 ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.079      ; 0.927      ;
-; 0.698 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.079      ; 0.963      ;
-; 0.798 ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.079      ; 1.063      ;
-; 0.817 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.080      ; 1.083      ;
-; 0.818 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.080      ; 1.084      ;
-; 0.819 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.080      ; 1.085      ;
-; 0.819 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.080      ; 1.085      ;
-; 0.820 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.080      ; 1.086      ;
-; 0.822 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.080      ; 1.088      ;
-; 0.822 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.080      ; 1.088      ;
-; 0.823 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; clk          ; clk         ; 0.000        ; 0.080      ; 1.089      ;
-; 1.671 ; mea_salida:d2|px_st.SND_68                          ; mea_salida:d2|st.SND                                 ; snd          ; clk         ; -0.500       ; -1.328     ; 0.069      ;
-; 1.954 ; mea_salida:d2|px_st.ILDE_83                         ; mea_salida:d2|st.ILDE                                ; snd          ; clk         ; -0.500       ; -1.266     ; 0.414      ;
+; 0.401 ; mea_salida:d2|load                                  ; mea_salida:d2|load                                   ; clk          ; clk         ; 0.000        ; 0.082      ; 0.669      ;
+; 0.433 ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.082      ; 0.701      ;
+; 0.435 ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.082      ; 0.703      ;
+; 0.478 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.082      ; 0.746      ;
+; 0.562 ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.082      ; 0.830      ;
+; 0.563 ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout   ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.082      ; 0.831      ;
+; 0.575 ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; clk          ; clk         ; 0.000        ; 0.082      ; 0.843      ;
+; 0.598 ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.082      ; 0.866      ;
+; 0.605 ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.081      ; 0.872      ;
+; 0.651 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.083      ; 0.920      ;
+; 0.652 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.083      ; 0.921      ;
+; 0.653 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout    ; clk          ; clk         ; 0.000        ; 0.083      ; 0.922      ;
+; 0.662 ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.082      ; 0.930      ;
+; 0.725 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.082      ; 0.993      ;
+; 0.727 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.082      ; 0.995      ;
+; 0.727 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.082      ; 0.995      ;
+; 0.730 ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.082      ; 0.998      ;
+; 0.743 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.082      ; 1.011      ;
+; 0.744 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.082      ; 1.012      ;
+; 0.745 ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.012      ;
+; 0.815 ; mea_salida:d2|st.LD                                 ; mea_salida:d2|load                                   ; clk          ; clk         ; 0.000        ; 0.082      ; 1.083      ;
+; 0.834 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; clk          ; clk         ; 0.000        ; 0.081      ; 1.101      ;
+; 0.834 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.081      ; 1.101      ;
+; 1.784 ; mea_salida:d2|px_st.SND_68                          ; mea_salida:d2|st.SND                                 ; snd          ; clk         ; -0.500       ; -1.441     ; 0.069      ;
+; 2.065 ; mea_salida:d2|px_st.ILDE_83                         ; mea_salida:d2|st.ILDE                                ; snd          ; clk         ; -0.500       ; -1.378     ; 0.413      ;
 +-------+-----------------------------------------------------+------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -285,31 +285,31 @@ No paths to report.
 +-------+------------------------------------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                                            ; To Node                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+------------------------------------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
-; 1.004 ; mea_salida:d2|st.LD                                  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.593      ; 2.137      ;
-; 1.050 ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout    ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.595      ; 2.185      ;
-; 1.092 ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.595      ; 2.227      ;
-; 1.122 ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.594      ; 2.256      ;
-; 1.129 ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.594      ; 2.263      ;
-; 1.149 ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.594      ; 2.283      ;
-; 1.176 ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.594      ; 2.310      ;
-; 1.188 ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.594      ; 2.322      ;
-; 1.195 ; mea_salida:d2|st.SND                                 ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.594      ; 2.329      ;
-; 1.210 ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.594      ; 2.344      ;
-; 1.232 ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.595      ; 2.367      ;
-; 1.314 ; mea_salida:d2|st.SND                                 ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.593      ; 2.447      ;
-; 1.361 ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.594      ; 2.495      ;
-; 1.377 ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.594      ; 2.511      ;
-; 1.745 ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.594      ; 2.879      ;
-; 1.867 ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout    ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.594      ; 3.001      ;
-; 1.870 ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.594      ; 3.004      ;
-; 1.919 ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.593      ; 3.052      ;
-; 1.941 ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.593      ; 3.074      ;
-; 2.092 ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.593      ; 3.225      ;
-; 2.108 ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.593      ; 3.241      ;
-; 2.170 ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.593      ; 3.303      ;
-; 2.177 ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.593      ; 3.310      ;
-; 2.197 ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.593      ; 3.330      ;
-; 2.215 ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.593      ; 3.348      ;
+; 0.985 ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.717      ; 2.242      ;
+; 1.033 ; mea_salida:d2|st.SND                                 ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.718      ; 2.291      ;
+; 1.034 ; mea_salida:d2|st.LD                                  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.718      ; 2.292      ;
+; 1.094 ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.717      ; 2.351      ;
+; 1.096 ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout    ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.717      ; 2.353      ;
+; 1.107 ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.527      ; 2.174      ;
+; 1.120 ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.718      ; 2.378      ;
+; 1.142 ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.528      ; 2.210      ;
+; 1.174 ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.718      ; 2.432      ;
+; 1.188 ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.719      ; 2.447      ;
+; 1.194 ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.718      ; 2.452      ;
+; 1.216 ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.527      ; 2.283      ;
+; 1.218 ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout    ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.527      ; 2.285      ;
+; 1.227 ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.718      ; 2.485      ;
+; 1.243 ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.528      ; 2.311      ;
+; 1.246 ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.719      ; 2.505      ;
+; 1.256 ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.528      ; 2.324      ;
+; 1.259 ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.718      ; 2.517      ;
+; 1.267 ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.528      ; 2.335      ;
+; 1.268 ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.718      ; 2.526      ;
+; 1.268 ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.529      ; 2.337      ;
+; 1.285 ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.528      ; 2.353      ;
+; 1.287 ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.528      ; 2.355      ;
+; 1.310 ; mea_salida:d2|st.SND                                 ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.528      ; 2.378      ;
+; 1.340 ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.529      ; 2.409      ;
 +-------+------------------------------------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -324,7 +324,7 @@ No synchronizer chains to report.
 +------------+-----------------+------------+---------------------------------------------------------------+
 ; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
 +------------+-----------------+------------+---------------------------------------------------------------+
-; 850.34 MHz ; 250.0 MHz       ; clk        ; limit due to minimum period restriction (max I/O toggle rate) ;
+; 855.43 MHz ; 250.0 MHz       ; clk        ; limit due to minimum period restriction (max I/O toggle rate) ;
 +------------+-----------------+------------+---------------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -334,8 +334,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+--------+-------------------+
 ; Clock ; Slack  ; End Point TNS     ;
 +-------+--------+-------------------+
-; snd   ; -2.383 ; -4.006            ;
-; clk   ; -1.271 ; -3.809            ;
+; snd   ; -1.615 ; -3.224            ;
+; clk   ; -1.355 ; -3.802            ;
 +-------+--------+-------------------+
 
 
@@ -344,8 +344,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+-------+-------------------+
 ; Clock ; Slack ; End Point TNS     ;
 +-------+-------+-------------------+
-; clk   ; 0.356 ; 0.000             ;
-; snd   ; 0.976 ; 0.000             ;
+; clk   ; 0.353 ; 0.000             ;
+; snd   ; 0.997 ; 0.000             ;
 +-------+-------+-------------------+
 
 
@@ -376,31 +376,31 @@ No paths to report.
 +--------+------------------------------------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node                                            ; To Node                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+------------------------------------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
-; -2.383 ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.160      ; 3.246      ;
-; -2.332 ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.160      ; 3.195      ;
-; -2.316 ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.160      ; 3.179      ;
-; -2.315 ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.160      ; 3.178      ;
-; -2.262 ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.160      ; 3.125      ;
-; -2.248 ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.160      ; 3.111      ;
-; -2.111 ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.160      ; 2.974      ;
-; -2.078 ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.160      ; 2.941      ;
-; -2.077 ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.161      ; 2.941      ;
-; -2.076 ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout    ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.161      ; 2.940      ;
-; -1.949 ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.161      ; 2.813      ;
-; -1.623 ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.160      ; 2.463      ;
-; -1.619 ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.160      ; 2.459      ;
-; -1.568 ; mea_salida:d2|st.SND                                 ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.160      ; 2.431      ;
-; -1.530 ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.161      ; 2.371      ;
-; -1.469 ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.160      ; 2.309      ;
-; -1.469 ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.160      ; 2.309      ;
-; -1.435 ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.160      ; 2.275      ;
-; -1.434 ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.160      ; 2.274      ;
-; -1.426 ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.160      ; 2.266      ;
-; -1.411 ; mea_salida:d2|st.SND                                 ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.160      ; 2.251      ;
-; -1.407 ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.160      ; 2.247      ;
-; -1.372 ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.161      ; 2.213      ;
-; -1.357 ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout    ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.161      ; 2.198      ;
-; -1.266 ; mea_salida:d2|st.LD                                  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.160      ; 2.129      ;
+; -1.615 ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.264      ; 2.445      ;
+; -1.609 ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.099      ; 2.385      ;
+; -1.606 ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.262      ; 2.434      ;
+; -1.606 ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.262      ; 2.434      ;
+; -1.596 ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.262      ; 2.424      ;
+; -1.565 ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.097      ; 2.339      ;
+; -1.561 ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.099      ; 2.337      ;
+; -1.549 ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.097      ; 2.323      ;
+; -1.542 ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.264      ; 2.372      ;
+; -1.533 ; mea_salida:d2|st.SND                                 ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.097      ; 2.307      ;
+; -1.521 ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.262      ; 2.349      ;
+; -1.513 ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.097      ; 2.287      ;
+; -1.507 ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.262      ; 2.335      ;
+; -1.506 ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.097      ; 2.280      ;
+; -1.493 ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.096      ; 2.266      ;
+; -1.493 ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.261      ; 2.320      ;
+; -1.489 ; mea_salida:d2|st.LD                                  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.262      ; 2.317      ;
+; -1.487 ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout    ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.096      ; 2.260      ;
+; -1.487 ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout    ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.261      ; 2.314      ;
+; -1.478 ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.262      ; 2.306      ;
+; -1.477 ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.097      ; 2.251      ;
+; -1.471 ; mea_salida:d2|st.SND                                 ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.262      ; 2.299      ;
+; -1.373 ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.097      ; 2.147      ;
+; -1.344 ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 1.096      ; 2.117      ;
+; -1.344 ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.261      ; 2.171      ;
 +--------+------------------------------------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -409,31 +409,31 @@ No paths to report.
 +--------+-----------------------------------------------------+------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node                                           ; To Node                                              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+-----------------------------------------------------+------------------------------------------------------+--------------+-------------+--------------+------------+------------+
-; -1.271 ; mea_salida:d2|px_st.ILDE_83                         ; mea_salida:d2|st.ILDE                                ; snd          ; clk         ; 0.500        ; -1.316     ; 0.434      ;
-; -1.007 ; mea_salida:d2|px_st.SND_68                          ; mea_salida:d2|st.SND                                 ; snd          ; clk         ; 0.500        ; -1.396     ; 0.090      ;
-; -0.176 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; clk          ; clk         ; 1.000        ; -0.069     ; 1.106      ;
-; -0.176 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.069     ; 1.106      ;
-; -0.176 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.069     ; 1.106      ;
-; -0.175 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.069     ; 1.105      ;
-; -0.175 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.069     ; 1.105      ;
-; -0.173 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.069     ; 1.103      ;
-; -0.173 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.069     ; 1.103      ;
-; -0.172 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.069     ; 1.102      ;
-; -0.135 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.070     ; 1.064      ;
-; -0.122 ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.070     ; 1.051      ;
-; -0.109 ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.070     ; 1.038      ;
-; -0.107 ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.070     ; 1.036      ;
-; -0.106 ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.070     ; 1.035      ;
-; 0.036  ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.069     ; 0.894      ;
-; 0.039  ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout   ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.070     ; 0.890      ;
-; 0.069  ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.070     ; 0.860      ;
-; 0.070  ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.070     ; 0.859      ;
-; 0.089  ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.070     ; 0.840      ;
-; 0.099  ; mea_salida:d2|st.LD                                 ; mea_salida:d2|load                                   ; clk          ; clk         ; 1.000        ; -0.071     ; 0.829      ;
-; 0.159  ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout    ; clk          ; clk         ; 1.000        ; -0.070     ; 0.770      ;
-; 0.162  ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.070     ; 0.767      ;
-; 0.198  ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; clk          ; clk         ; 1.000        ; -0.070     ; 0.731      ;
-; 0.270  ; mea_salida:d2|load                                  ; mea_salida:d2|load                                   ; clk          ; clk         ; 1.000        ; -0.070     ; 0.659      ;
+; -1.355 ; mea_salida:d2|px_st.ILDE_83                         ; mea_salida:d2|st.ILDE                                ; snd          ; clk         ; 0.500        ; -1.402     ; 0.432      ;
+; -1.119 ; mea_salida:d2|px_st.SND_68                          ; mea_salida:d2|st.SND                                 ; snd          ; clk         ; 0.500        ; -1.508     ; 0.090      ;
+; -0.169 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.073     ; 1.095      ;
+; -0.168 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.073     ; 1.094      ;
+; -0.166 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.073     ; 1.092      ;
+; -0.159 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.074     ; 1.084      ;
+; -0.159 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; clk          ; clk         ; 1.000        ; -0.074     ; 1.084      ;
+; -0.153 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.073     ; 1.079      ;
+; -0.152 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.073     ; 1.078      ;
+; -0.136 ; mea_salida:d2|st.LD                                 ; mea_salida:d2|load                                   ; clk          ; clk         ; 1.000        ; -0.073     ; 1.062      ;
+; -0.092 ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.073     ; 1.018      ;
+; -0.081 ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.074     ; 1.006      ;
+; -0.066 ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.073     ; 0.992      ;
+; 0.002  ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout    ; clk          ; clk         ; 1.000        ; -0.072     ; 0.925      ;
+; 0.002  ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.072     ; 0.925      ;
+; 0.004  ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.072     ; 0.923      ;
+; 0.049  ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; clk          ; clk         ; 1.000        ; -0.072     ; 0.878      ;
+; 0.054  ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.073     ; 0.872      ;
+; 0.056  ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout   ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.073     ; 0.870      ;
+; 0.074  ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.074     ; 0.851      ;
+; 0.079  ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.073     ; 0.847      ;
+; 0.127  ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.073     ; 0.799      ;
+; 0.205  ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.073     ; 0.721      ;
+; 0.207  ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.073     ; 0.719      ;
+; 0.267  ; mea_salida:d2|load                                  ; mea_salida:d2|load                                   ; clk          ; clk         ; 1.000        ; -0.073     ; 0.659      ;
 +--------+-----------------------------------------------------+------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -442,31 +442,31 @@ No paths to report.
 +-------+-----------------------------------------------------+------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                                           ; To Node                                              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+-----------------------------------------------------+------------------------------------------------------+--------------+-------------+--------------+------------+------------+
-; 0.356 ; mea_salida:d2|load                                  ; mea_salida:d2|load                                   ; clk          ; clk         ; 0.000        ; 0.070      ; 0.597      ;
-; 0.416 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.070      ; 0.657      ;
-; 0.418 ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; clk          ; clk         ; 0.000        ; 0.070      ; 0.659      ;
-; 0.419 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout    ; clk          ; clk         ; 0.000        ; 0.070      ; 0.660      ;
-; 0.538 ; mea_salida:d2|st.LD                                 ; mea_salida:d2|load                                   ; clk          ; clk         ; 0.000        ; 0.069      ; 0.778      ;
-; 0.539 ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout   ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.070      ; 0.780      ;
-; 0.552 ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.070      ; 0.793      ;
-; 0.569 ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.070      ; 0.810      ;
-; 0.570 ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.070      ; 0.811      ;
-; 0.592 ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.070      ; 0.833      ;
-; 0.592 ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.070      ; 0.833      ;
-; 0.603 ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.071      ; 0.845      ;
-; 0.607 ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.070      ; 0.848      ;
-; 0.639 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.070      ; 0.880      ;
-; 0.708 ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.070      ; 0.949      ;
-; 0.749 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.071      ; 0.991      ;
-; 0.751 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.071      ; 0.993      ;
+; 0.353 ; mea_salida:d2|load                                  ; mea_salida:d2|load                                   ; clk          ; clk         ; 0.000        ; 0.073      ; 0.597      ;
+; 0.400 ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.073      ; 0.644      ;
+; 0.402 ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.073      ; 0.646      ;
+; 0.432 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.073      ; 0.676      ;
+; 0.516 ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout   ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.073      ; 0.760      ;
+; 0.517 ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.073      ; 0.761      ;
+; 0.529 ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; clk          ; clk         ; 0.000        ; 0.072      ; 0.772      ;
+; 0.556 ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.073      ; 0.800      ;
+; 0.559 ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.072      ; 0.802      ;
+; 0.602 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.074      ; 0.847      ;
+; 0.604 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout    ; clk          ; clk         ; 0.000        ; 0.074      ; 0.849      ;
+; 0.604 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.074      ; 0.849      ;
+; 0.610 ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.073      ; 0.854      ;
+; 0.661 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.073      ; 0.905      ;
+; 0.663 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.073      ; 0.907      ;
+; 0.663 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.073      ; 0.907      ;
+; 0.671 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.073      ; 0.915      ;
+; 0.672 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.073      ; 0.916      ;
+; 0.682 ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.073      ; 0.926      ;
+; 0.696 ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.071      ; 0.938      ;
+; 0.726 ; mea_salida:d2|st.LD                                 ; mea_salida:d2|load                                   ; clk          ; clk         ; 0.000        ; 0.073      ; 0.970      ;
+; 0.750 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; clk          ; clk         ; 0.000        ; 0.071      ; 0.992      ;
 ; 0.751 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.071      ; 0.993      ;
-; 0.751 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.071      ; 0.993      ;
-; 0.752 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.071      ; 0.994      ;
-; 0.753 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.071      ; 0.995      ;
-; 0.754 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; clk          ; clk         ; 0.000        ; 0.071      ; 0.996      ;
-; 0.754 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.071      ; 0.996      ;
-; 1.511 ; mea_salida:d2|px_st.SND_68                          ; mea_salida:d2|st.SND                                 ; snd          ; clk         ; -0.500       ; -1.160     ; 0.062      ;
-; 1.739 ; mea_salida:d2|px_st.ILDE_83                         ; mea_salida:d2|st.ILDE                                ; snd          ; clk         ; -0.500       ; -1.076     ; 0.374      ;
+; 1.613 ; mea_salida:d2|px_st.SND_68                          ; mea_salida:d2|st.SND                                 ; snd          ; clk         ; -0.500       ; -1.262     ; 0.062      ;
+; 1.826 ; mea_salida:d2|px_st.ILDE_83                         ; mea_salida:d2|st.ILDE                                ; snd          ; clk         ; -0.500       ; -1.164     ; 0.373      ;
 +-------+-----------------------------------------------------+------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -475,31 +475,31 @@ No paths to report.
 +-------+------------------------------------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                                            ; To Node                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+------------------------------------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
-; 0.976 ; mea_salida:d2|st.LD                                  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.396      ; 1.912      ;
-; 1.033 ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout    ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.397      ; 1.970      ;
-; 1.082 ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.397      ; 2.019      ;
-; 1.105 ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.396      ; 2.041      ;
-; 1.106 ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.396      ; 2.042      ;
-; 1.121 ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.396      ; 2.057      ;
-; 1.151 ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.396      ; 2.087      ;
-; 1.169 ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.396      ; 2.105      ;
-; 1.182 ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.396      ; 2.118      ;
-; 1.191 ; mea_salida:d2|st.SND                                 ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.396      ; 2.127      ;
-; 1.204 ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.397      ; 2.141      ;
-; 1.281 ; mea_salida:d2|st.SND                                 ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.396      ; 2.217      ;
-; 1.314 ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.396      ; 2.250      ;
-; 1.327 ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.396      ; 2.263      ;
-; 1.650 ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.397      ; 2.587      ;
-; 1.753 ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout    ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.397      ; 2.690      ;
-; 1.755 ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.397      ; 2.692      ;
-; 1.839 ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.396      ; 2.775      ;
-; 1.839 ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.396      ; 2.775      ;
-; 1.982 ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.396      ; 2.918      ;
-; 1.986 ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.396      ; 2.922      ;
-; 2.061 ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.396      ; 2.997      ;
-; 2.078 ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.396      ; 3.014      ;
-; 2.086 ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.396      ; 3.022      ;
-; 2.088 ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.396      ; 3.024      ;
+; 0.997 ; mea_salida:d2|st.SND                                 ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.508      ; 2.045      ;
+; 1.000 ; mea_salida:d2|st.LD                                  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.508      ; 2.048      ;
+; 1.006 ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.507      ; 2.053      ;
+; 1.076 ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.336      ; 1.952      ;
+; 1.099 ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.508      ; 2.147      ;
+; 1.108 ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.507      ; 2.155      ;
+; 1.108 ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout    ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.507      ; 2.155      ;
+; 1.118 ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.337      ; 1.995      ;
+; 1.150 ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.508      ; 2.198      ;
+; 1.164 ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.509      ; 2.213      ;
+; 1.166 ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.508      ; 2.214      ;
+; 1.178 ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.336      ; 2.054      ;
+; 1.178 ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout    ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.336      ; 2.054      ;
+; 1.199 ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.508      ; 2.247      ;
+; 1.202 ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.337      ; 2.079      ;
+; 1.209 ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.509      ; 2.258      ;
+; 1.215 ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.337      ; 2.092      ;
+; 1.225 ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.508      ; 2.273      ;
+; 1.232 ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.508      ; 2.280      ;
+; 1.232 ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.337      ; 2.109      ;
+; 1.236 ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.338      ; 2.114      ;
+; 1.241 ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.337      ; 2.118      ;
+; 1.242 ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.337      ; 2.119      ;
+; 1.271 ; mea_salida:d2|st.SND                                 ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.337      ; 2.148      ;
+; 1.306 ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.338      ; 2.184      ;
 +-------+------------------------------------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -514,8 +514,8 @@ No synchronizer chains to report.
 +-------+--------+-------------------+
 ; Clock ; Slack  ; End Point TNS     ;
 +-------+--------+-------------------+
-; clk   ; -0.862 ; -1.571            ;
-; snd   ; -0.713 ; -0.946            ;
+; clk   ; -0.926 ; -1.706            ;
+; snd   ; -0.255 ; -0.473            ;
 +-------+--------+-------------------+
 
 
@@ -524,8 +524,8 @@ No synchronizer chains to report.
 +-------+-------+-------------------+
 ; Clock ; Slack ; End Point TNS     ;
 +-------+-------+-------------------+
-; clk   ; 0.184 ; 0.000             ;
-; snd   ; 0.352 ; 0.000             ;
+; clk   ; 0.181 ; 0.000             ;
+; snd   ; 0.313 ; 0.000             ;
 +-------+-------+-------------------+
 
 
@@ -546,7 +546,7 @@ No paths to report.
 +-------+--------+---------------------------------+
 ; Clock ; Slack  ; End Point TNS                   ;
 +-------+--------+---------------------------------+
-; clk   ; -3.000 ; -18.854                         ;
+; clk   ; -3.000 ; -18.859                         ;
 ; snd   ; -3.000 ; -3.000                          ;
 +-------+--------+---------------------------------+
 
@@ -556,31 +556,31 @@ No paths to report.
 +--------+-----------------------------------------------------+------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node                                           ; To Node                                              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+-----------------------------------------------------+------------------------------------------------------+--------------+-------------+--------------+------------+------------+
-; -0.862 ; mea_salida:d2|px_st.ILDE_83                         ; mea_salida:d2|st.ILDE                                ; snd          ; clk         ; 0.500        ; -1.103     ; 0.226      ;
-; -0.709 ; mea_salida:d2|px_st.SND_68                          ; mea_salida:d2|st.SND                                 ; snd          ; clk         ; 0.500        ; -1.126     ; 0.050      ;
-; 0.338  ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; clk          ; clk         ; 1.000        ; -0.039     ; 0.610      ;
-; 0.338  ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.039     ; 0.610      ;
-; 0.339  ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.039     ; 0.609      ;
-; 0.339  ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.039     ; 0.609      ;
-; 0.340  ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.039     ; 0.608      ;
-; 0.341  ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.039     ; 0.607      ;
-; 0.342  ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.039     ; 0.606      ;
-; 0.343  ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.039     ; 0.605      ;
-; 0.381  ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.039     ; 0.567      ;
-; 0.394  ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.040     ; 0.553      ;
-; 0.395  ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.040     ; 0.552      ;
-; 0.397  ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.040     ; 0.550      ;
-; 0.400  ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.040     ; 0.547      ;
-; 0.462  ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.039     ; 0.486      ;
-; 0.480  ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout   ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.039     ; 0.468      ;
-; 0.484  ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.040     ; 0.463      ;
-; 0.484  ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.039     ; 0.464      ;
-; 0.492  ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.040     ; 0.455      ;
-; 0.501  ; mea_salida:d2|st.LD                                 ; mea_salida:d2|load                                   ; clk          ; clk         ; 1.000        ; -0.040     ; 0.446      ;
-; 0.547  ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout    ; clk          ; clk         ; 1.000        ; -0.039     ; 0.401      ;
-; 0.552  ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.039     ; 0.396      ;
-; 0.562  ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; clk          ; clk         ; 1.000        ; -0.040     ; 0.385      ;
-; 0.598  ; mea_salida:d2|load                                  ; mea_salida:d2|load                                   ; clk          ; clk         ; 1.000        ; -0.039     ; 0.350      ;
+; -0.926 ; mea_salida:d2|px_st.ILDE_83                         ; mea_salida:d2|st.ILDE                                ; snd          ; clk         ; 0.500        ; -1.170     ; 0.223      ;
+; -0.780 ; mea_salida:d2|px_st.SND_68                          ; mea_salida:d2|st.SND                                 ; snd          ; clk         ; 0.500        ; -1.197     ; 0.050      ;
+; 0.357  ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.042     ; 0.588      ;
+; 0.358  ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.042     ; 0.587      ;
+; 0.361  ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.042     ; 0.584      ;
+; 0.365  ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.043     ; 0.579      ;
+; 0.366  ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; clk          ; clk         ; 1.000        ; -0.043     ; 0.578      ;
+; 0.371  ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.042     ; 0.574      ;
+; 0.372  ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.042     ; 0.573      ;
+; 0.378  ; mea_salida:d2|st.LD                                 ; mea_salida:d2|load                                   ; clk          ; clk         ; 1.000        ; -0.042     ; 0.567      ;
+; 0.405  ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.042     ; 0.540      ;
+; 0.407  ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.043     ; 0.537      ;
+; 0.413  ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.042     ; 0.532      ;
+; 0.447  ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout    ; clk          ; clk         ; 1.000        ; -0.042     ; 0.498      ;
+; 0.447  ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.042     ; 0.498      ;
+; 0.449  ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.042     ; 0.496      ;
+; 0.486  ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; clk          ; clk         ; 1.000        ; -0.042     ; 0.459      ;
+; 0.486  ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.042     ; 0.459      ;
+; 0.487  ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.042     ; 0.458      ;
+; 0.489  ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.042     ; 0.456      ;
+; 0.490  ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout   ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.042     ; 0.455      ;
+; 0.528  ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.042     ; 0.417      ;
+; 0.565  ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.042     ; 0.380      ;
+; 0.566  ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; clk          ; clk         ; 1.000        ; -0.042     ; 0.379      ;
+; 0.595  ; mea_salida:d2|load                                  ; mea_salida:d2|load                                   ; clk          ; clk         ; 1.000        ; -0.042     ; 0.350      ;
 +--------+-----------------------------------------------------+------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -589,31 +589,31 @@ No paths to report.
 +--------+------------------------------------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node                                            ; To Node                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+------------------------------------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
-; -0.713 ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 0.986      ; 1.763      ;
-; -0.702 ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 0.986      ; 1.752      ;
-; -0.699 ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 0.986      ; 1.749      ;
-; -0.683 ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 0.986      ; 1.733      ;
-; -0.656 ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 0.986      ; 1.706      ;
-; -0.655 ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 0.986      ; 1.705      ;
-; -0.577 ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 0.986      ; 1.627      ;
-; -0.557 ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout    ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 0.987      ; 1.608      ;
-; -0.557 ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 0.987      ; 1.608      ;
-; -0.557 ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 0.986      ; 1.607      ;
-; -0.485 ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 0.987      ; 1.536      ;
-; -0.339 ; mea_salida:d2|st.SND                                 ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 0.986      ; 1.389      ;
-; -0.233 ; mea_salida:d2|st.SND                                 ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 0.986      ; 1.263      ;
-; -0.225 ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 0.986      ; 1.255      ;
-; -0.218 ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 0.986      ; 1.248      ;
-; -0.158 ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 0.987      ; 1.189      ;
-; -0.143 ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 0.986      ; 1.173      ;
-; -0.138 ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 0.986      ; 1.168      ;
-; -0.133 ; mea_salida:d2|st.LD                                  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 0.986      ; 1.183      ;
-; -0.115 ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 0.986      ; 1.145      ;
-; -0.114 ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 0.986      ; 1.144      ;
-; -0.104 ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 0.986      ; 1.134      ;
-; -0.097 ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 0.986      ; 1.127      ;
-; -0.079 ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 0.987      ; 1.110      ;
-; -0.064 ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout    ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 0.987      ; 1.095      ;
+; -0.255 ; mea_salida:d2|st.SND                                 ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 0.965      ; 1.263      ;
+; -0.218 ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.048      ; 1.255      ;
+; -0.217 ; mea_salida:d2|st.LD                                  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.048      ; 1.254      ;
+; -0.213 ; mea_salida:d2|st.SND                                 ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.048      ; 1.250      ;
+; -0.210 ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.049      ; 1.248      ;
+; -0.210 ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.048      ; 1.247      ;
+; -0.195 ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.048      ; 1.232      ;
+; -0.189 ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 0.966      ; 1.198      ;
+; -0.172 ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.048      ; 1.209      ;
+; -0.170 ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 0.965      ; 1.178      ;
+; -0.170 ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.048      ; 1.207      ;
+; -0.169 ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 0.965      ; 1.177      ;
+; -0.167 ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.049      ; 1.205      ;
+; -0.166 ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 0.965      ; 1.174      ;
+; -0.166 ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout    ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 0.965      ; 1.174      ;
+; -0.163 ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout    ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.048      ; 1.200      ;
+; -0.162 ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.048      ; 1.199      ;
+; -0.158 ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 0.965      ; 1.166      ;
+; -0.156 ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 0.966      ; 1.165      ;
+; -0.156 ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 0.965      ; 1.164      ;
+; -0.152 ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 0.965      ; 1.160      ;
+; -0.147 ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.048      ; 1.184      ;
+; -0.098 ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 0.965      ; 1.106      ;
+; -0.087 ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; 0.500        ; 0.965      ; 1.095      ;
+; -0.071 ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; 0.500        ; 1.048      ; 1.108      ;
 +--------+------------------------------------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -622,31 +622,31 @@ No paths to report.
 +-------+-----------------------------------------------------+------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                                           ; To Node                                              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+-----------------------------------------------------+------------------------------------------------------+--------------+-------------+--------------+------------+------------+
-; 0.184 ; mea_salida:d2|load                                  ; mea_salida:d2|load                                   ; clk          ; clk         ; 0.000        ; 0.039      ; 0.307      ;
-; 0.202 ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; clk          ; clk         ; 0.000        ; 0.040      ; 0.326      ;
-; 0.210 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.039      ; 0.333      ;
-; 0.213 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout    ; clk          ; clk         ; 0.000        ; 0.039      ; 0.336      ;
-; 0.254 ; mea_salida:d2|st.LD                                 ; mea_salida:d2|load                                   ; clk          ; clk         ; 0.000        ; 0.039      ; 0.377      ;
-; 0.260 ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.040      ; 0.384      ;
-; 0.268 ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.040      ; 0.392      ;
-; 0.268 ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout   ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.039      ; 0.391      ;
-; 0.270 ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.039      ; 0.393      ;
-; 0.285 ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.040      ; 0.409      ;
-; 0.296 ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.040      ; 0.420      ;
-; 0.297 ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.040      ; 0.421      ;
-; 0.303 ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.040      ; 0.427      ;
-; 0.322 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.039      ; 0.445      ;
-; 0.343 ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.040      ; 0.467      ;
-; 0.376 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.040      ; 0.500      ;
-; 0.376 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.040      ; 0.500      ;
-; 0.378 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.040      ; 0.502      ;
-; 0.378 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.040      ; 0.502      ;
-; 0.379 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.040      ; 0.503      ;
-; 0.379 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.040      ; 0.503      ;
-; 0.380 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; clk          ; clk         ; 0.000        ; 0.040      ; 0.504      ;
-; 0.380 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.040      ; 0.504      ;
-; 1.393 ; mea_salida:d2|px_st.SND_68                          ; mea_salida:d2|st.SND                                 ; snd          ; clk         ; -0.500       ; -0.986     ; 0.031      ;
-; 1.532 ; mea_salida:d2|px_st.ILDE_83                         ; mea_salida:d2|st.ILDE                                ; snd          ; clk         ; -0.500       ; -0.963     ; 0.193      ;
+; 0.181 ; mea_salida:d2|load                                  ; mea_salida:d2|load                                   ; clk          ; clk         ; 0.000        ; 0.042      ; 0.307      ;
+; 0.191 ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.042      ; 0.317      ;
+; 0.193 ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.042      ; 0.319      ;
+; 0.220 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.042      ; 0.346      ;
+; 0.254 ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout   ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.042      ; 0.380      ;
+; 0.254 ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.042      ; 0.380      ;
+; 0.258 ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.042      ; 0.384      ;
+; 0.259 ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; clk          ; clk         ; 0.000        ; 0.042      ; 0.385      ;
+; 0.264 ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.042      ; 0.390      ;
+; 0.289 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.042      ; 0.415      ;
+; 0.291 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout    ; clk          ; clk         ; 0.000        ; 0.042      ; 0.417      ;
+; 0.291 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.042      ; 0.417      ;
+; 0.302 ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.042      ; 0.428      ;
+; 0.322 ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.042      ; 0.448      ;
+; 0.330 ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.041      ; 0.455      ;
+; 0.335 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.042      ; 0.461      ;
+; 0.336 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.042      ; 0.462      ;
+; 0.337 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.042      ; 0.463      ;
+; 0.346 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.042      ; 0.472      ;
+; 0.347 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.042      ; 0.473      ;
+; 0.354 ; mea_salida:d2|st.LD                                 ; mea_salida:d2|load                                   ; clk          ; clk         ; 0.000        ; 0.042      ; 0.480      ;
+; 0.372 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; clk          ; clk         ; 0.000        ; 0.041      ; 0.497      ;
+; 0.373 ; mea_salida:d2|load                                  ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; clk          ; clk         ; 0.000        ; 0.041      ; 0.498      ;
+; 1.455 ; mea_salida:d2|px_st.SND_68                          ; mea_salida:d2|st.SND                                 ; snd          ; clk         ; -0.500       ; -1.048     ; 0.031      ;
+; 1.595 ; mea_salida:d2|px_st.ILDE_83                         ; mea_salida:d2|st.ILDE                                ; snd          ; clk         ; -0.500       ; -1.028     ; 0.191      ;
 +-------+-----------------------------------------------------+------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -655,31 +655,31 @@ No paths to report.
 +-------+------------------------------------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                                            ; To Node                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+------------------------------------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
-; 0.352 ; mea_salida:d2|st.LD                                  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.126      ; 1.018      ;
-; 0.357 ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout    ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.126      ; 1.023      ;
-; 0.384 ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.126      ; 1.050      ;
-; 0.398 ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.126      ; 1.064      ;
-; 0.403 ; mea_salida:d2|st.SND                                 ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.126      ; 1.069      ;
-; 0.407 ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.126      ; 1.073      ;
-; 0.414 ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.126      ; 1.080      ;
-; 0.418 ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.126      ; 1.084      ;
-; 0.427 ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.126      ; 1.093      ;
-; 0.427 ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.126      ; 1.093      ;
-; 0.451 ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.126      ; 1.117      ;
-; 0.480 ; mea_salida:d2|st.SND                                 ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.126      ; 1.146      ;
-; 0.502 ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.126      ; 1.168      ;
-; 0.503 ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.126      ; 1.169      ;
-; 0.684 ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.126      ; 1.350      ;
-; 0.740 ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout    ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.126      ; 1.406      ;
-; 0.743 ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.126      ; 1.409      ;
-; 0.775 ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.126      ; 1.441      ;
-; 0.781 ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.126      ; 1.447      ;
-; 0.854 ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.126      ; 1.520      ;
-; 0.860 ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.126      ; 1.526      ;
-; 0.901 ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.126      ; 1.567      ;
-; 0.909 ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.126      ; 1.575      ;
-; 0.918 ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.126      ; 1.584      ;
-; 0.919 ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.126      ; 1.585      ;
+; 0.313 ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.197      ; 1.050      ;
+; 0.318 ; mea_salida:d2|st.SND                                 ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.197      ; 1.055      ;
+; 0.323 ; mea_salida:d2|st.LD                                  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.197      ; 1.060      ;
+; 0.350 ; reg_desplazamiento:d1|registro:\t:2:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.110      ; 1.000      ;
+; 0.361 ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.197      ; 1.098      ;
+; 0.362 ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout    ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.197      ; 1.099      ;
+; 0.368 ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.197      ; 1.105      ;
+; 0.386 ; reg_desplazamiento:d1|registro:\t:6:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.110      ; 1.036      ;
+; 0.391 ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.197      ; 1.128      ;
+; 0.394 ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.198      ; 1.132      ;
+; 0.397 ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.197      ; 1.134      ;
+; 0.413 ; reg_desplazamiento:d1|registro:\t:0:t0:bitx0|dout    ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.110      ; 1.063      ;
+; 0.419 ; reg_desplazamiento:d1|registro:\t:1:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.110      ; 1.069      ;
+; 0.423 ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.197      ; 1.160      ;
+; 0.426 ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.198      ; 1.164      ;
+; 0.432 ; reg_desplazamiento:d1|registro:\t:4:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.110      ; 1.082      ;
+; 0.434 ; mea_salida:d2|st.SND                                 ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.110      ; 1.084      ;
+; 0.437 ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.197      ; 1.174      ;
+; 0.437 ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; mea_salida:d2|px_st.SND_68  ; clk          ; snd         ; -0.500       ; 1.197      ; 1.174      ;
+; 0.447 ; reg_desplazamiento:d1|registro:\t:7:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.110      ; 1.097      ;
+; 0.448 ; reg_desplazamiento:d1|registro:\t:3:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.110      ; 1.098      ;
+; 0.451 ; reg_desplazamiento:d1|registro:\t:9:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.111      ; 1.102      ;
+; 0.456 ; reg_desplazamiento:d1|registro:\t:5:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.110      ; 1.106      ;
+; 0.458 ; reg_desplazamiento:d1|registro:\t:8:t1_10:bitx|dout  ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.110      ; 1.108      ;
+; 0.493 ; reg_desplazamiento:d1|registro:\t:10:t11:bitxul|dout ; mea_salida:d2|px_st.ILDE_83 ; clk          ; snd         ; -0.500       ; 1.111      ; 1.144      ;
 +-------+------------------------------------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -694,12 +694,12 @@ No synchronizer chains to report.
 +------------------+--------+-------+----------+---------+---------------------+
 ; Clock            ; Setup  ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------+--------+-------+----------+---------+---------------------+
-; Worst-case Slack ; -2.546 ; 0.184 ; N/A      ; N/A     ; -3.000              ;
-;  clk             ; -1.535 ; 0.184 ; N/A      ; N/A     ; -3.000              ;
-;  snd             ; -2.546 ; 0.352 ; N/A      ; N/A     ; -3.000              ;
-; Design-wide TNS  ; -9.888 ; 0.0   ; 0.0      ; 0.0     ; -25.275             ;
-;  clk             ; -5.608 ; 0.000 ; N/A      ; N/A     ; -22.275             ;
-;  snd             ; -4.280 ; 0.000 ; N/A      ; N/A     ; -3.000              ;
+; Worst-case Slack ; -1.744 ; 0.181 ; N/A      ; N/A     ; -3.000              ;
+;  clk             ; -1.643 ; 0.181 ; N/A      ; N/A     ; -3.000              ;
+;  snd             ; -1.744 ; 0.313 ; N/A      ; N/A     ; -3.000              ;
+; Design-wide TNS  ; -9.243 ; 0.0   ; 0.0      ; 0.0     ; -25.275             ;
+;  clk             ; -5.768 ; 0.000 ; N/A      ; N/A     ; -22.275             ;
+;  snd             ; -3.475 ; 0.000 ; N/A      ; N/A     ; -3.000              ;
 +------------------+--------+-------+----------+---------+---------------------+
 
 
@@ -709,6 +709,7 @@ No synchronizer chains to report.
 ; Pin           ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
 +---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
 ; serial_out    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; end_of_tram   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; ~ALTERA_DCLK~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; ~ALTERA_nCEO~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 +---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
@@ -724,7 +725,6 @@ No synchronizer chains to report.
 ; reset                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; data_in[9]              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; data_in[8]              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; snd                     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; data_in[7]              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; data_in[6]              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; data_in[5]              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
@@ -734,6 +734,7 @@ No synchronizer chains to report.
 ; data_in[1]              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; data_in[0]              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; serial_in               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; snd                     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_ASDO_DATA1~     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_FLASH_nCE_nCSO~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_DATA0~          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
@@ -745,7 +746,8 @@ No synchronizer chains to report.
 +---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 ; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
 +---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
-; serial_out    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-09 V                   ; 2.37 V              ; -0.00994 V          ; 0.186 V                              ; 0.028 V                              ; 4.98e-10 s                  ; 4.96e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.07e-09 V                  ; 2.37 V             ; -0.00994 V         ; 0.186 V                             ; 0.028 V                             ; 4.98e-10 s                 ; 4.96e-10 s                 ; Yes                       ; Yes                       ;
+; serial_out    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-09 V                   ; 2.38 V              ; -0.0144 V           ; 0.227 V                              ; 0.024 V                              ; 3.14e-10 s                  ; 3.39e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.07e-09 V                  ; 2.38 V             ; -0.0144 V          ; 0.227 V                             ; 0.024 V                             ; 3.14e-10 s                 ; 3.39e-10 s                 ; Yes                       ; Yes                       ;
+; end_of_tram   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-09 V                   ; 2.37 V              ; -0.00994 V          ; 0.186 V                              ; 0.028 V                              ; 4.98e-10 s                  ; 4.96e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.07e-09 V                  ; 2.37 V             ; -0.00994 V         ; 0.186 V                             ; 0.028 V                             ; 4.98e-10 s                 ; 4.96e-10 s                 ; Yes                       ; Yes                       ;
 ; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.67e-09 V                   ; 2.38 V              ; -0.0485 V           ; 0.167 V                              ; 0.096 V                              ; 2.95e-10 s                  ; 2.73e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 2.67e-09 V                  ; 2.38 V             ; -0.0485 V          ; 0.167 V                             ; 0.096 V                             ; 2.95e-10 s                 ; 2.73e-10 s                 ; Yes                       ; Yes                       ;
 ; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.18e-09 V                   ; 2.38 V              ; -0.00483 V          ; 0.152 V                              ; 0.012 V                              ; 4.81e-10 s                  ; 6.29e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.18e-09 V                  ; 2.38 V             ; -0.00483 V         ; 0.152 V                             ; 0.012 V                             ; 4.81e-10 s                 ; 6.29e-10 s                 ; Yes                       ; Yes                       ;
 +---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
@@ -756,7 +758,8 @@ No synchronizer chains to report.
 +---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 ; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
 +---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
-; serial_out    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.67e-07 V                   ; 2.35 V              ; -0.00942 V          ; 0.116 V                              ; 0.033 V                              ; 6.66e-10 s                  ; 6.27e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.67e-07 V                  ; 2.35 V             ; -0.00942 V         ; 0.116 V                             ; 0.033 V                             ; 6.66e-10 s                 ; 6.27e-10 s                 ; Yes                       ; Yes                       ;
+; serial_out    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.67e-07 V                   ; 2.36 V              ; -0.00552 V          ; 0.11 V                               ; 0.007 V                              ; 4.54e-10 s                  ; 4.35e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.67e-07 V                  ; 2.36 V             ; -0.00552 V         ; 0.11 V                              ; 0.007 V                             ; 4.54e-10 s                 ; 4.35e-10 s                 ; Yes                       ; Yes                       ;
+; end_of_tram   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.67e-07 V                   ; 2.35 V              ; -0.00942 V          ; 0.116 V                              ; 0.033 V                              ; 6.66e-10 s                  ; 6.27e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.67e-07 V                  ; 2.35 V             ; -0.00942 V         ; 0.116 V                             ; 0.033 V                             ; 6.66e-10 s                 ; 6.27e-10 s                 ; Yes                       ; Yes                       ;
 ; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.75e-07 V                   ; 2.35 V              ; -0.0109 V           ; 0.084 V                              ; 0.027 V                              ; 4.31e-10 s                  ; 3.61e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.75e-07 V                  ; 2.35 V             ; -0.0109 V          ; 0.084 V                             ; 0.027 V                             ; 4.31e-10 s                 ; 3.61e-10 s                 ; Yes                       ; Yes                       ;
 ; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.15e-07 V                   ; 2.35 V              ; -0.00712 V          ; 0.093 V                              ; 0.02 V                               ; 6.21e-10 s                  ; 7.9e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 6.15e-07 V                  ; 2.35 V             ; -0.00712 V         ; 0.093 V                             ; 0.02 V                              ; 6.21e-10 s                 ; 7.9e-10 s                  ; Yes                       ; Yes                       ;
 +---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
@@ -767,7 +770,8 @@ No synchronizer chains to report.
 +---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 ; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
 +---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
-; serial_out    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.74e-08 V                   ; 2.71 V              ; -0.0317 V           ; 0.148 V                              ; 0.064 V                              ; 4.51e-10 s                  ; 4.15e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.74e-08 V                  ; 2.71 V             ; -0.0317 V          ; 0.148 V                             ; 0.064 V                             ; 4.51e-10 s                 ; 4.15e-10 s                 ; No                        ; Yes                       ;
+; serial_out    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.74e-08 V                   ; 2.73 V              ; -0.0384 V           ; 0.169 V                              ; 0.089 V                              ; 2.7e-10 s                   ; 2.62e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 2.74e-08 V                  ; 2.73 V             ; -0.0384 V          ; 0.169 V                             ; 0.089 V                             ; 2.7e-10 s                  ; 2.62e-10 s                 ; Yes                       ; Yes                       ;
+; end_of_tram   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.74e-08 V                   ; 2.71 V              ; -0.0317 V           ; 0.148 V                              ; 0.064 V                              ; 4.51e-10 s                  ; 4.15e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.74e-08 V                  ; 2.71 V             ; -0.0317 V          ; 0.148 V                             ; 0.064 V                             ; 4.51e-10 s                 ; 4.15e-10 s                 ; No                        ; Yes                       ;
 ; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.22e-08 V                   ; 2.74 V              ; -0.06 V             ; 0.158 V                              ; 0.08 V                               ; 2.68e-10 s                  ; 2.19e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 2.22e-08 V                  ; 2.74 V             ; -0.06 V            ; 0.158 V                             ; 0.08 V                              ; 2.68e-10 s                 ; 2.19e-10 s                 ; Yes                       ; Yes                       ;
 ; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.54e-08 V                   ; 2.7 V               ; -0.00943 V          ; 0.276 V                              ; 0.035 V                              ; 3.19e-10 s                  ; 4.99e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.54e-08 V                  ; 2.7 V              ; -0.00943 V         ; 0.276 V                             ; 0.035 V                             ; 3.19e-10 s                 ; 4.99e-10 s                 ; No                        ; Yes                       ;
 +---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
@@ -818,8 +822,8 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 13    ; 13   ;
 ; Unconstrained Input Port Paths  ; 27    ; 27   ;
-; Unconstrained Output Ports      ; 1     ; 1    ;
-; Unconstrained Output Port Paths ; 1     ; 1    ;
+; Unconstrained Output Ports      ; 2     ; 2    ;
+; Unconstrained Output Port Paths ; 12    ; 12   ;
 +---------------------------------+-------+------+
 
 
@@ -859,6 +863,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +-------------+---------------------------------------------------------------------------------------+
 ; Output Port ; Comment                                                                               ;
 +-------------+---------------------------------------------------------------------------------------+
+; end_of_tram ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; serial_out  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +-------------+---------------------------------------------------------------------------------------+
 
@@ -889,6 +894,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +-------------+---------------------------------------------------------------------------------------+
 ; Output Port ; Comment                                                                               ;
 +-------------+---------------------------------------------------------------------------------------+
+; end_of_tram ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; serial_out  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +-------------+---------------------------------------------------------------------------------------+
 
@@ -899,7 +905,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Sat Nov 16 10:13:38 2019
+    Info: Processing started: Thu Nov 21 18:34:30 2019
 Info: Command: quartus_sta mef_registro -c mef_registro
 Info: qsta_default_script.tcl version: #2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -918,16 +924,16 @@ Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -2.546
+Info (332146): Worst-case setup slack is -1.744
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.546              -4.280 snd 
-    Info (332119):    -1.535              -5.608 clk 
-Info (332146): Worst-case hold slack is 0.404
+    Info (332119):    -1.744              -3.475 snd 
+    Info (332119):    -1.643              -5.768 clk 
+Info (332146): Worst-case hold slack is 0.401
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.404               0.000 clk 
-    Info (332119):     1.004               0.000 snd 
+    Info (332119):     0.401               0.000 clk 
+    Info (332119):     0.985               0.000 snd 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
@@ -941,16 +947,16 @@ Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -2.383
+Info (332146): Worst-case setup slack is -1.615
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.383              -4.006 snd 
-    Info (332119):    -1.271              -3.809 clk 
-Info (332146): Worst-case hold slack is 0.356
+    Info (332119):    -1.615              -3.224 snd 
+    Info (332119):    -1.355              -3.802 clk 
+Info (332146): Worst-case hold slack is 0.353
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.356               0.000 clk 
-    Info (332119):     0.976               0.000 snd 
+    Info (332119):     0.353               0.000 clk 
+    Info (332119):     0.997               0.000 snd 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
@@ -962,29 +968,29 @@ Info: Analyzing Fast 1200mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -0.862
+Info (332146): Worst-case setup slack is -0.926
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.862              -1.571 clk 
-    Info (332119):    -0.713              -0.946 snd 
-Info (332146): Worst-case hold slack is 0.184
+    Info (332119):    -0.926              -1.706 clk 
+    Info (332119):    -0.255              -0.473 snd 
+Info (332146): Worst-case hold slack is 0.181
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.184               0.000 clk 
-    Info (332119):     0.352               0.000 snd 
+    Info (332119):     0.181               0.000 clk 
+    Info (332119):     0.313               0.000 snd 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000             -18.854 clk 
+    Info (332119):    -3.000             -18.859 clk 
     Info (332119):    -3.000              -3.000 snd 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 888 megabytes
-    Info: Processing ended: Sat Nov 16 10:13:40 2019
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 887 megabytes
+    Info: Processing ended: Thu Nov 21 18:34:33 2019
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 
