@@ -1,0 +1,33 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "salida_serie",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "select_msj[0]",
+					"strict" : false
+				},
+				{
+					"name" : "select_msj[1]",
+					"strict" : false
+				},
+				{
+					"name" : "enviar",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

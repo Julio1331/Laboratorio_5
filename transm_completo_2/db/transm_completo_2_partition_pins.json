@@ -1,0 +1,45 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "aux_out_clk_int",
+					"strict" : false
+				},
+				{
+					"name" : "salida_serie",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "clk_50Mhz",
+					"strict" : false
+				},
+				{
+					"name" : "select_vel[0]",
+					"strict" : false
+				},
+				{
+					"name" : "select_vel[1]",
+					"strict" : false
+				},
+				{
+					"name" : "select_msj[0]",
+					"strict" : false
+				},
+				{
+					"name" : "select_msj[1]",
+					"strict" : false
+				},
+				{
+					"name" : "enviar",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

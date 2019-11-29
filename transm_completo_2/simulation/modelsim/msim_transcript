@@ -1,0 +1,595 @@
+# do transm_completo_2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying /home/julio/intelFPGA_lite/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/sincX3.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:27:43 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/sincX3.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sincX3
+# -- Compiling architecture func of sincX3
+# End time: 18:27:43 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/sincronizador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:27:43 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/sincronizador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sincronizador
+# -- Compiling architecture func of sincronizador
+# End time: 18:27:43 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/selFrecuencias.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:27:43 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/selFrecuencias.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity selfrecuencias
+# -- Compiling architecture func of selfrecuencias
+# End time: 18:27:43 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/ffd.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:27:43 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/ffd.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ffd
+# -- Compiling architecture func of ffd
+# End time: 18:27:43 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/divisorx2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:27:43 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/divisorx2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity divisorx2
+# -- Compiling architecture func of divisorx2
+# End time: 18:27:43 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/DivFrecuencias.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:27:43 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/DivFrecuencias.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity divfrecuencias
+# -- Compiling architecture func of divfrecuencias
+# End time: 18:27:43 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/data_11/partity.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:27:43 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/data_11/partity.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package my_pack
+# -- Compiling package body my_pack
+# -- Loading package my_pack
+# End time: 18:27:43 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/trama_y_reg.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:27:43 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/trama_y_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity trama_y_reg
+# -- Compiling architecture bh of trama_y_reg
+# End time: 18:27:43 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/ROM.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:27:43 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/ROM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity rom
+# -- Compiling architecture synth of rom
+# ** Warning: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/ROM.vhd(46): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+# End time: 18:27:43 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/registro.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:27:43 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/registro.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity registro
+# -- Compiling architecture bh of registro
+# End time: 18:27:43 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/reg_desplazamiento.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:27:43 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/reg_desplazamiento.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity reg_desplazamiento
+# -- Compiling architecture func of reg_desplazamiento
+# End time: 18:27:43 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mux_entradas.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:27:43 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mux_entradas.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_entradas
+# -- Compiling architecture bh of mux_entradas
+# End time: 18:27:43 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/msj_y_mem.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:27:43 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/msj_y_mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity msj_y_mem
+# -- Compiling architecture bh of msj_y_mem
+# End time: 18:27:43 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mef_registro.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:27:43 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mef_registro.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mef_registro
+# -- Compiling architecture bh of mef_registro
+# End time: 18:27:43 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_salida.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:27:43 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_salida.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mea_salida
+# -- Compiling architecture mea of mea_salida
+# End time: 18:27:43 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_mem.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:27:43 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mea_mem
+# -- Compiling architecture bh of mea_mem
+# End time: 18:27:43 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/generador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:27:43 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/generador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity generador
+# -- Compiling architecture func of generador
+# End time: 18:27:43 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/msj_y_salida_apart/msj_y_salida_apart.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:27:43 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/msj_y_salida_apart/msj_y_salida_apart.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity msj_y_salida_apart
+# -- Compiling architecture bh of msj_y_salida_apart
+# End time: 18:27:43 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/transm_completo_2/transm_completo_2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:27:43 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/transm_completo_2/transm_completo_2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity transm_completo_2
+# -- Compiling architecture bh of transm_completo_2
+# End time: 18:27:43 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/data_11.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:27:43 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/data_11.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package my_pack
+# -- Compiling entity data_11
+# -- Compiling architecture bh of data_11
+# End time: 18:27:44 on Nov 27,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/transm_completo_2/../../../../Escritorio/FPGA_Proyectos/Laboratorio_5/transm_completo_2/sim/TBtransm_completo_2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:27:44 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/transm_completo_2/../../../../Escritorio/FPGA_Proyectos/Laboratorio_5/transm_completo_2/sim/TBtransm_completo_2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity TBtransm_completo_2
+# -- Compiling architecture bh of TBtransm_completo_2
+# End time: 18:27:44 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  TBtransm_completo_2
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" TBtransm_completo_2 
+# Start time: 18:27:44 on Nov 27,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.tbtransm_completo_2(bh)
+# ** Warning: (vsim-3473) Component instance "dut : transmisor" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tbtransm_completo_2 File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/transm_completo_2/../../../../Escritorio/FPGA_Proyectos/Laboratorio_5/transm_completo_2/sim/TBtransm_completo_2.vhd
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# 
+# stdin: <EOF>
+do transm_completo_2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/sincX3.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:30:03 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/sincX3.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sincX3
+# -- Compiling architecture func of sincX3
+# End time: 18:30:03 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/sincronizador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:30:03 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/sincronizador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sincronizador
+# -- Compiling architecture func of sincronizador
+# End time: 18:30:04 on Nov 27,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/selFrecuencias.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:30:04 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/selFrecuencias.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity selfrecuencias
+# -- Compiling architecture func of selfrecuencias
+# End time: 18:30:04 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/ffd.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:30:04 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/ffd.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ffd
+# -- Compiling architecture func of ffd
+# End time: 18:30:04 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/divisorx2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:30:04 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/divisorx2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity divisorx2
+# -- Compiling architecture func of divisorx2
+# End time: 18:30:04 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/DivFrecuencias.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:30:04 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/DivFrecuencias.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity divfrecuencias
+# -- Compiling architecture func of divfrecuencias
+# End time: 18:30:04 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/data_11/partity.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:30:04 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/data_11/partity.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package my_pack
+# -- Compiling package body my_pack
+# -- Loading package my_pack
+# End time: 18:30:04 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/trama_y_reg.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:30:04 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/trama_y_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity trama_y_reg
+# -- Compiling architecture bh of trama_y_reg
+# End time: 18:30:04 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/ROM.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:30:04 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/ROM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity rom
+# -- Compiling architecture synth of rom
+# ** Warning: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/ROM.vhd(46): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+# End time: 18:30:04 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/registro.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:30:04 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/registro.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity registro
+# -- Compiling architecture bh of registro
+# End time: 18:30:04 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/reg_desplazamiento.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:30:04 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/reg_desplazamiento.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity reg_desplazamiento
+# -- Compiling architecture func of reg_desplazamiento
+# End time: 18:30:04 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mux_entradas.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:30:04 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mux_entradas.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_entradas
+# -- Compiling architecture bh of mux_entradas
+# End time: 18:30:04 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/msj_y_mem.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:30:04 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/msj_y_mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity msj_y_mem
+# -- Compiling architecture bh of msj_y_mem
+# End time: 18:30:04 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mef_registro.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:30:04 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mef_registro.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mef_registro
+# -- Compiling architecture bh of mef_registro
+# End time: 18:30:04 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_salida.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:30:04 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_salida.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mea_salida
+# -- Compiling architecture mea of mea_salida
+# End time: 18:30:04 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_mem.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:30:04 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mea_mem
+# -- Compiling architecture bh of mea_mem
+# End time: 18:30:04 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/generador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:30:04 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/generador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity generador
+# -- Compiling architecture func of generador
+# End time: 18:30:04 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/msj_y_salida_apart/msj_y_salida_apart.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:30:04 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/msj_y_salida_apart/msj_y_salida_apart.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity msj_y_salida_apart
+# -- Compiling architecture bh of msj_y_salida_apart
+# End time: 18:30:04 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/transm_completo_2/transm_completo_2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:30:04 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/transm_completo_2/transm_completo_2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity transm_completo_2
+# -- Compiling architecture bh of transm_completo_2
+# End time: 18:30:04 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/data_11.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:30:04 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/data_11.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package my_pack
+# -- Compiling entity data_11
+# -- Compiling architecture bh of data_11
+# End time: 18:30:04 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/transm_completo_2/../../../../Escritorio/FPGA_Proyectos/Laboratorio_5/transm_completo_2/sim/TBtransm_completo_2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:30:04 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/transm_completo_2/../../../../Escritorio/FPGA_Proyectos/Laboratorio_5/transm_completo_2/sim/TBtransm_completo_2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity TBtransm_completo_2
+# -- Compiling architecture bh of TBtransm_completo_2
+# End time: 18:30:04 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  TBtransm_completo_2
+# End time: 18:30:05 on Nov 27,2019, Elapsed time: 0:02:21
+# Errors: 0, Warnings: 2
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" TBtransm_completo_2 
+# Start time: 18:30:05 on Nov 27,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.tbtransm_completo_2(bh)
+# ** Warning: (vsim-3473) Component instance "dut : transmisor" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tbtransm_completo_2 File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/transm_completo_2/../../../../Escritorio/FPGA_Proyectos/Laboratorio_5/transm_completo_2/sim/TBtransm_completo_2.vhd
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# End time: 18:30:39 on Nov 27,2019, Elapsed time: 0:00:34
+# Errors: 0, Warnings: 1

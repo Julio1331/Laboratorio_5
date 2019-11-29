@@ -1,0 +1,302 @@
+# do msj_y_mem_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying /home/julio/intelFPGA_lite/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/msj_y_mem.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:10:50 on Nov 25,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/msj_y_mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity msj_y_mem
+# -- Compiling architecture bh of msj_y_mem
+# End time: 19:10:50 on Nov 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/ROM.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:10:50 on Nov 25,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/ROM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity rom
+# -- Compiling architecture synth of rom
+# ** Warning: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/ROM.vhd(46): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+# End time: 19:10:50 on Nov 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mux_entradas.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:10:50 on Nov 25,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mux_entradas.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_entradas
+# -- Compiling architecture bh of mux_entradas
+# End time: 19:10:50 on Nov 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_mem.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:10:50 on Nov 25,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mea_mem
+# -- Compiling architecture bh of mea_mem
+# End time: 19:10:50 on Nov 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/msj_y_mem/../../../../Escritorio/FPGA_Proyectos/Laboratorio_5/test_bench/TBmsj_y_mem.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:10:50 on Nov 25,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/msj_y_mem/../../../../Escritorio/FPGA_Proyectos/Laboratorio_5/test_bench/TBmsj_y_mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity TBmsj_y_mem
+# -- Compiling architecture bh of TBmsj_y_mem
+# End time: 19:10:50 on Nov 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  TBmsj_y_mem
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" TBmsj_y_mem 
+# Start time: 19:10:50 on Nov 25,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tbmsj_y_mem(bh)
+# Loading work.msj_y_mem(bh)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.mea_mem(bh)
+# Loading work.rom(fast)
+# Loading work.mux_entradas(bh)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 11 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 13 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 17 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 21 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 23 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 27 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 29 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 31 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 33 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 35 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 37 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 39 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 41 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 43 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 45 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 47 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 49 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 51 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 53 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 55 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 57 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 59 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 61 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 63 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 65 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 67 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 69 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 71 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 73 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 75 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 77 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 79 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 81 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 83 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 85 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 87 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 89 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 91 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 93 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 95 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 97 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 99 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 101 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 103 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 105 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 107 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 109 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 111 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 113 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 115 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 117 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 119 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 121 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 123 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 125 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 127 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 129 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 131 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 133 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 135 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 137 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 139 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 141 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 143 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 145 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 147 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 149 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 151 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 153 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 155 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 157 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 159 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 161 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 163 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 165 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 167 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 169 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 171 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 173 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 175 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 177 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 179 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 181 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 183 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 185 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 187 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 189 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 191 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 193 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 195 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 197 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 199 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 201 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 203 ms  Iteration: 1  Instance: /tbmsj_y_mem/dut/d2
+# 
+# stdin: <EOF>
+# End time: 20:36:32 on Nov 25,2019, Elapsed time: 1:25:42
+# Errors: 0, Warnings: 102

@@ -2,7 +2,7 @@
 async_in[0] => sincX3:entradas.async_in[0]
 async_in[1] => sincX3:entradas.async_in[1]
 reset_d => sincX3:entradas.reset
-salida <= selFrecuencias:seleccionador.salida
+salida << selFrecuencias:seleccionador.salida
 clk_50Mhz => sincX3:entradas.clk_in
 clk_50Mhz => divfrecuencias:divisor.clk50mhz
 

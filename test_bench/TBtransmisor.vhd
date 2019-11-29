@@ -37,18 +37,18 @@ begin
 										);
 	select_gener: process
 	begin
-		tbselect_baud <= "00";
-		tbselect_msj <= "00";
-		tbenviar_msj <= '0';
-		wait for 10 ms;
-		tbenviar_msj <= '1';
-		wait for 20 ms;
-		
---		tbselect_baud <= cont (4 downto 3);
---		tbselect_msj <= cont (2 downto 1);
---		tbenviar_msj <= cont(0);
+--		tbselect_baud <= "00";
+--		tbselect_msj <= "00";
+--		tbenviar_msj <= '0';
 --		wait for 10 ms;
---		cont <= cont + '1';
+--		tbenviar_msj <= '1';
+--		wait for 20 ms;
+		
+		tbselect_baud <= cont (4 downto 3);
+		tbselect_msj <= cont (2 downto 1);
+		tbenviar_msj <= cont(0);
+		wait for 500 ms;
+		cont <= cont + '1';
 	end process select_gener;
 	
 --	pulsos_envio: process
@@ -67,9 +67,9 @@ begin
 	reset_genr: process 
 	begin
 		tbreset <= '0';
-		wait for 20 ns;
-		tbreset <= '1';
 		wait for 20 ms;
+		tbreset <= '1';
+		wait for 20000 ms;
 	end process reset_genr;
 end architecture;
 	

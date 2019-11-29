@@ -1,0 +1,16 @@
+Fitter Status : Successful - Mon Nov 25 20:34:42 2019
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Revision Name : msj_y_salida_apart
+Top-level Entity Name : msj_y_salida_apart
+Family : Cyclone IV E
+Device : EP4CE6E22C6
+Timing Models : Final
+Total logic elements : 53 / 6,272 ( < 1 % )
+    Total combinational functions : 50 / 6,272 ( < 1 % )
+    Dedicated logic registers : 20 / 6,272 ( < 1 % )
+Total registers : 20
+Total pins : 6 / 92 ( 7 % )
+Total virtual pins : 0
+Total memory bits : 1,792 / 276,480 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

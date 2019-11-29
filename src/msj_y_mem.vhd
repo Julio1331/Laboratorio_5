@@ -1,3 +1,7 @@
+--este dispositivo elige el msj a transmitir lo direcciona en la memoria y lo pone
+--a la salida, tambien se encarga de ir direccionando segun corresponda el dato 
+--que se debe transmitir segun los valores que tomen las entradas de fin de trama 
+--y fin de transmision 
 library ieee;
 use ieee.std_logic_1164.all;
 

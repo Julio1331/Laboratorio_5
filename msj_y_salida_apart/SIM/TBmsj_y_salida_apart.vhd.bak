@@ -1,0 +1,33 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity TBmsj_y_salida_apart is
+end TBmsj_y_salida_apart;
+
+architecture bh of TBmsj_y_salida_apart is
+	
+	signal tbenviar: std_logic;
+	signal tbselect_msj: std_logic_vector(1 downto 0);
+	signal tbclk: std_logic;
+	signal tbreset: std_logic;
+	signal tbsalida_serie: std_logic;
+	
+	component msj_y_salida_apart 
+		port(	
+				enviar: in std_logic;
+				select_msj: in std_logic_vector(1 downto 0);
+				clk: in std_logic;
+				reset: in std_logic;
+				salida_serie: out std_logic	
+				);
+	end component;
+begin
+	
+		dut: msj_y_salida_apart port map( 
+													enviar => tbenviar,
+													select_msj => tbselect_msj,
+													clk => tbclk,
+													reset => tbreset,
+													salida_serie => tbsalida_serie
+													);
+				

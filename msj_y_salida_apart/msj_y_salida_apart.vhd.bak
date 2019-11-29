@@ -1,0 +1,43 @@
+--este despositivo comprende la seleccion del mensaje, armado de la trama 
+-- y transmision del mismo sin el control del tiempo  y ni selector de velocidad
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity msj_y_salida_apart is
+	port(	
+			enviar: in std_logic;
+			select_msj: in std_logic_vector(1 downto 0);
+			clk: in std_logic;
+			reset: in std_logic;
+			salida_serie: out std_logic	
+			);
+			
+end msj_y_salida_apart;
+
+architecture bh of msj_y_salida_apart is 
+	 
+	component msj_y_mem
+		port( 
+				enviar: in std_logic;
+				select_msj: in std_logic_vector(1 downto 0);
+				end_transmission: in std_logic;
+				end_trama: in std_logic;
+				msj_out: out std_logic_vector(7 downto 0);
+				send_interno: out std_logic;
+				clk: in std_logic;
+				reset_in: in std_logic
+				);
+	end component;
+	
+	component trama_y_reg 
+		port(
+			send: in std_logic;
+			rst: in std_logic;
+			datos: in std_logic_vector(7 downto 0);
+			sal_serie: out std_logic;
+			end_of_transmission: out std_logic;
+			end_of_trama: out std_logic;
+			clk: in std_logic
+			);
+	end component;
+	

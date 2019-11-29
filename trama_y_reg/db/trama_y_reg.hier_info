@@ -10,7 +10,7 @@ datos[5] => data_11:d1.datos_in[5]
 datos[6] => data_11:d1.datos_in[6]
 datos[7] => data_11:d1.datos_in[7]
 sal_serie <= mef_registro:d2.serial_out
-end_of_transmition <= data_11:d1.eot
+end_of_transmission <= data_11:d1.eot
 end_of_trama <= mef_registro:d2.end_of_tram
 clk => mef_registro:d2.clk
 

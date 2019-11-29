@@ -33,7 +33,7 @@ architecture bh of transmisor is
 					rst: in std_logic;
 					datos: in std_logic_vector(7 downto 0);
 					sal_serie: out std_logic;
-					end_of_transmition: out std_logic;
+					end_of_transmission: out std_logic;
 					end_of_trama: out std_logic;
 					clk: in std_logic
 					);
@@ -73,7 +73,7 @@ begin
 										rst => reset,
 										datos => aux_msj,
 										sal_serie => salida_serie,
-										end_of_transmition => aux_end_transmission,
+										end_of_transmission => aux_end_transmission,
 										end_of_trama => aux_end_trama,
 										clk => aux_clk
 										);

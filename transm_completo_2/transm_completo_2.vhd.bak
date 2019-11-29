@@ -1,0 +1,33 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity transm_completo_2 is
+	port(
+			select_msj: in std_logic_vector(1 downto 0);
+			select_vel: in std_logic_vector(1 downto 0);
+			enviar: in std_logic;
+			reset: in std_logic;
+			clk_50Mhz: in std_logic
+			);
+end transm_completo_2;
+
+entity generador is 
+port (
+	--entradas de seleccion
+	async_in 	: in std_logic_vector (1 downto 0); --!Vector de 3 bits de entradas asincronicas
+	reset_d		: in std_logic; --!Entrada de reset activo en bajo 
+	
+	--salida de frecuencia
+	salida 		: out std_logic; --!Salida de frecuencia
+	
+	--entrada de 50MHZ
+	clk_50Mhz 	: in std_logic --!Entrada de reloj de 50Mhz.
+);
+entity msj_y_salida_apart is
+	port(	
+			enviar: in std_logic;
+			select_msj: in std_logic_vector(1 downto 0);
+			clk: in std_logic;
+			reset: in std_logic;
+			salida_serie: out std_logic	
+			);

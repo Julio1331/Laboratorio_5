@@ -1,5 +1,5 @@
 Analysis & Synthesis report for trama_y_reg
-Fri Nov 22 20:27:13 2019
+Mon Nov 25 15:47:26 2019
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -48,7 +48,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Nov 22 20:27:13 2019       ;
+; Analysis & Synthesis Status        ; Successful - Mon Nov 25 15:47:26 2019       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; trama_y_reg                                 ;
 ; Top-level Entity Name              ; trama_y_reg                                 ;
@@ -353,7 +353,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -363,13 +363,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Fri Nov 22 20:26:53 2019
+    Info: Processing started: Mon Nov 25 15:47:13 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off trama_y_reg -c trama_y_reg
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/trama_y_reg.vhd
-    Info (12022): Found design unit 1: trama_y_reg-bh File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/trama_y_reg.vhd Line: 16
-    Info (12023): Found entity 1: trama_y_reg File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/trama_y_reg.vhd Line: 4
+    Info (12022): Found design unit 1: trama_y_reg-bh File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/trama_y_reg.vhd Line: 18
+    Info (12023): Found entity 1: trama_y_reg File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/trama_y_reg.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/registro.vhd
     Info (12022): Found design unit 1: registro-bh File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/registro.vhd Line: 18
     Info (12023): Found entity 1: registro File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/registro.vhd Line: 7
@@ -388,9 +388,12 @@ Info (12021): Found 2 design units, including 1 entities, in source file /home/j
 Info (12021): Found 2 design units, including 1 entities, in source file /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/data_11.vhd
     Info (12022): Found design unit 1: data_11-bh File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/data_11.vhd Line: 15
     Info (12023): Found entity 1: data_11 File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/data_11.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/test_bench/TBtrama_y_reg.vhd
+    Info (12022): Found design unit 1: TBtrama_y_reg-bh File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/test_bench/TBtrama_y_reg.vhd Line: 8
+    Info (12023): Found entity 1: TBtrama_y_reg File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/test_bench/TBtrama_y_reg.vhd Line: 5
 Info (12127): Elaborating entity "trama_y_reg" for the top level hierarchy
-Info (12128): Elaborating entity "data_11" for hierarchy "data_11:d1" File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/trama_y_reg.vhd Line: 43
-Info (12128): Elaborating entity "mef_registro" for hierarchy "mef_registro:d2" File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/trama_y_reg.vhd Line: 50
+Info (12128): Elaborating entity "data_11" for hierarchy "data_11:d1" File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/trama_y_reg.vhd Line: 45
+Info (12128): Elaborating entity "mef_registro" for hierarchy "mef_registro:d2" File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/trama_y_reg.vhd Line: 52
 Info (12128): Elaborating entity "reg_desplazamiento" for hierarchy "mef_registro:d2|reg_desplazamiento:d1" File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mef_registro.vhd Line: 50
 Info (12128): Elaborating entity "registro" for hierarchy "mef_registro:d2|reg_desplazamiento:d1|registro:\t:10:t11:bitxul" File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/reg_desplazamiento.vhd Line: 57
 Info (12128): Elaborating entity "mea_salida" for hierarchy "mef_registro:d2|mea_salida:d2" File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mef_registro.vhd Line: 59
@@ -408,9 +411,9 @@ Info (21057): Implemented 43 device resources after synthesis - the final resour
     Info (21059): Implemented 3 output pins
     Info (21061): Implemented 29 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 982 megabytes
-    Info: Processing ended: Fri Nov 22 20:27:13 2019
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:40
+    Info: Peak virtual memory: 981 megabytes
+    Info: Processing ended: Mon Nov 25 15:47:26 2019
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:28
 
 

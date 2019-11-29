@@ -22,9 +22,9 @@ VRb<8KUbQMRL4S:WjEY_BB3
 !s100 8bRkY0;]QV6]TbQ1?;<aF2
 Z7 OV;C;10.5b;63
 31
-Z8 !s110 1574635433
+Z8 !s110 1574711113
 !i10b 1
-Z9 !s108 1574635433.000000
+Z9 !s108 1574711113.000000
 Z10 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/data_11.vhd|
 Z11 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/data_11.vhd|
 !i113 1
@@ -65,9 +65,9 @@ VUojl[cCX]61JL49l>f3SE1
 !s100 4AT[[_U`f6h37cC7Zaf643
 R7
 31
-Z20 !s110 1574635432
+Z20 !s110 1574711112
 !i10b 1
-Z21 !s108 1574635432.000000
+Z21 !s108 1574711112.000000
 Z22 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/DivFrecuencias.vhd|
 Z23 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/DivFrecuencias.vhd|
 !i113 1
@@ -261,7 +261,7 @@ R43
 R12
 R13
 Emea_salida
-Z44 w1574464385
+Z44 w1574709104
 R15
 R16
 R17
@@ -293,8 +293,8 @@ R4
 DEx4 work 10 mea_salida 0 22 Eaejleli^R6dkJ69niH4m3
 l26
 L19
-VEDc;Z8iV51`9l7Xe0E;4W0
-!s100 <_^W=^YV`C9<jhbU:AC7Q2
+V[NC`h5oJo?^40<@e44=Go2
+!s100 FR`l532gD@m:9RoG6W]YP0
 R7
 31
 R20
@@ -402,9 +402,9 @@ VfF;i1=ic`XbS=hVR8HMo80
 !s100 9fDKn37B73f`=<`i_Bb^;3
 R7
 31
-R20
+R8
 !i10b 1
-R21
+R9
 Z62 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mux_entradas.vhd|
 Z63 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mux_entradas.vhd|
 !i113 1
@@ -420,9 +420,9 @@ VGXZXX[RT4:]i_JFoIkPb[0
 !s100 Q;aK_CgGH[E0LNUXmJQ]i2
 R7
 31
-R20
+R8
 !i10b 1
-R21
+R9
 R62
 R63
 !i113 1
@@ -574,7 +574,7 @@ R7
 31
 R8
 !i10b 1
-R21
+R9
 Z82 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/ROM.vhd|
 Z83 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/ROM.vhd|
 !i113 1
@@ -593,7 +593,7 @@ R7
 31
 R8
 !i10b 1
-R21
+R9
 R82
 R83
 !i113 1
@@ -731,7 +731,7 @@ R95
 R12
 R13
 Etbtransmisor
-Z96 w1574635426
+Z96 w1574711109
 R16
 R17
 R3
@@ -761,8 +761,8 @@ R4
 DEx4 work 12 tbtransmisor 0 22 =JH_z;i@5NSdHZz1UHVi91
 l29
 L8
-V4XokJ5S1gY=JU<TjS1@bC0
-!s100 RzZ4R9`48?zCmL<HQzhOk2
+V=^IX5V`CH]X245zi9lzk<2
+!s100 dn_M=@X<f4be4gj9=S4am0
 R7
 31
 R8
@@ -774,7 +774,7 @@ R100
 R12
 R13
 Etrama_y_reg
-Z101 w1574465337
+Z101 w1574706951
 R3
 R4
 R0
@@ -782,11 +782,11 @@ Z102 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/trama_y_reg.vhd
 Z103 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/trama_y_reg.vhd
 l0
 L6
-VFhhODHdLEO_l2[N8^Q5k:0
-!s100 ZgH6P^:LW95EVLDS390Jo0
+VlfYC8V`^V?Ghn`=[RE7IT0
+!s100 z9G=Rz5]f1LHC=I[^lO5W2
 R7
 31
-R20
+R8
 !i10b 1
 R21
 Z104 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/trama_y_reg.vhd|
@@ -797,14 +797,14 @@ R13
 Abh
 R3
 R4
-DEx4 work 11 trama_y_reg 0 22 FhhODHdLEO_l2[N8^Q5k:0
+DEx4 work 11 trama_y_reg 0 22 lfYC8V`^V?Ghn`=[RE7IT0
 l44
 L18
-Vd`AhmK;zn^@7cZ>A4c<BA3
-!s100 kMZ31F2mbiTI15WUR;nNY3
+Vb<9L9Q@n8j<P1dYn1SgK92
+!s100 =oL_?T4cPMlmQBbUz;Glk3
 R7
 31
-R20
+R8
 !i10b 1
 R21
 R104
@@ -813,7 +813,7 @@ R105
 R12
 R13
 Etransmisor
-Z106 w1574630829
+Z106 w1574710508
 R3
 R4
 R0
@@ -839,8 +839,8 @@ R4
 DEx4 work 10 transmisor 0 22 RPD[3O55I>>83?ZF1gFm80
 l60
 L15
-V^TgS74jM]ZK2<BEJ`;RBS2
-!s100 ?nXKnEom9Og0AkDnibBV<0
+V^7mma]7A;lQb`ci=PA1@k3
+!s100 ITkELFoI:^[_<^@39BU>90
 R7
 31
 R8

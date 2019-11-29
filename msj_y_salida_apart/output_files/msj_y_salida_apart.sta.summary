@@ -1,0 +1,77 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -3.930
+TNS   : -41.754
+
+Type  : Slow 1200mV 85C Model Setup 'msj_y_mem:d1|mea_mem:d1|stac.asign'
+Slack : -2.801
+TNS   : -19.592
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.222
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'msj_y_mem:d1|mea_mem:d1|stac.asign'
+Slack : 1.138
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -25.174
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'msj_y_mem:d1|mea_mem:d1|stac.asign'
+Slack : 0.412
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -3.469
+TNS   : -35.895
+
+Type  : Slow 1200mV 0C Model Setup 'msj_y_mem:d1|mea_mem:d1|stac.asign'
+Slack : -2.436
+TNS   : -16.757
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.180
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'msj_y_mem:d1|mea_mem:d1|stac.asign'
+Slack : 1.029
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -25.174
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'msj_y_mem:d1|mea_mem:d1|stac.asign'
+Slack : 0.480
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -1.582
+TNS   : -14.828
+
+Type  : Fast 1200mV 0C Model Setup 'msj_y_mem:d1|mea_mem:d1|stac.asign'
+Slack : -1.141
+TNS   : -7.597
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.028
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'msj_y_mem:d1|mea_mem:d1|stac.asign'
+Slack : 0.605
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -25.396
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'msj_y_mem:d1|mea_mem:d1|stac.asign'
+Slack : 0.376
+TNS   : 0.000
+
+------------------------------------------------------------

@@ -211,5 +211,5 @@ GND                          : 140       : gnd    :                   :         
 datos[1]                     : 141       : input  : 2.5 V             :         : 8         : N              
 datos[0]                     : 142       : input  : 2.5 V             :         : 8         : N              
 datos[2]                     : 143       : input  : 2.5 V             :         : 8         : N              
-end_of_transmition           : 144       : output : 2.5 V             :         : 8         : N              
+end_of_transmission          : 144       : output : 2.5 V             :         : 8         : N              
 GND                          : EPAD      :        :                   :         :           :                

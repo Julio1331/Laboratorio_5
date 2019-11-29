@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 d/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/mea_salida/simulation/modelsim
 Emea_salida
-Z1 w1573572695
+Z1 w1574709104
 Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 Z4 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
@@ -24,9 +24,9 @@ VEaejleli^R6dkJ69niH4m3
 !s100 PFCmBDDZ8=5`z;fTa;]bg0
 Z9 OV;C;10.5b;63
 31
-Z10 !s110 1573583768
+Z10 !s110 1574709110
 !i10b 1
-Z11 !s108 1573583768.000000
+Z11 !s108 1574709110.000000
 Z12 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_salida.vhd|
 Z13 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_salida.vhd|
 !i113 1
@@ -41,8 +41,8 @@ R6
 DEx4 work 10 mea_salida 0 22 Eaejleli^R6dkJ69niH4m3
 l26
 L19
-V7K?1<MnghCkb;FiS7OGI@0
-!s100 G4nHUH[8B__H[FT6_6HPo0
+V[NC`h5oJo?^40<@e44=Go2
+!s100 FR`l532gD@m:9RoG6W]YP0
 R9
 31
 R10
@@ -54,7 +54,7 @@ R13
 R14
 R15
 Etbmea_salida
-Z16 w1573583749
+Z16 w1573681915
 R5
 R6
 R0

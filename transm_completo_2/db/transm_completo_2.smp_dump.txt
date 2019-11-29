@@ -1,0 +1,14 @@
+
+State Machine - |transm_completo_2|msj_y_salida_apart:d2|trama_y_reg:d2|mef_registro:d2|mea_salida:d2|st
+Name st.SND st.LD st.ILDE 
+st.ILDE 0 0 0 
+st.LD 0 1 1 
+st.SND 1 0 1 
+
+State Machine - |transm_completo_2|msj_y_salida_apart:d2|msj_y_mem:d1|mea_mem:d1|stac
+Name stac.incremento stac.espera stac.send stac.asign stac.ini 
+stac.ini 0 0 0 0 0 
+stac.asign 0 0 0 1 1 
+stac.send 0 0 1 0 1 
+stac.espera 0 1 0 0 1 
+stac.incremento 1 0 0 0 1 

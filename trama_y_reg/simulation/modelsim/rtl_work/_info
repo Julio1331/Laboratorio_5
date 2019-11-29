@@ -1,0 +1,353 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/trama_y_reg/simulation/modelsim
+Edata_11
+Z1 w1574463393
+Z2 DPx4 work 7 my_pack 0 22 ;EfkHPXQGVJ8ofoc]OC``1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/data_11.vhd
+Z6 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/data_11.vhd
+l0
+L6
+VRb<8KUbQMRL4S:WjEY_BB3
+!s100 8bRkY0;]QV6]TbQ1?;<aF2
+Z7 OV;C;10.5b;63
+31
+Z8 !s110 1574709436
+!i10b 1
+Z9 !s108 1574709436.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/data_11.vhd|
+Z11 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/data_11.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Abh
+R2
+R3
+R4
+DEx4 work 7 data_11 0 22 Rb<8KUbQMRL4S:WjEY_BB3
+l18
+L15
+VEW;2PQ6VC_?50DPPdWg1E3
+!s100 d6=2I2_b2Nmm?XD^zAVdz1
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Emea_salida
+Z14 w1574709104
+Z15 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z16 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z17 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R3
+R4
+R0
+Z18 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_salida.vhd
+Z19 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_salida.vhd
+l0
+L8
+VEaejleli^R6dkJ69niH4m3
+!s100 PFCmBDDZ8=5`z;fTa;]bg0
+R7
+31
+R8
+!i10b 1
+R9
+Z20 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_salida.vhd|
+Z21 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_salida.vhd|
+!i113 1
+R12
+R13
+Amea
+R15
+R16
+R17
+R3
+R4
+DEx4 work 10 mea_salida 0 22 Eaejleli^R6dkJ69niH4m3
+l26
+L19
+V[NC`h5oJo?^40<@e44=Go2
+!s100 FR`l532gD@m:9RoG6W]YP0
+R7
+31
+R8
+!i10b 1
+R9
+R20
+R21
+!i113 1
+R12
+R13
+Emef_registro
+Z22 w1574464488
+R15
+R16
+R17
+R3
+R4
+R0
+Z23 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mef_registro.vhd
+Z24 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mef_registro.vhd
+l0
+L9
+V<LMAhlc]_BKjU]UD7UC>A1
+!s100 Bljdm]agg6B`ZN]4LM]aZ2
+R7
+31
+R8
+!i10b 1
+R9
+Z25 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mef_registro.vhd|
+Z26 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mef_registro.vhd|
+!i113 1
+R12
+R13
+Abh
+R15
+R16
+R17
+R3
+R4
+DEx4 work 12 mef_registro 0 22 <LMAhlc]_BKjU]UD7UC>A1
+l49
+L22
+VGf=7NlQdzJ2620Q`;U`BD1
+!s100 8S2G_:W:FAfF1`UJ^K_ER3
+R7
+31
+R8
+!i10b 1
+R9
+R25
+R26
+!i113 1
+R12
+R13
+Pmy_pack
+R3
+R4
+Z27 w1574119403
+R0
+Z28 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/data_11/partity.vhd
+Z29 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/data_11/partity.vhd
+l0
+L5
+V;EfkHPXQGVJ8ofoc]OC``1
+!s100 L3V9cjPWTzRF>k>Ji7iVI1
+R7
+31
+b1
+R8
+!i10b 1
+R9
+Z30 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/data_11/partity.vhd|
+Z31 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/data_11/partity.vhd|
+!i113 1
+R12
+R13
+Bbody
+R2
+R3
+R4
+l0
+L9
+V0NJO`KBaMAcSP^3;`J8BP0
+!s100 XinR>6a;PClXFE<8>5^AQ3
+R7
+31
+R8
+!i10b 1
+R9
+R30
+R31
+!i113 1
+R12
+R13
+Ereg_desplazamiento
+Z32 w1573681915
+R15
+R16
+R17
+R3
+R4
+R0
+Z33 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/reg_desplazamiento.vhd
+Z34 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/reg_desplazamiento.vhd
+l0
+L7
+VZLhA@F<SgY3ZTbDb=ndG]1
+!s100 ;Hz3e?]LinBDMFoe3jF1E0
+R7
+31
+R8
+!i10b 1
+R9
+Z35 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/reg_desplazamiento.vhd|
+Z36 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/reg_desplazamiento.vhd|
+!i113 1
+R12
+R13
+Afunc
+R15
+R16
+R17
+R3
+R4
+DEx4 work 18 reg_desplazamiento 0 22 ZLhA@F<SgY3ZTbDb=ndG]1
+l34
+L21
+VOZ6LE2UR=Ya4<1JE4Jkc<1
+!s100 lhQ]3?_m29@@?]6@cG>nI3
+R7
+31
+R8
+!i10b 1
+R9
+R35
+R36
+!i113 1
+R12
+R13
+Eregistro
+Z37 w1573774650
+R15
+R16
+R17
+R3
+R4
+R0
+Z38 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/registro.vhd
+Z39 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/registro.vhd
+l0
+L7
+VfUCDVlHCd6B`lCO4I@E0k1
+!s100 KPJO:n=_5==?N@6iH`KE@2
+R7
+31
+R8
+!i10b 1
+R9
+Z40 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/registro.vhd|
+Z41 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/registro.vhd|
+!i113 1
+R12
+R13
+Abh
+R15
+R16
+R17
+R3
+R4
+DEx4 work 8 registro 0 22 fUCDVlHCd6B`lCO4I@E0k1
+l20
+L18
+V]ON^I[46iC5]cSEP:a1T40
+!s100 c=AN@lL]Z86RhS[2:3hil0
+R7
+31
+R8
+!i10b 1
+R9
+R40
+R41
+!i113 1
+R12
+R13
+Etbtrama_y_reg
+Z42 w1574708894
+R16
+R17
+R3
+R4
+R0
+Z43 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/trama_y_reg/../test_bench/TBtrama_y_reg.vhd
+Z44 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/trama_y_reg/../test_bench/TBtrama_y_reg.vhd
+l0
+L5
+VeW7Yf_g0OjRRdCgT]:NMh1
+!s100 KhFXM;0@l=@HhAczj1ZR42
+R7
+31
+R8
+!i10b 1
+R9
+Z45 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/trama_y_reg/../test_bench/TBtrama_y_reg.vhd|
+Z46 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/trama_y_reg/../test_bench/TBtrama_y_reg.vhd|
+!i113 1
+R12
+R13
+Abh
+R16
+R17
+R3
+R4
+DEx4 work 13 tbtrama_y_reg 0 22 eW7Yf_g0OjRRdCgT]:NMh1
+l31
+L8
+V6GZDX3^Z0CNK^VSiBRKe80
+!s100 DfI=8GGDZS=No02Jh[T>j0
+R7
+31
+R8
+!i10b 1
+R9
+R45
+R46
+!i113 1
+R12
+R13
+Etrama_y_reg
+Z47 w1574706951
+R3
+R4
+R0
+Z48 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/trama_y_reg.vhd
+Z49 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/trama_y_reg.vhd
+l0
+L6
+VlfYC8V`^V?Ghn`=[RE7IT0
+!s100 z9G=Rz5]f1LHC=I[^lO5W2
+R7
+31
+R8
+!i10b 1
+R9
+Z50 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/trama_y_reg.vhd|
+Z51 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/trama_y_reg.vhd|
+!i113 1
+R12
+R13
+Abh
+R3
+R4
+DEx4 work 11 trama_y_reg 0 22 lfYC8V`^V?Ghn`=[RE7IT0
+l44
+L18
+Vb<9L9Q@n8j<P1dYn1SgK92
+!s100 =oL_?T4cPMlmQBbUz;Glk3
+R7
+31
+R8
+!i10b 1
+R9
+R50
+R51
+!i113 1
+R12
+R13

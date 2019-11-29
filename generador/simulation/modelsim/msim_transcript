@@ -1,0 +1,151 @@
+# do generador_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying /home/julio/intelFPGA_lite/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/generador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:19:07 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/generador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity generador
+# -- Compiling architecture func of generador
+# End time: 18:19:07 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/sincX3.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:19:07 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/sincX3.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sincX3
+# -- Compiling architecture func of sincX3
+# End time: 18:19:07 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/sincronizador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:19:07 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/sincronizador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sincronizador
+# -- Compiling architecture func of sincronizador
+# End time: 18:19:07 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/selFrecuencias.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:19:07 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/selFrecuencias.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity selfrecuencias
+# -- Compiling architecture func of selfrecuencias
+# End time: 18:19:07 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/ffd.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:19:07 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/ffd.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ffd
+# -- Compiling architecture func of ffd
+# End time: 18:19:08 on Nov 27,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/divisorx2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:19:08 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/divisorx2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity divisorx2
+# -- Compiling architecture func of divisorx2
+# End time: 18:19:08 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/DivFrecuencias.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:19:08 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/DivFrecuencias.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity divfrecuencias
+# -- Compiling architecture func of divfrecuencias
+# End time: 18:19:08 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/../../../TBgenerador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:19:08 on Nov 27,2019
+# vcom -reportprogress 300 -93 -work work /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/../../../TBgenerador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity TBgenerador
+# -- Compiling architecture bh of TBgenerador
+# End time: 18:19:08 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  TBgenerador
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" TBgenerador 
+# Start time: 18:19:08 on Nov 27,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tbgenerador(bh)
+# Loading work.generador(func)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.selfrecuencias(func)
+# Loading work.sincx3(func)
+# Loading work.sincronizador(func)
+# Loading work.ffd(func)
+# Loading work.divisorx2(func)
+# Loading work.divfrecuencias(func)
+# 
+# add wave *
+# ** Error: Unable to lock WLF file "vsim.wlf". Retrying 1 times, errno 11
+# ** Error: Unable to lock WLF file "vsim.wlf". Retrying 2 times, errno 11
+# ** Error: Unable to lock WLF file "vsim.wlf". Retrying 3 times, errno 11
+# ** Error: Cannot lock WLF file: "vsim.wlf"
+#           errno 11: Resource temporarily unavailable.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: unknown  Hostname: julio-X556UAK  ProcessID: 7047
+#           Attempting to use alternate WLF file "./wlft9KUqCm".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft9KUqCm
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# 
+# stdin: <EOF>
+# End time: 18:20:41 on Nov 27,2019, Elapsed time: 0:01:33
+# Errors: 4, Warnings: 2

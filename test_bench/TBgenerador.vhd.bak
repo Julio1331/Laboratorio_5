@@ -1,0 +1,70 @@
+--!\file
+--!\brief Descripcion de un Divisor de Frecuencias
+--!\authors Leotta Gaston \n Pereyra Julio
+
+--!Biblioteca IEEE
+library IEEE;
+--!componente general std_logic
+use IEEE.STD_LOGIC_1164.ALL;
+--!componente general unsigned
+use ieee.std_logic_unsigned.all;
+--!componente general numeric standard
+use ieee.numeric_std.all;
+
+--!\brief TestBench para simulacion.
+--!
+--!Test bench, archivo para la prueba del dispositivo generador.
+entity TBgenerador is
+end TBgenerador;
+architecture tb of TBgenerador is
+--!Declaracion del dispositivo Generador a probar
+	component generador is
+		port (
+			--entradas de seleccion
+			async_in 	: in std_logic_vector (2 downto 0); --!Vector de 3 bits de entradas asincronicas
+			reset_d		: in std_logic; --!Entrada de reset activo en bajo 
+			
+			--salida de frecuencia
+			salida 		: out std_logic; --!Salida de frecuencia
+			
+			--salidas a los displays
+			d_unidad		: out std_logic_vector (6 downto 0); --!Salida para el display1 para la visualizacion de la unidad
+			d_decena		: out std_logic_vector (6 downto 0); --!Salida para el display2 para la visualizacion de la decena
+
+			--entrada de 50MHZ
+			clk_50Mhz 	: in std_logic --!Entrada de reloj de 50Mhz.
+		);
+	end component;
+	signal async_in_tb 	: std_logic_vector (2 downto 0); --!señal de entrada asincronicapara para prueba
+	signal reset_d_tb		: std_logic :='0'; --!señal de entrada reset para prueba
+	signal salida_tb		: std_logic; --!señal de salida del dispositivo para analisis de prueba.
+	signal d_unidad_tb	: std_logic_vector (6 downto 0); --!Vector de señales de salida de 7 bits para display de prueba unidad
+	signal d_decena_tb	: std_logic_vector (6 downto 0); --!Vector de señales de salida de 7 bits para display de prueba decena
+	signal clk 				: std_logic :='0'; --!Señal de entrada de reloj de prueba
+	
+begin
+
+	dut : generador port map(
+			async_in => async_in_tb,
+			reset_d => reset_d_tb,
+			salida => salida_tb,
+			d_unidad => d_unidad_tb,
+			d_decena => d_decena_tb,
+			clk_50Mhz => clk
+	);
+	
+	clk <= not (clk) after 10 ns;
+	
+	process
+	begin
+		
+		reset_d_tb <= '1';
+		wait for 4 ns;
+		for i in 0 to 8 loop
+			async_in_tb <= std_logic_vector(to_unsigned(i, async_in_tb'length));
+			wait for 1000 ms;
+		end loop;		
+	end process;
+
+
+end tb;

@@ -9,7 +9,7 @@ entity trama_y_reg is
 			rst: in std_logic;
 			datos: in std_logic_vector(7 downto 0);
 			sal_serie: out std_logic;
-			end_of_transmition: out std_logic;
+			end_of_transmission: out std_logic;
 			end_of_trama: out std_logic;
 			clk: in std_logic
 			);
@@ -46,7 +46,7 @@ begin
 								datos_in => datos,
 								datos_out => trama,
 								serial_out => ser_out,
-								eot => end_of_transmition
+								eot => end_of_transmission
 								);
 	
 	d2: mef_registro port map(

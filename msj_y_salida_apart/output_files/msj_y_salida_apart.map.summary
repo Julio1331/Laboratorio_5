@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Nov 25 20:34:37 2019
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Revision Name : msj_y_salida_apart
+Top-level Entity Name : msj_y_salida_apart
+Family : Cyclone IV E
+Total logic elements : 52
+    Total combinational functions : 50
+    Dedicated logic registers : 20
+Total registers : 20
+Total pins : 6
+Total virtual pins : 0
+Total memory bits : 1,792
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
