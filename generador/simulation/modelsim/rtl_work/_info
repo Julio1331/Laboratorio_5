@@ -24,9 +24,9 @@ VUojl[cCX]61JL49l>f3SE1
 !s100 4AT[[_U`f6h37cC7Zaf643
 Z9 OV;C;10.5b;63
 31
-Z10 !s110 1574889548
+Z10 !s110 1575226013
 !i10b 1
-Z11 !s108 1574889548.000000
+Z11 !s108 1575226013.000000
 Z12 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/DivFrecuencias.vhd|
 Z13 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/DivFrecuencias.vhd|
 !i113 1
@@ -53,106 +53,24 @@ R13
 !i113 1
 R14
 R15
-Edivisorx2
-Z16 w1574271144
-R2
-R5
-R6
-R0
-Z17 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/divisorx2.vhd
-Z18 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/divisorx2.vhd
-l0
-L18
-V2SPG3F>3=ez@2VlOj3]J60
-!s100 [L=geDY?O9HFN26TfWUe73
-R9
-31
-R10
-!i10b 1
-R11
-Z19 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/divisorx2.vhd|
-Z20 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/divisorx2.vhd|
-!i113 1
-R14
-R15
-Afunc
-R2
-R5
-R6
-DEx4 work 9 divisorx2 0 22 2SPG3F>3=ez@2VlOj3]J60
-l53
-L35
-V_jEg>2=RP34hPmMZToYiD2
-!s100 EN^4h[K[4koEKhK_Z1RlL2
-R9
-31
-R10
-!i10b 1
-R11
-R19
-R20
-!i113 1
-R14
-R15
-Effd
-Z21 w1574271138
-R2
-R5
-R6
-R0
-Z22 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/ffd.vhd
-Z23 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/ffd.vhd
-l0
-L19
-V?`co@ToSDCH40DTH?_1;l1
-!s100 [60HYdIH:Rne_nFPR6[>51
-R9
-31
-R10
-!i10b 1
-Z24 !s108 1574889547.000000
-Z25 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/ffd.vhd|
-Z26 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/ffd.vhd|
-!i113 1
-R14
-R15
-Afunc
-R2
-R5
-R6
-DEx4 work 3 ffd 0 22 ?`co@ToSDCH40DTH?_1;l1
-l38
-L35
-V;3DSbZ=eiDk8W;MamiLLl0
-!s100 S54[e1E[@oM8bQ;c7V^[42
-R9
-31
-R10
-!i10b 1
-R24
-R25
-R26
-!i113 1
-R14
-R15
 Egenerador
-Z27 w1574271142
+Z16 w1575225412
 R5
 R6
 R0
-Z28 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/generador.vhd
-Z29 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/generador.vhd
+Z17 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/generador.vhd
+Z18 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/generador.vhd
 l0
 L19
 V4oJE7JYBo7l_WJY46@`9S1
 !s100 Q=;Qlf;QKcDJBU[>VAaIO0
 R9
 31
-Z30 !s110 1574889547
+R10
 !i10b 1
-R24
-Z31 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/generador.vhd|
-Z32 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/generador.vhd|
+R11
+Z19 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/generador.vhd|
+Z20 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/generador.vhd|
 !i113 1
 R14
 R15
@@ -160,17 +78,17 @@ Afunc
 R5
 R6
 DEx4 work 9 generador 0 22 4oJE7JYBo7l_WJY46@`9S1
-l92
+l77
 L36
-VPh_:GP?3IJe0<3jKNg=7R0
-!s100 d42zh2CJB3bJ43bA@oG032
+VN4?n<YW]fzbVQN^TcY5I<3
+!s100 =?TZ5To0_D@LVWcA4C>6=3
 R9
 31
-R30
+R10
 !i10b 1
-R24
-R31
-R32
+R11
+R19
+R20
 !i113 1
 R14
 R15
@@ -182,19 +100,19 @@ R4
 R5
 R6
 R0
-Z33 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/selFrecuencias.vhd
-Z34 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/selFrecuencias.vhd
+Z21 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/selFrecuencias.vhd
+Z22 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/selFrecuencias.vhd
 l0
 L21
 V?T]?OYcc?[A0=IoN2UhSH3
 !s100 TPMGmf_G2O;gigaXaR7^P0
 R9
 31
-R30
+R10
 !i10b 1
-R24
-Z35 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/selFrecuencias.vhd|
-Z36 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/selFrecuencias.vhd|
+R11
+Z23 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/selFrecuencias.vhd|
+Z24 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/selFrecuencias.vhd|
 !i113 1
 R14
 R15
@@ -211,136 +129,56 @@ V8]mkIo;nlS@63B@YG6ejk2
 !s100 YK2;<V>g6=gCJeghMD6PA2
 R9
 31
-R30
+R10
 !i10b 1
+R11
+R23
 R24
-R35
-R36
-!i113 1
-R14
-R15
-Esincronizador
-R21
-R2
-R5
-R6
-R0
-Z37 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/sincronizador.vhd
-Z38 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/sincronizador.vhd
-l0
-L20
-VWFY0;=P8N2Q449k=Sn7P42
-!s100 dBNeX5Sm3NLbAl[:WVSk<0
-R9
-31
-R30
-!i10b 1
-R24
-Z39 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/sincronizador.vhd|
-Z40 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/sincronizador.vhd|
-!i113 1
-R14
-R15
-Afunc
-R2
-R5
-R6
-DEx4 work 13 sincronizador 0 22 WFY0;=P8N2Q449k=Sn7P42
-l67
-L39
-V@PI@Q91NF91fNUAfg^UCD0
-!s100 [bMW^TD8LOcDk[M]W8mMS3
-R9
-31
-R30
-!i10b 1
-R24
-R39
-R40
-!i113 1
-R14
-R15
-Esincx3
-R21
-R2
-R3
-R4
-R5
-R6
-R0
-Z41 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/sincX3.vhd
-Z42 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/sincX3.vhd
-l0
-L22
-Vgml?5D:=ZOK<n]oZiLIFi0
-!s100 WV7F[ihQZA>jHAz93Q6;G3
-R9
-31
-R30
-!i10b 1
-R24
-Z43 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/sincX3.vhd|
-Z44 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/sincX3.vhd|
-!i113 1
-R14
-R15
-Afunc
-R2
-R3
-R4
-R5
-R6
-DEx4 work 6 sincx3 0 22 gml?5D:=ZOK<n]oZiLIFi0
-l51
-L38
-V>GX4;?]Qci52Z^nnGc<Jk0
-!s100 Hbd0];nA^YDNH5K;fN83Q2
-R9
-31
-R30
-!i10b 1
-R24
-R43
-R44
 !i113 1
 R14
 R15
 Etbgenerador
-Z45 w1574889541
+Z25 w1574882001
+R2
+R3
+R4
 R5
 R6
 R0
-Z46 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/../../../TBgenerador.vhd
-Z47 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/../../../TBgenerador.vhd
+Z26 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/../test_bench/TBgenerador.vhd
+Z27 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/../test_bench/TBgenerador.vhd
 l0
-L4
-VCJzYoR36R`RVQAhQlKz8E2
-!s100 G>S@nB12`Sj_dK6gNR8?M2
+L17
+VUP?OZ>Z?jDJRGPD197:i<2
+!s100 ?7[e1>:W6T20jh0XA6Mf_1
 R9
 31
 R10
 !i10b 1
 R11
-Z48 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/../../../TBgenerador.vhd|
-Z49 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/../../../TBgenerador.vhd|
+Z28 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/../test_bench/TBgenerador.vhd|
+Z29 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador/../test_bench/TBgenerador.vhd|
 !i113 1
 R14
 R15
-Abh
+Atb
+R2
+R3
+R4
 R5
 R6
-DEx4 work 11 tbgenerador 0 22 CJzYoR36R`RVQAhQlKz8E2
-l26
-L7
-VoWBPm44A]Ml`2UR3RQ>gP1
-!s100 j`X57:2@h0HV^6R7Z>gzT1
+DEx4 work 11 tbgenerador 0 22 UP?OZ>Z?jDJRGPD197:i<2
+l45
+L19
+V=bAVJ?AKI?1WRkn<0JRm01
+!s100 FTQ3ak1VzKh6hnUdHFE4]0
 R9
 31
 R10
 !i10b 1
 R11
-R48
-R49
+R28
+R29
 !i113 1
 R14
 R15

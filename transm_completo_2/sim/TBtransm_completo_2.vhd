@@ -10,7 +10,7 @@ architecture bh of TBtransm_completo_2 is
 	signal tbenviar: std_logic;
 	signal tbselect_msj: std_logic_vector(1 downto 0);
 	signal tbselect_vel: std_logic_vector(1 downto 0);
-	signal tbsalida_serie: std_logic := '0';
+	signal tbsalida_serie: std_logic ;
 	signal tbreset: std_logic;
 	signal tbclk: std_logic;
 	signal tbaux_out_clk_int: std_logic := '0';
@@ -52,7 +52,7 @@ begin
 		tbselect_vel <= cont (4 downto 3);
 		tbselect_msj <= cont (2 downto 1);
 		tbenviar <= cont(0);
-		wait for 20 ms;
+		wait for 10 ms;
 		cont <= cont + '1';
 	end process select_gener;
 	

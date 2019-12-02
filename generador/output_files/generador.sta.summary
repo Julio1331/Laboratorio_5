@@ -3,111 +3,39 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'clk_50Mhz'
-Slack : -1.511
-TNS   : -57.476
-
-Type  : Slow 1200mV 85C Model Setup 'sincX3:entradas|sincronizador:\sinc_xx:1:buss|divisorx2:div1|ffd:ffd1|dd'
-Slack : -0.335
-TNS   : -0.335
-
-Type  : Slow 1200mV 85C Model Setup 'sincX3:entradas|sincronizador:\sinc_xx:0:buss|divisorx2:div1|ffd:ffd1|dd'
-Slack : -0.169
-TNS   : -0.169
+Slack : -1.537
+TNS   : -57.247
 
 Type  : Slow 1200mV 85C Model Hold 'clk_50Mhz'
 Slack : 0.342
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'sincX3:entradas|sincronizador:\sinc_xx:0:buss|divisorx2:div1|ffd:ffd1|dd'
-Slack : 0.766
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'sincX3:entradas|sincronizador:\sinc_xx:1:buss|divisorx2:div1|ffd:ffd1|dd'
-Slack : 0.931
-TNS   : 0.000
-
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_50Mhz'
 Slack : -3.000
-TNS   : -55.000
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'sincX3:entradas|sincronizador:\sinc_xx:0:buss|divisorx2:div1|ffd:ffd1|dd'
-Slack : -1.000
-TNS   : -2.000
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'sincX3:entradas|sincronizador:\sinc_xx:1:buss|divisorx2:div1|ffd:ffd1|dd'
-Slack : -1.000
-TNS   : -2.000
+TNS   : -51.000
 
 Type  : Slow 1200mV 0C Model Setup 'clk_50Mhz'
-Slack : -1.261
-TNS   : -46.808
-
-Type  : Slow 1200mV 0C Model Setup 'sincX3:entradas|sincronizador:\sinc_xx:1:buss|divisorx2:div1|ffd:ffd1|dd'
-Slack : -0.254
-TNS   : -0.254
-
-Type  : Slow 1200mV 0C Model Setup 'sincX3:entradas|sincronizador:\sinc_xx:0:buss|divisorx2:div1|ffd:ffd1|dd'
-Slack : -0.115
-TNS   : -0.115
+Slack : -1.299
+TNS   : -46.897
 
 Type  : Slow 1200mV 0C Model Hold 'clk_50Mhz'
-Slack : 0.298
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'sincX3:entradas|sincronizador:\sinc_xx:0:buss|divisorx2:div1|ffd:ffd1|dd'
-Slack : 0.763
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'sincX3:entradas|sincronizador:\sinc_xx:1:buss|divisorx2:div1|ffd:ffd1|dd'
-Slack : 0.918
+Slack : 0.297
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_50Mhz'
 Slack : -3.000
-TNS   : -55.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'sincX3:entradas|sincronizador:\sinc_xx:0:buss|divisorx2:div1|ffd:ffd1|dd'
-Slack : -1.000
-TNS   : -2.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'sincX3:entradas|sincronizador:\sinc_xx:1:buss|divisorx2:div1|ffd:ffd1|dd'
-Slack : -1.000
-TNS   : -2.000
+TNS   : -51.000
 
 Type  : Fast 1200mV 0C Model Setup 'clk_50Mhz'
-Slack : -0.411
-TNS   : -9.686
-
-Type  : Fast 1200mV 0C Model Setup 'sincX3:entradas|sincronizador:\sinc_xx:1:buss|divisorx2:div1|ffd:ffd1|dd'
-Slack : 0.047
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'sincX3:entradas|sincronizador:\sinc_xx:0:buss|divisorx2:div1|ffd:ffd1|dd'
-Slack : 0.147
-TNS   : 0.000
+Slack : -0.383
+TNS   : -9.955
 
 Type  : Fast 1200mV 0C Model Hold 'clk_50Mhz'
-Slack : 0.179
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'sincX3:entradas|sincronizador:\sinc_xx:0:buss|divisorx2:div1|ffd:ffd1|dd'
-Slack : 0.603
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'sincX3:entradas|sincronizador:\sinc_xx:1:buss|divisorx2:div1|ffd:ffd1|dd'
-Slack : 0.684
+Slack : 0.178
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_50Mhz'
 Slack : -3.000
-TNS   : -58.673
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'sincX3:entradas|sincronizador:\sinc_xx:0:buss|divisorx2:div1|ffd:ffd1|dd'
-Slack : -1.000
-TNS   : -2.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'sincX3:entradas|sincronizador:\sinc_xx:1:buss|divisorx2:div1|ffd:ffd1|dd'
-Slack : -1.000
-TNS   : -2.000
+TNS   : -54.376
 
 ------------------------------------------------------------

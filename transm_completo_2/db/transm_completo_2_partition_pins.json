@@ -12,19 +12,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "reset",
-					"strict" : false
-				},
-				{
-					"name" : "clk_50Mhz",
-					"strict" : false
-				},
-				{
 					"name" : "select_vel[0]",
 					"strict" : false
 				},
 				{
 					"name" : "select_vel[1]",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "clk_50Mhz",
 					"strict" : false
 				},
 				{

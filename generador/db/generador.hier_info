@@ -1,9 +1,8 @@
 |generador
-async_in[0] => sincX3:entradas.async_in[0]
-async_in[1] => sincX3:entradas.async_in[1]
-reset_d => sincX3:entradas.reset
-salida << selFrecuencias:seleccionador.salida
-clk_50Mhz => sincX3:entradas.clk_in
+async_in[0] => selFrecuencias:seleccionador.sel_in[0]
+async_in[1] => selFrecuencias:seleccionador.sel_in[1]
+reset_d => ~NO_FANOUT~
+salida <= selFrecuencias:seleccionador.salida
 clk_50Mhz => divfrecuencias:divisor.clk50mhz
 
 
@@ -15,119 +14,6 @@ ck5 => Mux0.IN3
 sel_in[0] => Mux0.IN5
 sel_in[1] => Mux0.IN4
 salida <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|generador|sincX3:entradas
-clk_in => sincronizador:sinc_xx:1:buss.clk_in
-clk_in => sincronizador:sinc_xx:0:buss.clk_in
-async_in[0] => sincronizador:sinc_xx:0:buss.data_async
-async_in[1] => sincronizador:sinc_xx:1:buss.data_async
-reset => sincronizador:sinc_xx:1:buss.rst
-reset => sincronizador:sinc_xx:0:buss.rst
-sync_out[0] <= sincronizador:sinc_xx:0:buss.data_sync
-sync_out[1] <= sincronizador:sinc_xx:1:buss.data_sync
-
-
-|generador|sincX3:entradas|sincronizador:\sinc_xx:1:buss
-data_async => ffd:ffd1.d
-clk_in => divisorx2:div1.clk_in
-clk_in => ffd:ffd3.clk
-clk_in => clk_out.DATAIN
-rst => ffd:ffd1.rst
-rst => ffd:ffd2.rst
-rst => divisorx2:div1.rst
-rst => ffd:ffd3.rst
-data_sync <= ffd:ffd3.q
-clk_out <= clk_in.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|generador|sincX3:entradas|sincronizador:\sinc_xx:1:buss|ffd:ffd1
-clk => dd.CLK
-d => dd.DATAIN
-rst => dd.ACLR
-q <= dd.DB_MAX_OUTPUT_PORT_TYPE
-q_d <= dd.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|generador|sincX3:entradas|sincronizador:\sinc_xx:1:buss|ffd:ffd2
-clk => dd.CLK
-d => dd.DATAIN
-rst => dd.ACLR
-q <= dd.DB_MAX_OUTPUT_PORT_TYPE
-q_d <= dd.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|generador|sincX3:entradas|sincronizador:\sinc_xx:1:buss|divisorx2:div1
-clk_in => ffd:ffd1.clk
-rst => ffd:ffd1.rst
-o <= ffd:ffd1.q
-
-
-|generador|sincX3:entradas|sincronizador:\sinc_xx:1:buss|divisorx2:div1|ffd:ffd1
-clk => dd.CLK
-d => dd.DATAIN
-rst => dd.ACLR
-q <= dd.DB_MAX_OUTPUT_PORT_TYPE
-q_d <= dd.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|generador|sincX3:entradas|sincronizador:\sinc_xx:1:buss|ffd:ffd3
-clk => dd.CLK
-d => dd.DATAIN
-rst => dd.ACLR
-q <= dd.DB_MAX_OUTPUT_PORT_TYPE
-q_d <= dd.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|generador|sincX3:entradas|sincronizador:\sinc_xx:0:buss
-data_async => ffd:ffd1.d
-clk_in => divisorx2:div1.clk_in
-clk_in => ffd:ffd3.clk
-clk_in => clk_out.DATAIN
-rst => ffd:ffd1.rst
-rst => ffd:ffd2.rst
-rst => divisorx2:div1.rst
-rst => ffd:ffd3.rst
-data_sync <= ffd:ffd3.q
-clk_out <= clk_in.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|generador|sincX3:entradas|sincronizador:\sinc_xx:0:buss|ffd:ffd1
-clk => dd.CLK
-d => dd.DATAIN
-rst => dd.ACLR
-q <= dd.DB_MAX_OUTPUT_PORT_TYPE
-q_d <= dd.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|generador|sincX3:entradas|sincronizador:\sinc_xx:0:buss|ffd:ffd2
-clk => dd.CLK
-d => dd.DATAIN
-rst => dd.ACLR
-q <= dd.DB_MAX_OUTPUT_PORT_TYPE
-q_d <= dd.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|generador|sincX3:entradas|sincronizador:\sinc_xx:0:buss|divisorx2:div1
-clk_in => ffd:ffd1.clk
-rst => ffd:ffd1.rst
-o <= ffd:ffd1.q
-
-
-|generador|sincX3:entradas|sincronizador:\sinc_xx:0:buss|divisorx2:div1|ffd:ffd1
-clk => dd.CLK
-d => dd.DATAIN
-rst => dd.ACLR
-q <= dd.DB_MAX_OUTPUT_PORT_TYPE
-q_d <= dd.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|generador|sincX3:entradas|sincronizador:\sinc_xx:0:buss|ffd:ffd3
-clk => dd.CLK
-d => dd.DATAIN
-rst => dd.ACLR
-q <= dd.DB_MAX_OUTPUT_PORT_TYPE
-q_d <= dd.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |generador|divfrecuencias:divisor

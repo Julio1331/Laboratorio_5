@@ -22,9 +22,9 @@ VRb<8KUbQMRL4S:WjEY_BB3
 !s100 8bRkY0;]QV6]TbQ1?;<aF2
 Z7 OV;C;10.5b;63
 31
-Z8 !s110 1574809422
+Z8 !s110 1575246466
 !i10b 1
-Z9 !s108 1574809422.000000
+Z9 !s108 1575246466.000000
 Z10 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/data_11.vhd|
 Z11 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/data_11.vhd|
 !i113 1
@@ -49,16 +49,59 @@ R11
 !i113 1
 R12
 R13
-Emea_mem
-Z14 w1574464258
-Z15 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
-Z16 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z17 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Egenerador_2
+Z14 w1575237594
+Z15 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z16 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 R3
 R4
 R0
-Z18 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_mem.vhd
-Z19 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_mem.vhd
+Z17 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador_2/generador_2.vhd
+Z18 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador_2/generador_2.vhd
+l0
+L5
+VG0zd6CFXondP=^SPVAOOG2
+!s100 @5EIQ3Hcld?Ig?a<=G^CY0
+R7
+31
+R8
+!i10b 1
+R9
+Z19 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador_2/generador_2.vhd|
+Z20 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador_2/generador_2.vhd|
+!i113 1
+R12
+R13
+Abh
+R15
+R16
+R3
+R4
+DEx4 work 11 generador_2 0 22 G0zd6CFXondP=^SPVAOOG2
+l34
+L14
+VeEL;gl@i>1mNM^BmYCEWI1
+!s100 iC_8zEGo7Xii3f=iHiA_a3
+R7
+31
+R8
+!i10b 1
+R9
+R19
+R20
+!i113 1
+R12
+R13
+Emea_mem
+Z21 w1574464258
+Z22 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R15
+R16
+R3
+R4
+R0
+Z23 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_mem.vhd
+Z24 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_mem.vhd
 l0
 L10
 Vh<^Nc0Rk1]EQ1FaPc_I1F1
@@ -68,15 +111,15 @@ R7
 R8
 !i10b 1
 R9
-Z20 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_mem.vhd|
-Z21 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_mem.vhd|
+Z25 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_mem.vhd|
+Z26 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_mem.vhd|
 !i113 1
 R12
 R13
 Abh
+R22
 R15
 R16
-R17
 R3
 R4
 DEx4 work 7 mea_mem 0 22 h<^Nc0Rk1]EQ1FaPc_I1F1
@@ -89,21 +132,21 @@ R7
 R8
 !i10b 1
 R9
-R20
-R21
+R25
+R26
 !i113 1
 R12
 R13
 Emea_salida
-Z22 w1574724884
+Z27 w1574865103
+R22
 R15
 R16
-R17
 R3
 R4
 R0
-Z23 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_salida.vhd
-Z24 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_salida.vhd
+Z28 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_salida.vhd
+Z29 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_salida.vhd
 l0
 L8
 VEaejleli^R6dkJ69niH4m3
@@ -113,42 +156,42 @@ R7
 R8
 !i10b 1
 R9
-Z25 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_salida.vhd|
-Z26 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_salida.vhd|
+Z30 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_salida.vhd|
+Z31 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_salida.vhd|
 !i113 1
 R12
 R13
 Amea
+R22
 R15
 R16
-R17
 R3
 R4
 DEx4 work 10 mea_salida 0 22 Eaejleli^R6dkJ69niH4m3
 l26
 L19
-V[NC`h5oJo?^40<@e44=Go2
-!s100 FR`l532gD@m:9RoG6W]YP0
+VnhI5F>LZ6M_3=YElJEPZQ0
+!s100 VHGEUR_YR20H8jAVa>Pk^0
 R7
 31
 R8
 !i10b 1
 R9
-R25
-R26
+R30
+R31
 !i113 1
 R12
 R13
 Emef_registro
-Z27 w1574464488
+Z32 w1574464488
+R22
 R15
 R16
-R17
 R3
 R4
 R0
-Z28 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mef_registro.vhd
-Z29 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mef_registro.vhd
+Z33 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mef_registro.vhd
+Z34 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mef_registro.vhd
 l0
 L9
 V<LMAhlc]_BKjU]UD7UC>A1
@@ -158,15 +201,15 @@ R7
 R8
 !i10b 1
 R9
-Z30 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mef_registro.vhd|
-Z31 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mef_registro.vhd|
+Z35 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mef_registro.vhd|
+Z36 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mef_registro.vhd|
 !i113 1
 R12
 R13
 Abh
+R22
 R15
 R16
-R17
 R3
 R4
 DEx4 work 12 mef_registro 0 22 <LMAhlc]_BKjU]UD7UC>A1
@@ -179,18 +222,18 @@ R7
 R8
 !i10b 1
 R9
-R30
-R31
+R35
+R36
 !i113 1
 R12
 R13
 Emsj_y_mem
-Z32 w1574722468
+Z37 w1574722468
 R3
 R4
 R0
-Z33 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/msj_y_mem.vhd
-Z34 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/msj_y_mem.vhd
+Z38 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/msj_y_mem.vhd
+Z39 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/msj_y_mem.vhd
 l0
 L8
 VdCXDUXGG_oSa7MDTV^j_A2
@@ -200,8 +243,8 @@ R7
 R8
 !i10b 1
 R9
-Z35 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/msj_y_mem.vhd|
-Z36 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/msj_y_mem.vhd|
+Z40 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/msj_y_mem.vhd|
+Z41 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/msj_y_mem.vhd|
 !i113 1
 R12
 R13
@@ -218,57 +261,57 @@ R7
 R8
 !i10b 1
 R9
-R35
-R36
+R40
+R41
 !i113 1
 R12
 R13
 Emsj_y_salida_apart
-Z37 w1574723343
+Z42 w1575245132
 R3
 R4
 R0
-Z38 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/msj_y_salida_apart/msj_y_salida_apart.vhd
-Z39 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/msj_y_salida_apart/msj_y_salida_apart.vhd
+Z43 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/msj_y_salida_apart/msj_y_salida_apart.vhd
+Z44 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/msj_y_salida_apart/msj_y_salida_apart.vhd
 l0
 L6
-V3SdSI7IC=W4e@CCYGIQCJ0
-!s100 lfc^z[QgcRUTSfM6ooh]i2
+Vm7V9?7o300OIfWb`kbL@l0
+!s100 l<kgQBfYRK7CGbU0UYeQb3
 R7
 31
 R8
 !i10b 1
 R9
-Z40 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/msj_y_salida_apart/msj_y_salida_apart.vhd|
-Z41 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/msj_y_salida_apart/msj_y_salida_apart.vhd|
+Z45 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/msj_y_salida_apart/msj_y_salida_apart.vhd|
+Z46 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/msj_y_salida_apart/msj_y_salida_apart.vhd|
 !i113 1
 R12
 R13
 Abh
 R3
 R4
-DEx4 work 18 msj_y_salida_apart 0 22 3SdSI7IC=W4e@CCYGIQCJ0
-l49
-L17
-VNAY^6eBdnBzWlmO?TIXR12
-!s100 ]MQ3:J86Uz`F<J<0Q3=5:2
+DEx4 work 18 msj_y_salida_apart 0 22 m7V9?7o300OIfWb`kbL@l0
+l60
+L18
+Vk7B@4J>zfY=VI?01<lP?a1
+!s100 9SSWN<jG9DI4Rk9k>R;Zj2
 R7
 31
 R8
 !i10b 1
 R9
-R40
-R41
+R45
+R46
 !i113 1
 R12
 R13
 Emux_entradas
-Z42 w1574464807
+Z47 w1574464807
 R3
 R4
 R0
-Z43 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mux_entradas.vhd
-Z44 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mux_entradas.vhd
+Z48 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mux_entradas.vhd
+Z49 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mux_entradas.vhd
 l0
 L5
 VfF;i1=ic`XbS=hVR8HMo80
@@ -278,8 +321,8 @@ R7
 R8
 !i10b 1
 R9
-Z45 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mux_entradas.vhd|
-Z46 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mux_entradas.vhd|
+Z50 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mux_entradas.vhd|
+Z51 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mux_entradas.vhd|
 !i113 1
 R12
 R13
@@ -296,18 +339,18 @@ R7
 R8
 !i10b 1
 R9
-R45
-R46
+R50
+R51
 !i113 1
 R12
 R13
 Pmy_pack
 R3
 R4
-Z47 w1574119403
+Z52 w1574119403
 R0
-Z48 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/data_11/partity.vhd
-Z49 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/data_11/partity.vhd
+Z53 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/data_11/partity.vhd
+Z54 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/data_11/partity.vhd
 l0
 L5
 V;EfkHPXQGVJ8ofoc]OC``1
@@ -318,8 +361,8 @@ b1
 R8
 !i10b 1
 R9
-Z50 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/data_11/partity.vhd|
-Z51 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/data_11/partity.vhd|
+Z55 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/data_11/partity.vhd|
+Z56 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/data_11/partity.vhd|
 !i113 1
 R12
 R13
@@ -336,21 +379,21 @@ R7
 R8
 !i10b 1
 R9
-R50
-R51
+R55
+R56
 !i113 1
 R12
 R13
 Ereg_desplazamiento
-Z52 w1573681915
+Z57 w1573681915
+R22
 R15
 R16
-R17
 R3
 R4
 R0
-Z53 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/reg_desplazamiento.vhd
-Z54 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/reg_desplazamiento.vhd
+Z58 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/reg_desplazamiento.vhd
+Z59 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/reg_desplazamiento.vhd
 l0
 L7
 VZLhA@F<SgY3ZTbDb=ndG]1
@@ -360,15 +403,15 @@ R7
 R8
 !i10b 1
 R9
-Z55 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/reg_desplazamiento.vhd|
-Z56 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/reg_desplazamiento.vhd|
+Z60 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/reg_desplazamiento.vhd|
+Z61 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/reg_desplazamiento.vhd|
 !i113 1
 R12
 R13
 Afunc
+R22
 R15
 R16
-R17
 R3
 R4
 DEx4 work 18 reg_desplazamiento 0 22 ZLhA@F<SgY3ZTbDb=ndG]1
@@ -381,21 +424,21 @@ R7
 R8
 !i10b 1
 R9
-R55
-R56
+R60
+R61
 !i113 1
 R12
 R13
 Eregistro
-Z57 w1573774650
+Z62 w1573774650
+R22
 R15
 R16
-R17
 R3
 R4
 R0
-Z58 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/registro.vhd
-Z59 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/registro.vhd
+Z63 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/registro.vhd
+Z64 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/registro.vhd
 l0
 L7
 VfUCDVlHCd6B`lCO4I@E0k1
@@ -405,15 +448,15 @@ R7
 R8
 !i10b 1
 R9
-Z60 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/registro.vhd|
-Z61 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/registro.vhd|
+Z65 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/registro.vhd|
+Z66 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/registro.vhd|
 !i113 1
 R12
 R13
 Abh
+R22
 R15
 R16
-R17
 R3
 R4
 DEx4 work 8 registro 0 22 fUCDVlHCd6B`lCO4I@E0k1
@@ -426,19 +469,19 @@ R7
 R8
 !i10b 1
 R9
-R60
-R61
+R65
+R66
 !i113 1
 R12
 R13
 Erom
-Z62 w1574142388
-R15
+Z67 w1574142388
+R22
 R3
 R4
 R0
-Z63 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/ROM.vhd
-Z64 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/ROM.vhd
+Z68 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/ROM.vhd
+Z69 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/ROM.vhd
 l0
 L5
 VQj>^=BfTh5VVNzH3=BY_K2
@@ -448,13 +491,13 @@ R7
 R8
 !i10b 1
 R9
-Z65 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/ROM.vhd|
-Z66 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/ROM.vhd|
+Z70 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/ROM.vhd|
+Z71 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/ROM.vhd|
 !i113 1
 R12
 R13
 Asynth
-R15
+R22
 R3
 R4
 DEx4 work 3 rom 0 22 Qj>^=BfTh5VVNzH3=BY_K2
@@ -467,57 +510,61 @@ R7
 R8
 !i10b 1
 R9
-R65
-R66
-!i113 1
-R12
-R13
-Etbmsj_y_salida_apart
-Z67 w1574809415
-R3
-R4
-R0
-Z68 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/msj_y_salida_apart/SIM/TBmsj_y_salida_apart.vhd
-Z69 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/msj_y_salida_apart/SIM/TBmsj_y_salida_apart.vhd
-l0
-L4
-VUVi50o5HZ85U]<g=^9oiU1
-!s100 5oaOC8>FBL5@@XNF6H=;z2
-R7
-31
-R8
-!i10b 1
-R9
-Z70 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/msj_y_salida_apart/SIM/TBmsj_y_salida_apart.vhd|
-Z71 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/msj_y_salida_apart/SIM/TBmsj_y_salida_apart.vhd|
-!i113 1
-R12
-R13
-Abh
-R3
-R4
-DEx4 work 20 tbmsj_y_salida_apart 0 22 UVi50o5HZ85U]<g=^9oiU1
-l24
-L7
-V`>NOc5k4?78PN5A_6aITA2
-!s100 LS4dnb4]K?8C1B_iGJ];@0
-R7
-31
-R8
-!i10b 1
-R9
 R70
 R71
 !i113 1
 R12
 R13
-Etrama_y_reg
-Z72 w1574706951
+Etbmsj_y_salida_apart
+Z72 w1575245754
+R15
+R16
 R3
 R4
 R0
-Z73 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/trama_y_reg.vhd
-Z74 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/trama_y_reg.vhd
+Z73 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/msj_y_salida_apart/SIM/TBmsj_y_salida_apart.vhd
+Z74 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/msj_y_salida_apart/SIM/TBmsj_y_salida_apart.vhd
+l0
+L5
+VFgi_n16o_0<UJKZAThMUz1
+!s100 I>b^o6F9k`6G[Y9B[GDzj2
+R7
+31
+R8
+!i10b 1
+R9
+Z75 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/msj_y_salida_apart/SIM/TBmsj_y_salida_apart.vhd|
+Z76 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/msj_y_salida_apart/SIM/TBmsj_y_salida_apart.vhd|
+!i113 1
+R12
+R13
+Abh
+R15
+R16
+R3
+R4
+DEx4 work 20 tbmsj_y_salida_apart 0 22 Fgi_n16o_0<UJKZAThMUz1
+l30
+L8
+Vc985WVL8C3>k^>[?M]3Wi3
+!s100 cK;VgTjL@Rk:555@XB?io3
+R7
+31
+R8
+!i10b 1
+R9
+R75
+R76
+!i113 1
+R12
+R13
+Etrama_y_reg
+Z77 w1574706951
+R3
+R4
+R0
+Z78 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/trama_y_reg.vhd
+Z79 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/trama_y_reg.vhd
 l0
 L6
 VlfYC8V`^V?Ghn`=[RE7IT0
@@ -527,8 +574,8 @@ R7
 R8
 !i10b 1
 R9
-Z75 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/trama_y_reg.vhd|
-Z76 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/trama_y_reg.vhd|
+Z80 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/trama_y_reg.vhd|
+Z81 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/trama_y_reg.vhd|
 !i113 1
 R12
 R13
@@ -545,8 +592,8 @@ R7
 R8
 !i10b 1
 R9
-R75
-R76
+R80
+R81
 !i113 1
 R12
 R13

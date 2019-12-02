@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Wed Nov 27 15:52:04 2019
+Analysis & Synthesis Status : Successful - Sun Dec  1 20:32:19 2019
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : transm_completo_2
 Top-level Entity Name : transm_completo_2
 Family : Cyclone IV E
-Total logic elements : 125
-    Total combinational functions : 117
-    Dedicated logic registers : 76
-Total registers : 76
+Total logic elements : 117
+    Total combinational functions : 115
+    Dedicated logic registers : 67
+Total registers : 67
 Total pins : 9
 Total virtual pins : 0
 Total memory bits : 1,792

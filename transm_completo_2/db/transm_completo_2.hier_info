@@ -1,201 +1,68 @@
 |transm_completo_2
-aux_out_clk_int <= generador:d1.salida
+aux_out_clk_int <= generador_2:d1.clk_out
 select_msj[0] => msj_y_salida_apart:d2.select_msj[0]
 select_msj[1] => msj_y_salida_apart:d2.select_msj[1]
-select_vel[0] => generador:d1.async_in[0]
-select_vel[1] => generador:d1.async_in[1]
+select_vel[0] => generador_2:d1.sel_vel[0]
+select_vel[1] => generador_2:d1.sel_vel[1]
 enviar => msj_y_salida_apart:d2.enviar
 salida_serie <= msj_y_salida_apart:d2.salida_serie
-reset => generador:d1.reset_d
+reset => generador_2:d1.rst
 reset => msj_y_salida_apart:d2.reset
-clk_50Mhz => generador:d1.clk_50Mhz
+clk_50Mhz => generador_2:d1.clk_50MHz
 
 
-|transm_completo_2|generador:d1
-async_in[0] => sincX3:entradas.async_in[0]
-async_in[1] => sincX3:entradas.async_in[1]
-reset_d => sincX3:entradas.reset
-salida <= selFrecuencias:seleccionador.salida
-clk_50Mhz => sincX3:entradas.clk_in
-clk_50Mhz => divfrecuencias:divisor.clk50mhz
-
-
-|transm_completo_2|generador:d1|selfrecuencias:seleccionador
-ck1 => Mux0.IN0
-ck2 => Mux0.IN1
-ck4 => Mux0.IN2
-ck5 => Mux0.IN3
-sel_in[0] => Mux0.IN5
-sel_in[1] => Mux0.IN4
-salida <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|transm_completo_2|generador:d1|sincX3:entradas
-clk_in => sincronizador:sinc_xx:1:buss.clk_in
-clk_in => sincronizador:sinc_xx:0:buss.clk_in
-async_in[0] => sincronizador:sinc_xx:0:buss.data_async
-async_in[1] => sincronizador:sinc_xx:1:buss.data_async
-reset => sincronizador:sinc_xx:1:buss.rst
-reset => sincronizador:sinc_xx:0:buss.rst
-sync_out[0] <= sincronizador:sinc_xx:0:buss.data_sync
-sync_out[1] <= sincronizador:sinc_xx:1:buss.data_sync
-
-
-|transm_completo_2|generador:d1|sincX3:entradas|sincronizador:\sinc_xx:1:buss
-data_async => ffd:ffd1.d
-clk_in => divisorx2:div1.clk_in
-clk_in => ffd:ffd3.clk
-clk_in => clk_out.DATAIN
-rst => ffd:ffd1.rst
-rst => ffd:ffd2.rst
-rst => divisorx2:div1.rst
-rst => ffd:ffd3.rst
-data_sync <= ffd:ffd3.q
-clk_out <= clk_in.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|transm_completo_2|generador:d1|sincX3:entradas|sincronizador:\sinc_xx:1:buss|ffd:ffd1
-clk => dd.CLK
-d => dd.DATAIN
-rst => dd.ACLR
-q <= dd.DB_MAX_OUTPUT_PORT_TYPE
-q_d <= dd.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|transm_completo_2|generador:d1|sincX3:entradas|sincronizador:\sinc_xx:1:buss|ffd:ffd2
-clk => dd.CLK
-d => dd.DATAIN
-rst => dd.ACLR
-q <= dd.DB_MAX_OUTPUT_PORT_TYPE
-q_d <= dd.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|transm_completo_2|generador:d1|sincX3:entradas|sincronizador:\sinc_xx:1:buss|divisorx2:div1
-clk_in => ffd:ffd1.clk
-rst => ffd:ffd1.rst
-o <= ffd:ffd1.q
-
-
-|transm_completo_2|generador:d1|sincX3:entradas|sincronizador:\sinc_xx:1:buss|divisorx2:div1|ffd:ffd1
-clk => dd.CLK
-d => dd.DATAIN
-rst => dd.ACLR
-q <= dd.DB_MAX_OUTPUT_PORT_TYPE
-q_d <= dd.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|transm_completo_2|generador:d1|sincX3:entradas|sincronizador:\sinc_xx:1:buss|ffd:ffd3
-clk => dd.CLK
-d => dd.DATAIN
-rst => dd.ACLR
-q <= dd.DB_MAX_OUTPUT_PORT_TYPE
-q_d <= dd.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|transm_completo_2|generador:d1|sincX3:entradas|sincronizador:\sinc_xx:0:buss
-data_async => ffd:ffd1.d
-clk_in => divisorx2:div1.clk_in
-clk_in => ffd:ffd3.clk
-clk_in => clk_out.DATAIN
-rst => ffd:ffd1.rst
-rst => ffd:ffd2.rst
-rst => divisorx2:div1.rst
-rst => ffd:ffd3.rst
-data_sync <= ffd:ffd3.q
-clk_out <= clk_in.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|transm_completo_2|generador:d1|sincX3:entradas|sincronizador:\sinc_xx:0:buss|ffd:ffd1
-clk => dd.CLK
-d => dd.DATAIN
-rst => dd.ACLR
-q <= dd.DB_MAX_OUTPUT_PORT_TYPE
-q_d <= dd.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|transm_completo_2|generador:d1|sincX3:entradas|sincronizador:\sinc_xx:0:buss|ffd:ffd2
-clk => dd.CLK
-d => dd.DATAIN
-rst => dd.ACLR
-q <= dd.DB_MAX_OUTPUT_PORT_TYPE
-q_d <= dd.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|transm_completo_2|generador:d1|sincX3:entradas|sincronizador:\sinc_xx:0:buss|divisorx2:div1
-clk_in => ffd:ffd1.clk
-rst => ffd:ffd1.rst
-o <= ffd:ffd1.q
-
-
-|transm_completo_2|generador:d1|sincX3:entradas|sincronizador:\sinc_xx:0:buss|divisorx2:div1|ffd:ffd1
-clk => dd.CLK
-d => dd.DATAIN
-rst => dd.ACLR
-q <= dd.DB_MAX_OUTPUT_PORT_TYPE
-q_d <= dd.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|transm_completo_2|generador:d1|sincX3:entradas|sincronizador:\sinc_xx:0:buss|ffd:ffd3
-clk => dd.CLK
-d => dd.DATAIN
-rst => dd.ACLR
-q <= dd.DB_MAX_OUTPUT_PORT_TYPE
-q_d <= dd.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|transm_completo_2|generador:d1|divfrecuencias:divisor
-clk50mhz => clk_5.CLK
-clk50mhz => cont5[0].CLK
-clk50mhz => cont5[1].CLK
-clk50mhz => cont5[2].CLK
-clk50mhz => cont5[3].CLK
-clk50mhz => cont5[4].CLK
-clk50mhz => cont5[5].CLK
-clk50mhz => cont5[6].CLK
-clk50mhz => cont5[7].CLK
-clk50mhz => clk_4.CLK
-clk50mhz => cont4[0].CLK
-clk50mhz => cont4[1].CLK
-clk50mhz => cont4[2].CLK
-clk50mhz => cont4[3].CLK
-clk50mhz => cont4[4].CLK
-clk50mhz => cont4[5].CLK
-clk50mhz => cont4[6].CLK
-clk50mhz => cont4[7].CLK
-clk50mhz => cont4[8].CLK
-clk50mhz => cont4[9].CLK
-clk50mhz => cont4[10].CLK
-clk50mhz => clk_2.CLK
-clk50mhz => cont2[0].CLK
-clk50mhz => cont2[1].CLK
-clk50mhz => cont2[2].CLK
-clk50mhz => cont2[3].CLK
-clk50mhz => cont2[4].CLK
-clk50mhz => cont2[5].CLK
-clk50mhz => cont2[6].CLK
-clk50mhz => cont2[7].CLK
-clk50mhz => cont2[8].CLK
-clk50mhz => cont2[9].CLK
-clk50mhz => cont2[10].CLK
-clk50mhz => cont2[11].CLK
-clk50mhz => clk_1.CLK
-clk50mhz => cont1[0].CLK
-clk50mhz => cont1[1].CLK
-clk50mhz => cont1[2].CLK
-clk50mhz => cont1[3].CLK
-clk50mhz => cont1[4].CLK
-clk50mhz => cont1[5].CLK
-clk50mhz => cont1[6].CLK
-clk50mhz => cont1[7].CLK
-clk50mhz => cont1[8].CLK
-clk50mhz => cont1[9].CLK
-clk50mhz => cont1[10].CLK
-clk50mhz => cont1[11].CLK
-clk50mhz => cont1[12].CLK
-clk1 <= clk_1.DB_MAX_OUTPUT_PORT_TYPE
-clk2 <= clk_2.DB_MAX_OUTPUT_PORT_TYPE
-clk4 <= clk_4.DB_MAX_OUTPUT_PORT_TYPE
-clk5 <= clk_5.DB_MAX_OUTPUT_PORT_TYPE
+|transm_completo_2|generador_2:d1
+sel_vel[0] => Mux0.IN1
+sel_vel[1] => Mux0.IN0
+clk_out <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+rst => ~NO_FANOUT~
+clk_50MHz => clk_115200.CLK
+clk_50MHz => cont115200[0].CLK
+clk_50MHz => cont115200[1].CLK
+clk_50MHz => cont115200[2].CLK
+clk_50MHz => cont115200[3].CLK
+clk_50MHz => cont115200[4].CLK
+clk_50MHz => cont115200[5].CLK
+clk_50MHz => cont115200[6].CLK
+clk_50MHz => cont115200[7].CLK
+clk_50MHz => clk_38400.CLK
+clk_50MHz => cont38400[0].CLK
+clk_50MHz => cont38400[1].CLK
+clk_50MHz => cont38400[2].CLK
+clk_50MHz => cont38400[3].CLK
+clk_50MHz => cont38400[4].CLK
+clk_50MHz => cont38400[5].CLK
+clk_50MHz => cont38400[6].CLK
+clk_50MHz => cont38400[7].CLK
+clk_50MHz => cont38400[8].CLK
+clk_50MHz => cont38400[9].CLK
+clk_50MHz => clk_4800.CLK
+clk_50MHz => cont4800[0].CLK
+clk_50MHz => cont4800[1].CLK
+clk_50MHz => cont4800[2].CLK
+clk_50MHz => cont4800[3].CLK
+clk_50MHz => cont4800[4].CLK
+clk_50MHz => cont4800[5].CLK
+clk_50MHz => cont4800[6].CLK
+clk_50MHz => cont4800[7].CLK
+clk_50MHz => cont4800[8].CLK
+clk_50MHz => cont4800[9].CLK
+clk_50MHz => cont4800[10].CLK
+clk_50MHz => cont4800[11].CLK
+clk_50MHz => cont4800[12].CLK
+clk_50MHz => clk_9600.CLK
+clk_50MHz => cont9600[0].CLK
+clk_50MHz => cont9600[1].CLK
+clk_50MHz => cont9600[2].CLK
+clk_50MHz => cont9600[3].CLK
+clk_50MHz => cont9600[4].CLK
+clk_50MHz => cont9600[5].CLK
+clk_50MHz => cont9600[6].CLK
+clk_50MHz => cont9600[7].CLK
+clk_50MHz => cont9600[8].CLK
+clk_50MHz => cont9600[9].CLK
+clk_50MHz => cont9600[10].CLK
+clk_50MHz => cont9600[11].CLK
 
 
 |transm_completo_2|msj_y_salida_apart:d2

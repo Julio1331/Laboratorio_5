@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sun Dec  1 18:45:29 2019
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Revision Name : generador_2
+Top-level Entity Name : generador_2
+Family : Cyclone IV E
+Device : EP4CE6E22C6
+Timing Models : Final
+Total logic elements : 62 / 6,272 ( < 1 % )
+    Total combinational functions : 62 / 6,272 ( < 1 % )
+    Dedicated logic registers : 47 / 6,272 ( < 1 % )
+Total registers : 47
+Total pins : 5 / 92 ( 5 % )
+Total virtual pins : 0
+Total memory bits : 0 / 276,480 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

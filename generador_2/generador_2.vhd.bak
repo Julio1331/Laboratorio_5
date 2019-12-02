@@ -1,0 +1,38 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity generador_2 is
+	port(
+			sel_vel: in std_logic_vector(1 downto 0);
+			clk_out: out std_logic;
+			rst: in std_logic;
+			clk_50MHz: in std_logic
+			);
+end generador_2;
+
+architecture bh of generador_2 is
+
+begin 
+	--9600 4800 38400 115200
+	constant max_c9600		: NATURAL := 2604; --maximo para 1Hz
+	
+	
+	signal cont9600	: NATURAL range 0 to max_c9600;
+	
+	
+	signal clk_9600	: STD_LOGIC := '0';
+	
+begin	
+	gen_clock_9600: process(clk_50MHz)	
+	begin
+		if rising_edge(clk_50MHz) then  
+			if cont9600 < max_c9600 then 
+				cont9600 <= cont9600+1;
+			else
+				clk_9600 <= not clk_9600;
+				cont9600 <= 0;
+			end if;
+		end if;
+	end process;
+	
+			
