@@ -4,11 +4,13 @@ select_msj[0] => msj_y_mem:d1.select_msj[0]
 select_msj[1] => msj_y_mem:d1.select_msj[1]
 select_vel[0] => generador_2:d3.sel_vel[0]
 select_vel[1] => generador_2:d3.sel_vel[1]
+cts <= comb.DB_MAX_OUTPUT_PORT_TYPE
+rts <= rts.DB_MAX_OUTPUT_PORT_TYPE
 clk => generador_2:d3.clk_50MHz
 reset => msj_y_mem:d1.reset_in
 reset => trama_y_reg:d2.rst
 reset => generador_2:d3.rst
-salida_serie << trama_y_reg:d2.sal_serie
+salida_serie <= trama_y_reg:d2.sal_serie
 
 
 |msj_y_salida_apart|msj_y_mem:d1

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for msj_y_salida_apart
-Sun Dec  1 21:16:09 2019
+Sat Dec  7 20:33:22 2019
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -55,7 +55,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Dec  1 21:16:09 2019       ;
+; Analysis & Synthesis Status        ; Successful - Sat Dec  7 20:33:22 2019       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; msj_y_salida_apart                          ;
 ; Top-level Entity Name              ; msj_y_salida_apart                          ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 ;     Total combinational functions  ; 115                                         ;
 ;     Dedicated logic registers      ; 67                                          ;
 ; Total registers                    ; 67                                          ;
-; Total pins                         ; 8                                           ;
+; Total pins                         ; 10                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 1,792                                       ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -77,6 +77,7 @@ refer to the applicable agreement for further details.
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE115F29C7      ;                    ;
 ; Top-level entity name                                            ; msj_y_salida_apart ; msj_y_salida_apart ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
@@ -226,15 +227,15 @@ refer to the applicable agreement for further details.
 ;     -- Dedicated logic registers            ; 67        ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 8         ;
+; I/O pins                                    ; 10        ;
 ; Total memory bits                           ; 1792      ;
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 47        ;
-; Total fan-out                               ; 574       ;
-; Average fan-out                             ; 2.80      ;
+; Total fan-out                               ; 576       ;
+; Average fan-out                             ; 2.76      ;
 +---------------------------------------------+-----------+
 
 
@@ -243,7 +244,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------+--------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                ; Entity Name        ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------+--------------------+--------------+
-; |msj_y_salida_apart                          ; 115 (0)             ; 67 (0)                    ; 1792        ; 0            ; 0       ; 0         ; 8    ; 0            ; |msj_y_salida_apart                                                                                ; msj_y_salida_apart ; work         ;
+; |msj_y_salida_apart                          ; 115 (0)             ; 67 (0)                    ; 1792        ; 0            ; 0       ; 0         ; 10   ; 0            ; |msj_y_salida_apart                                                                                ; msj_y_salida_apart ; work         ;
 ;    |generador_2:d3|                          ; 65 (65)             ; 47 (47)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |msj_y_salida_apart|generador_2:d3                                                                 ; generador_2        ; work         ;
 ;    |msj_y_mem:d1|                            ; 30 (0)              ; 6 (0)                     ; 1792        ; 0            ; 0       ; 0         ; 0    ; 0            ; |msj_y_salida_apart|msj_y_mem:d1                                                                   ; msj_y_mem          ; work         ;
 ;       |mea_mem:d1|                           ; 30 (30)             ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |msj_y_salida_apart|msj_y_mem:d1|mea_mem:d1                                                        ; mea_mem            ; work         ;
@@ -502,16 +503,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 8                           ;
+; boundary_port         ; 10                          ;
 ; cycloneiii_ff         ; 67                          ;
 ;     CLR               ; 18                          ;
 ;     ENA               ; 1                           ;
 ;     SCLR              ; 43                          ;
 ;     plain             ; 5                           ;
-; cycloneiii_lcell_comb ; 116                         ;
+; cycloneiii_lcell_comb ; 117                         ;
 ;     arith             ; 46                          ;
 ;         2 data inputs ; 46                          ;
-;     normal            ; 70                          ;
+;     normal            ; 71                          ;
+;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 6                           ;
 ;         2 data inputs ; 9                           ;
 ;         3 data inputs ; 29                          ;
@@ -528,7 +530,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -538,7 +540,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Sun Dec  1 21:15:56 2019
+    Info: Processing started: Sat Dec  7 20:33:08 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off msj_y_salida_apart -c msj_y_salida_apart
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -579,13 +581,14 @@ Info (12021): Found 2 design units, including 1 entities, in source file /home/j
     Info (12022): Found design unit 1: msj_y_mem-bh File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/msj_y_mem.vhd Line: 21
     Info (12023): Found entity 1: msj_y_mem File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/msj_y_mem.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file msj_y_salida_apart.vhd
-    Info (12022): Found design unit 1: msj_y_salida_apart-bh File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/msj_y_salida_apart/msj_y_salida_apart.vhd Line: 18
+    Info (12022): Found design unit 1: msj_y_salida_apart-bh File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/msj_y_salida_apart/msj_y_salida_apart.vhd Line: 20
     Info (12023): Found entity 1: msj_y_salida_apart File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/msj_y_salida_apart/msj_y_salida_apart.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file SIM/TBmsj_y_salida_apart.vhd
     Info (12022): Found design unit 1: TBmsj_y_salida_apart-bh File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/msj_y_salida_apart/SIM/TBmsj_y_salida_apart.vhd Line: 8
     Info (12023): Found entity 1: TBmsj_y_salida_apart File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/msj_y_salida_apart/SIM/TBmsj_y_salida_apart.vhd Line: 5
 Info (12127): Elaborating entity "msj_y_salida_apart" for the top level hierarchy
-Info (12128): Elaborating entity "msj_y_mem" for hierarchy "msj_y_mem:d1" File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/msj_y_salida_apart/msj_y_salida_apart.vhd Line: 61
+Warning (10541): VHDL Signal Declaration warning at msj_y_salida_apart.vhd(61): used implicit default value for signal "aux_rts_cts" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/msj_y_salida_apart/msj_y_salida_apart.vhd Line: 61
+Info (12128): Elaborating entity "msj_y_mem" for hierarchy "msj_y_mem:d1" File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/msj_y_salida_apart/msj_y_salida_apart.vhd Line: 64
 Info (12128): Elaborating entity "mea_mem" for hierarchy "msj_y_mem:d1|mea_mem:d1" File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/msj_y_mem.vhd Line: 53
 Warning (10492): VHDL Process Statement warning at mea_mem.vhd(54): signal "add_0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_mem.vhd Line: 54
 Warning (10492): VHDL Process Statement warning at mea_mem.vhd(69): signal "add_aux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_mem.vhd Line: 69
@@ -601,13 +604,13 @@ Info (10041): Inferred latch for "add_aux[6]" at mea_mem.vhd(44) File: /home/jul
 Info (10041): Inferred latch for "add_aux[7]" at mea_mem.vhd(44) File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_mem.vhd Line: 44
 Info (12128): Elaborating entity "rom" for hierarchy "msj_y_mem:d1|rom:d2" File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/msj_y_mem.vhd Line: 64
 Info (12128): Elaborating entity "mux_entradas" for hierarchy "msj_y_mem:d1|mux_entradas:d3" File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/msj_y_mem.vhd Line: 70
-Info (12128): Elaborating entity "trama_y_reg" for hierarchy "trama_y_reg:d2" File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/msj_y_salida_apart/msj_y_salida_apart.vhd Line: 72
+Info (12128): Elaborating entity "trama_y_reg" for hierarchy "trama_y_reg:d2" File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/msj_y_salida_apart/msj_y_salida_apart.vhd Line: 75
 Info (12128): Elaborating entity "data_11" for hierarchy "trama_y_reg:d2|data_11:d1" File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/trama_y_reg.vhd Line: 45
 Info (12128): Elaborating entity "mef_registro" for hierarchy "trama_y_reg:d2|mef_registro:d2" File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/trama_y_reg.vhd Line: 52
 Info (12128): Elaborating entity "reg_desplazamiento" for hierarchy "trama_y_reg:d2|mef_registro:d2|reg_desplazamiento:d1" File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mef_registro.vhd Line: 50
 Info (12128): Elaborating entity "registro" for hierarchy "trama_y_reg:d2|mef_registro:d2|reg_desplazamiento:d1|registro:\t:10:t11:bitxul" File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/reg_desplazamiento.vhd Line: 57
 Info (12128): Elaborating entity "mea_salida" for hierarchy "trama_y_reg:d2|mef_registro:d2|mea_salida:d2" File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mef_registro.vhd Line: 59
-Info (12128): Elaborating entity "generador_2" for hierarchy "generador_2:d3" File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/msj_y_salida_apart/msj_y_salida_apart.vhd Line: 81
+Info (12128): Elaborating entity "generador_2" for hierarchy "generador_2:d3" File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/msj_y_salida_apart/msj_y_salida_apart.vhd Line: 84
 Warning (19016): Clock multiplexers are found and protected
     Warning (19017): Found clock multiplexer generador_2:d3|Mux0 File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/generador_2/generador_2.vhd Line: 85
 Info (19000): Inferred 1 megafunctions from design logic
@@ -648,18 +651,21 @@ Warning (13012): Latch msj_y_mem:d1|mea_mem:d1|add_aux[7] has unsafe behavior Fi
     Warning (13013): Ports D and ENA on the latch are fed by the same signal msj_y_mem:d1|mea_mem:d1|stac.incremento File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/mea_mem.vhd Line: 26
 Info (13000): Registers with preset signals will power-up high File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/registro.vhd Line: 14
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "cts" is stuck at GND File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/msj_y_salida_apart/msj_y_salida_apart.vhd Line: 11
+    Warning (13410): Pin "rts" is stuck at GND File: /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/msj_y_salida_apart/msj_y_salida_apart.vhd Line: 12
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 133 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 135 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 7 input pins
-    Info (21059): Implemented 1 output pins
+    Info (21059): Implemented 3 output pins
     Info (21061): Implemented 118 logic cells
     Info (21064): Implemented 7 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 23 warnings
-    Info: Peak virtual memory: 1011 megabytes
-    Info: Processing ended: Sun Dec  1 21:16:09 2019
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:28
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 27 warnings
+    Info: Peak virtual memory: 1025 megabytes
+    Info: Processing ended: Sat Dec  7 20:33:22 2019
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:32
 
 

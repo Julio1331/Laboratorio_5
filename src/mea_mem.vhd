@@ -46,6 +46,7 @@ begin
 			case stac is
 				when ini =>
 					if (send_us ='1') then
+					--if (rising_edge(send_us)) then
 						pxst <= asign;
 					else 
 						pxst <= ini;

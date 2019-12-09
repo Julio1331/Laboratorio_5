@@ -10,6 +10,8 @@ architecture bh of TBmsj_y_salida_apart is
 	signal tbenviar: std_logic;
 	signal tbselect_msj: std_logic_vector(1 downto 0);
 	signal tbselect_vel: std_logic_vector(1 downto 0);
+	signal tbcts: std_logic;
+	signal tbrts: std_logic;
 	signal tbsalida_serie: std_logic ;
 	signal tbreset: std_logic;
 	signal tbclk: std_logic;
@@ -21,6 +23,8 @@ architecture bh of TBmsj_y_salida_apart is
 			enviar: in std_logic;
 			select_msj: in std_logic_vector(1 downto 0);
 			select_vel: in std_logic_vector(1 downto 0);
+			cts: out std_logic;
+			rts: out std_logic;
 			clk: in std_logic;
 			reset: in std_logic;
 			salida_serie: out std_logic	
@@ -33,6 +37,8 @@ begin
 										enviar => tbenviar,
 										select_msj => tbselect_msj,
 										select_vel => tbselect_vel,
+										cts => tbcts,
+										rts => tbrts,
 										salida_serie => tbsalida_serie,
 										reset => tbreset,
 										clk => tbclk
@@ -49,7 +55,7 @@ begin
 		tbselect_vel <= cont (4 downto 3);
 		tbselect_msj <= cont (2 downto 1);
 		tbenviar <= cont(0);
-		wait for 100 ms;
+		wait for 500 ms;
 		cont <= cont + '1';
 	end process select_gener;
 	
@@ -69,7 +75,7 @@ begin
 	reset_genr: process 
 	begin
 		tbreset <= '0';
-		wait for 20 ms;
+		wait for 80 ms;--800
 		tbreset <= '1';
 		wait for 20000 ms;
 	end process reset_genr;

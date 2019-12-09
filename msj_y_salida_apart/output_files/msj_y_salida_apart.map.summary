@@ -1,4 +1,4 @@
-Analysis & Synthesis Status : Successful - Sun Dec  1 21:16:09 2019
+Analysis & Synthesis Status : Successful - Sat Dec  7 20:33:22 2019
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : msj_y_salida_apart
 Top-level Entity Name : msj_y_salida_apart
@@ -7,7 +7,7 @@ Total logic elements : 117
     Total combinational functions : 115
     Dedicated logic registers : 67
 Total registers : 67
-Total pins : 8
+Total pins : 10
 Total virtual pins : 0
 Total memory bits : 1,792
 Embedded Multiplier 9-bit elements : 0

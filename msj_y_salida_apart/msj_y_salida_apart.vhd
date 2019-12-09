@@ -8,6 +8,8 @@ entity msj_y_salida_apart is
 			enviar: in std_logic;
 			select_msj: in std_logic_vector(1 downto 0);
 			select_vel: in std_logic_vector(1 downto 0);
+			cts: out std_logic;
+			rts: out std_logic;
 			clk: in std_logic;
 			reset: in std_logic;
 			salida_serie: out std_logic	
@@ -56,6 +58,7 @@ architecture bh of msj_y_salida_apart is
 	signal aux_msj: std_logic_vector(7 downto 0);
 	signal aux_send: std_logic;
 	signal auxclk_int: std_logic;
+	signal aux_rts_cts: std_logic;
 	
 begin 
 	d1: msj_y_mem port map( 
@@ -84,6 +87,8 @@ begin
 										rst => reset,
 										clk_50MHz => clk
 										);
+	rts <= aux_rts_cts;
+	cts <= aux_rts_cts;
 end architecture;
 
 

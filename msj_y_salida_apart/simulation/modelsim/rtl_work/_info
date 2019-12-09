@@ -22,9 +22,9 @@ VRb<8KUbQMRL4S:WjEY_BB3
 !s100 8bRkY0;]QV6]TbQ1?;<aF2
 Z7 OV;C;10.5b;63
 31
-Z8 !s110 1575246466
+Z8 !s110 1575761924
 !i10b 1
-Z9 !s108 1575246466.000000
+Z9 !s108 1575761924.000000
 Z10 !s90 -reportprogress|300|-93|-work|work|/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/data_11.vhd|
 Z11 !s107 /home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/src/data_11.vhd|
 !i113 1
@@ -93,7 +93,7 @@ R20
 R12
 R13
 Emea_mem
-Z21 w1574464258
+Z21 w1575761917
 Z22 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 R15
 R16
@@ -125,8 +125,8 @@ R4
 DEx4 work 7 mea_mem 0 22 h<^Nc0Rk1]EQ1FaPc_I1F1
 l30
 L23
-V0[UH:^<?Go0[==7J8Pd<_3
-!s100 Hz^7I<omh1en:XT:>d8EC1
+V?h@JiK6QTRjnZOHcUko2[2
+!s100 RKR6]gMDh`HJ`3@YU1`Jn3
 R7
 31
 R8
@@ -267,7 +267,7 @@ R41
 R12
 R13
 Emsj_y_salida_apart
-Z42 w1575245132
+Z42 w1575756527
 R3
 R4
 R0
@@ -275,8 +275,8 @@ Z43 8/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/msj_y_salida_apart/msj_
 Z44 F/home/julio/Escritorio/FPGA_Proyectos/Laboratorio_5/msj_y_salida_apart/msj_y_salida_apart.vhd
 l0
 L6
-Vm7V9?7o300OIfWb`kbL@l0
-!s100 l<kgQBfYRK7CGbU0UYeQb3
+V;=46VDen3P;o:21^;`0no1
+!s100 doiF@efTgjc0Lh0f]Ej1P2
 R7
 31
 R8
@@ -290,11 +290,11 @@ R13
 Abh
 R3
 R4
-DEx4 work 18 msj_y_salida_apart 0 22 m7V9?7o300OIfWb`kbL@l0
-l60
-L18
-Vk7B@4J>zfY=VI?01<lP?a1
-!s100 9SSWN<jG9DI4Rk9k>R;Zj2
+DEx4 work 18 msj_y_salida_apart 0 22 ;=46VDen3P;o:21^;`0no1
+l63
+L20
+VbKHUeW3:A^h:8Pk=TLFfN0
+!s100 nbBRgf7^>L=5WlM0nbJ600
 R7
 31
 R8
@@ -516,7 +516,7 @@ R71
 R12
 R13
 Etbmsj_y_salida_apart
-Z72 w1575245754
+Z72 w1575761585
 R15
 R16
 R3
@@ -544,10 +544,10 @@ R16
 R3
 R4
 DEx4 work 20 tbmsj_y_salida_apart 0 22 Fgi_n16o_0<UJKZAThMUz1
-l30
+l34
 L8
-Vc985WVL8C3>k^>[?M]3Wi3
-!s100 cK;VgTjL@Rk:555@XB?io3
+V2ieJikDB@d8oUT2ALC?ea0
+!s100 ehzTZJBEYM4816K^jXlfW1
 R7
 31
 R8
